@@ -6,20 +6,50 @@
 
         <title>Your page title</title>
         <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/panels.css">
         <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/forms.css">
         <script src="js/jquery-2.2.3.min.js"></script>
         <script src="js/panels.js"></script>
+        <script src="js/forms.js"></script>
         <script>
             $(document).ready(function() {
                 resizeLayout();
                 $(window).resize(resizeLayout);
-                
+
                 $("#btNav").click(toggleNav);
                 $("#nav_curtain").click(closeNav);
 
                 $("#btAside").click(toggleAside);
                 $("#btCloseAside").click(closeAside);
+
+
+                $(".checkbox_input").each(function() {
+                    if ($(this).prop("checked")) {
+                        $(this).parent().addClass("is-checked");
+                    } else {
+
+                    }
+                });
+                $(".checkbox_input").change(function() {
+                    $(this).parent().toggleClass("is-checked");
+                });
+
+                $(".radio_input").each(function() {
+                    if ($(this).prop("checked")) {
+                        var name = $(this).attr("name");
+                        $("input[name='" + name + "']").parent().removeClass("is-checked");
+                        $(this).parent().addClass("is-checked");
+                    }
+                });
+                $(".radio_input").change(function() {
+                    console.log($(this));
+                    if ($(this).prop("checked")) {
+                        var name = $(this).attr("name");
+                        $("input[name='" + name + "']").parent().removeClass("is-checked");
+                        $(this).parent().addClass("is-checked");
+                    }
+                });
             });
         </script>
         <style>
@@ -36,6 +66,69 @@
             <main id="main" class="grid-u">
                 <p>main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content</p>
                 <p> main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content </p>
+                <p>
+                    <label class="checkbox" for="checkbox-teste1">
+                        <input type="checkbox" id="checkbox-teste1" class="checkbox_input" value="teste1" checked>
+                        <span class="checkbox_label">Checkbox 1</span>
+                        <span class="checkbox_box-outline">
+                            <span class="checkbox_tick-outline"></span>
+                        </span>
+                    </label>
+                    <label class="checkbox" for="checkbox-teste2">
+                        <input type="checkbox" id="checkbox-teste2" class="checkbox_input" value="teste2">
+                        <span class="checkbox_label">Checkbox 2</span>
+                        <span class="checkbox_box-outline">
+                            <span class="checkbox_tick-outline"></span>
+                        </span>
+                    </label>
+
+                </p>
+                <p>
+                    <label class="radio" for="option-1">
+                        <input type="radio" id="option-1" class="radio_input" name="options" value="1" >
+                        <span class="radio_label">First</span>
+                        <span class="radio_box-outline">
+                            <span class="radio_tick-outline"></span>
+                        </span>
+                    </label>
+                    <label class="radio" for="option-2">
+                        <input type="radio" id="option-2" class="radio_input" name="options" value="2" >
+                        <span class="radio_label">2</span>
+                        <span class="radio_box-outline">
+                            <span class="radio_tick-outline"></span>
+                        </span>
+                    </label>
+                    <label class="radio" for="option-3">
+                        <input type="radio" id="option-3" class="radio_input" name="options" value="3" >
+                        <span class="radio_label">terceiro</span>
+                        <span class="radio_box-outline">
+                            <span class="radio_tick-outline"></span>
+                        </span>
+                    </label>
+                </p>
+                <p>
+                    <label class="radio" for="option-4">
+                        <input type="radio" id="option-4" class="radio_input" name="options-2" value="4" >
+                        <span class="radio_label">4</span>
+                        <span class="radio_box-outline">
+                            <span class="radio_tick-outline"></span>
+                        </span>
+                    </label>
+                    <label class="radio" for="option-5">
+                        <input type="radio" id="option-5" class="radio_input" name="options-2" value="5" >
+                        <span class="radio_label">cinco</span>
+                        <span class="radio_box-outline">
+                            <span class="radio_tick-outline"></span>
+                        </span>
+                    </label>
+                    <label class="radio" for="option-6">
+                        <input type="radio" id="option-6" class="radio_input" name="options-2" value="6" >
+                        <span class="radio_label">seis</span>
+                        <span class="radio_box-outline">
+                            <span class="radio_tick-outline"></span>
+                        </span>
+                    </label>
+                </p>
                 <p>main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main </p>
                 <p>content main content main content main content main content main content main content main content main content <button id="btAside">aside</button> main content  main content  main content  main content  main content  main content  main content  main content  main content  main content  main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content</p>
             </main>

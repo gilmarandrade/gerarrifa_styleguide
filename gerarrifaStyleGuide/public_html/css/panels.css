@@ -1,0 +1,156 @@
+/**
+ * Panels
+ * -main
+ * -nav
+ * -aside
+ */
+
+/* Nav
+  ==================================================================== */
+
+#nav{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:-100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 91.6667%;/* 11/12 */
+    *width: 91.6357%;
+    background: red;
+    transition: left .8s ease;
+}
+.nav-opened #nav{
+    left:0;
+}
+#nav_curtain{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    background: rgba(0,0,0,.8);
+    cursor: pointer;
+}
+.nav-closed #nav_curtain{
+    left:-100%;
+    opacity: 0;
+    transition: left .01s .5s, opacity .5s ease;
+}
+.nav-opened #nav_curtain{
+    left:0%;
+    opacity: 1;
+    transition: left .01s 0s, opacity .5s ease;
+}
+
+/* Main
+  ==================================================================== */
+
+#main{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    margin-left:0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;/* 12/12 */
+    background: greenyellow;
+    transition: none;
+}
+
+/* Aside
+  ==================================================================== */
+#aside{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right:-100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;/* 12/12 */
+    background: yellow;
+    transition: right .8s ease;
+}
+.aside-opened #aside{
+    right:0;
+}
+
+/**
+* xsm (xsmall)
+* >= 480px
+*/
+@media screen and (min-width: 30em) {
+}
+/**
+* sm (small)
+* >= 600px
+*/
+@media screen and (min-width: 37.5em) {
+    #nav{
+        width: 41.6667%;/* 5/12 */
+        *width: 41.6357%;
+    }
+    .aside-opened #main{
+        width: 58.3333%;/* 7/12*/
+        *width: 58.3023%;
+        margin-right: 41.6667%;/* 5/12 */
+        *margin-right: 41.6357%;
+    }
+    #aside{
+        width: 41.6667%;/* 5/12 */
+        *width: 41.6357%;
+        transition: none;
+    }
+}
+/**
+* md (medium)
+* >= 768px
+*/
+@media screen and (min-width: 48em) {
+}
+/**
+* lg (large)
+* >= 1024px
+*/
+@media screen and (min-width: 64em) {
+    #nav{
+        width: 25%;/* 3/12 */
+        *width: 24.9690%;
+    }
+}
+/**
+* xlg (xlg)
+* >= 1280px
+*/
+@media screen and (min-width: 80em) {
+    #nav{ 
+        left:0;
+        width: 16.6667%;/* 2/12*/
+        *width: 16.6357%;
+        transition: none;
+    }
+    #nav_curtain{
+        display: none;
+    }
+    #main{
+        width: 83.3333%;/* 10/12 */
+        *width: 83.3023%;
+        margin-left: 16.6667%;/* 2/12*/
+        *margin-left: 16.6357%;
+    }
+    .aside-opened #main{
+        width: 50%; /* 6/12 */
+        *width: 49.9690%;
+    }
+    #aside{
+        width: 33.3333%;/* 4/12 */
+        *width: 33.3023%;
+    }
+}
+/**
+* xxlg (xxlarge)
+* >= 1920px
+*/
+@media screen and (min-width: 120em) {
+}

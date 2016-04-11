@@ -1,16 +1,48 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!doctype html>
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Your page title</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script>
+            $(document).ready(function() {
+                resizeLayout();
+                $(window).resize(resizeLayout);
+                
+                $("#btNav").click(toggleNav);
+                $("#nav_curtain").click(closeNav);
+
+                $("#btAside").click(toggleAside);
+                $("#btCloseAside").click(closeAside);
+            });
+        </script>
+        <style>
+            .group-button{
+                position: fixed;
+                top:0;
+            }
+        </style>
+
     </head>
-    <body>
-        <div>TODO write content</div>
+
+    <body class="nav-closed">
+        <div class="grid-g">
+            <main id="main" class="grid-u">
+                <p>main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content</p>
+                <p> main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content </p>
+                <p>main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main </p>
+                <p>content main content main content main content main content main content main content main content main content <button id="btAside">aside</button> main content  main content  main content  main content  main content  main content  main content  main content  main content  main content  main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content</p>
+            </main>
+            <aside id="aside" class="grid-u">aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="grid-u">nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content </nav>
+        </div>
+        <div class="group-button"><button id="btNav">nav</button></div>
     </body>
 </html>

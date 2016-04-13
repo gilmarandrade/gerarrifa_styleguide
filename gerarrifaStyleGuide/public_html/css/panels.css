@@ -17,8 +17,9 @@
     overflow-y: auto;
     width: 91.6667%;/* 11/12 */
     *width: 91.6357%;
-    background: red;
+    background: #3498db;
     transition: left .8s ease;
+    z-index: 2;
 }
 .nav-opened #nav{
     left:0;
@@ -55,7 +56,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;/* 12/12 */
-    background: greenyellow;
+    background: #1abc9c;
     transition: none;
 }
 
@@ -69,7 +70,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;/* 12/12 */
-    background: yellow;
+    background: #bdc3c7;
     transition: right .8s ease;
 }
 .aside-opened #aside{

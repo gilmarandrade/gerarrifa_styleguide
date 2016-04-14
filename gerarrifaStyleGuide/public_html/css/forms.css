@@ -40,7 +40,7 @@
     cursor: pointer;
     overflow: hidden;
     border-radius: 2px;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 .checkbox_tick-outline{
     position: absolute;
@@ -93,7 +93,7 @@
     cursor: pointer;
     overflow: hidden;
     border-radius: 50%;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 .radio_tick-outline{
     position: absolute;

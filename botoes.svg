@@ -4756,9 +4756,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.125"
-     inkscape:cx="2149.4801"
-     inkscape:cy="-77.154575"
+     inkscape:zoom="1"
+     inkscape:cx="1476.7124"
+     inkscape:cy="-1400.3204"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -18262,5 +18262,19 @@
            height="45.07143"
            width="288.57144"
            id="rect5472-5" /></flowRegion><flowPara
-         id="flowPara5474-9">Tabs</flowPara></flowRoot>  </g>
+         id="flowPara5474-9">Tabs</flowPara></flowRoot>    <rect
+       style="opacity:0.3;fill:#00ffff;fill-opacity:1;stroke:none"
+       id="rect11464"
+       width="16"
+       height="65"
+       x="1035"
+       y="360.36218" />
+    <rect
+       style="opacity:0.3;fill:#00ffff;fill-opacity:1;stroke:none"
+       id="rect11481"
+       width="16"
+       height="42.426407"
+       x="1214.8094"
+       y="2390.2083" />
+  </g>
 </svg>

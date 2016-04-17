@@ -19,7 +19,7 @@
    xml:space="preserve"
    id="svg11258"
    inkscape:version="0.48.1 "
-   sodipodi:docname="tipologia e cores.svg"><metadata
+   sodipodi:docname="tipologia.svg"><metadata
    id="metadata15120"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
@@ -2966,7 +2966,79 @@
          id="feMergeNode17571"
          in="offsetBlur" /><feMergeNode
          id="feMergeNode17573"
-         in="fbSourceGraphic" /></feMerge></filter></defs><sodipodi:namedview
+         in="fbSourceGraphic" /></feMerge></filter><filter
+     id="filter8259"
+     inkscape:label="Drop shadow"
+     width="1.5"
+     height="1.5"
+     x="-.25"
+     y="-.25"><feGaussianBlur
+       id="feGaussianBlur8261"
+       in="SourceAlpha"
+       stdDeviation="4.8"
+       result="blur" /><feColorMatrix
+       id="feColorMatrix8263"
+       result="bluralpha"
+       type="matrix"
+       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.44 0 " /><feOffset
+       id="feOffset8265"
+       in="bluralpha"
+       dx="1.4"
+       dy="2.8"
+       result="offsetBlur" /><feMerge
+       id="feMerge8267"><feMergeNode
+         id="feMergeNode8269"
+         in="offsetBlur" /><feMergeNode
+         id="feMergeNode8271"
+         in="SourceGraphic" /></feMerge></filter><filter
+     id="filter8273"
+     inkscape:label="Drop shadow"
+     width="1.5"
+     height="1.5"
+     x="-.25"
+     y="-.25"><feGaussianBlur
+       id="feGaussianBlur8275"
+       in="SourceAlpha"
+       stdDeviation="4.8"
+       result="blur" /><feColorMatrix
+       id="feColorMatrix8277"
+       result="bluralpha"
+       type="matrix"
+       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.44 0 " /><feOffset
+       id="feOffset8279"
+       in="bluralpha"
+       dx="1.4"
+       dy="2.8"
+       result="offsetBlur" /><feMerge
+       id="feMerge8281"><feMergeNode
+         id="feMergeNode8283"
+         in="offsetBlur" /><feMergeNode
+         id="feMergeNode8285"
+         in="SourceGraphic" /></feMerge></filter><filter
+     id="filter8287"
+     inkscape:label="Drop shadow"
+     width="1.5"
+     height="1.5"
+     x="-.25"
+     y="-.25"><feGaussianBlur
+       id="feGaussianBlur8289"
+       in="SourceAlpha"
+       stdDeviation="4.8"
+       result="blur" /><feColorMatrix
+       id="feColorMatrix8291"
+       result="bluralpha"
+       type="matrix"
+       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.44 0 " /><feOffset
+       id="feOffset8293"
+       in="bluralpha"
+       dx="1.4"
+       dy="2.8"
+       result="offsetBlur" /><feMerge
+       id="feMerge8295"><feMergeNode
+         id="feMergeNode8297"
+         in="offsetBlur" /><feMergeNode
+         id="feMergeNode8299"
+         in="SourceGraphic" /></feMerge></filter></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -2979,9 +3051,9 @@
    inkscape:window-height="705"
    id="namedview15116"
    showgrid="false"
-   inkscape:zoom="1"
-   inkscape:cx="-4377.2712"
-   inkscape:cy="-6446.0009"
+   inkscape:zoom="2"
+   inkscape:cx="-4867.6607"
+   inkscape:cy="-3802.3171"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
@@ -7829,6 +7901,7 @@
 
 
 
+
 <rect
    style="fill:#f1c40f"
    id="rect14560"
@@ -7841,6 +7914,7 @@
    x="1035.667"
    id="text14562"
    font-size="12">sun flower</text>
+
 
 
 
@@ -7859,6 +7933,7 @@
 
 
 
+
 <rect
    style="fill:#2980b9"
    id="rect14568"
@@ -7871,6 +7946,7 @@
    x="1459.667"
    id="text14570"
    font-size="12">belize hole</text>
+
 
 
 
@@ -7889,6 +7965,7 @@
 
 
 
+
 <rect
    style="fill:#8e44ad"
    id="rect14576"
@@ -7901,6 +7978,7 @@
    x="1635.667"
    id="text14578"
    font-size="12">wisteria</text>
+
 
 
 
@@ -7919,6 +7997,7 @@
 
 
 
+
 <rect
    style="fill:#e67e22"
    id="rect14584"
@@ -7931,6 +8010,7 @@
    x="1205.667"
    id="text14586"
    font-size="12">carrot</text>
+
 
 
 
@@ -7949,6 +8029,7 @@
 
 
 
+
 <rect
    style="fill:#16a085"
    id="rect14592"
@@ -7961,6 +8042,7 @@
    x="1111.667"
    id="text14594"
    font-size="12">green sea</text>
+
 
 
 
@@ -7979,6 +8061,7 @@
 
 
 
+
 <rect
    style="fill:#27ae60"
    id="rect14600"
@@ -7991,6 +8074,7 @@
    x="1283.667"
    id="text14602"
    font-size="12">nephritis</text>
+
 
 
 
@@ -8009,6 +8093,7 @@
 
 
 
+
 <rect
    style="fill:#bdc3c7"
    id="rect14608"
@@ -8021,6 +8106,7 @@
    x="1633.667"
    id="text14610"
    font-size="12">silver</text>
+
 
 
 
@@ -8039,6 +8125,7 @@
 
 
 
+
 <rect
    style="fill:#7f8c8d"
    id="rect14616"
@@ -8051,6 +8138,7 @@
    x="1816.667"
    id="text14618"
    font-size="12">asbesto</text>
+
 
 
 
@@ -8069,6 +8157,7 @@
 
 
 
+
 <rect
    style="fill:#2c3e50"
    id="rect14624"
@@ -8081,6 +8170,7 @@
    x="1811.667"
    id="text14626"
    font-size="12">midnight blue</text>
+
 
 
 
@@ -8099,6 +8189,7 @@
 
 
 
+
 <rect
    style="fill:#c0392b"
    id="rect14632"
@@ -8111,6 +8202,7 @@
    x="1458.667"
    id="text14634"
    font-size="12">pomegranate</text>
+
 
 
 
@@ -12593,12 +12685,14 @@
    id="2" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome"
    y="11.683915"
    x="171.91489"
    xml:space="preserve"
    id="3"> </text>
+
 
 
 </g><flowRoot
@@ -12622,12 +12716,14 @@
    id="2-2" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="3-4"> </text>
+
 
 
 </g><g
@@ -12640,12 +12736,14 @@
    id="2-6" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="3-7"> </text>
+
 
 
 </g><g
@@ -12658,12 +12756,14 @@
    id="2-25" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="3-3"> </text>
+
 
 
 </g><rect
@@ -13117,12 +13217,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text5866"
    xml:space="preserve"
    x="171.91489"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome"> </text>
+
 
 
 </g><rect
@@ -14067,12 +14169,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text10434"
    xml:space="preserve"
    x="171.91489"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome"> </text>
+
 
 
 </g><g
@@ -14085,12 +14189,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text10440"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -14103,12 +14209,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text10446"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -14121,12 +14229,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text10452"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><rect
@@ -14698,12 +14808,14 @@
    id="text10862" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome"
    y="11.683915"
    x="171.91489"
    xml:space="preserve"
    id="text10864"> </text>
+
 
 
 </g><path
@@ -15354,12 +15466,14 @@
    id="text10868" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="text10870"> </text>
+
 
 
 </g><g
@@ -15372,12 +15486,14 @@
    id="text10874" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="text10876"> </text>
+
 
 
 </g><g
@@ -15390,12 +15506,14 @@
    id="text10880" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="text10882"> </text>
+
 
 
 </g><path
@@ -15965,12 +16083,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text12532"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -15983,12 +16103,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text12538"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -16001,12 +16123,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text12544"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><path
@@ -16788,12 +16912,14 @@
    id="text13801" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="text13803"> </text>
+
 
 
 </g><g
@@ -16806,12 +16932,14 @@
    id="text13807" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="text13809"> </text>
+
 
 
 </g><g
@@ -16824,12 +16952,14 @@
    id="text13813" />
 
 
+
 <text
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"
    y="11.683915"
    x="12.751104"
    xml:space="preserve"
    id="text13815"> </text>
+
 
 
 </g><path
@@ -17493,12 +17623,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text14597"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -17511,12 +17643,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text14603"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -17529,12 +17663,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text14609"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><path
@@ -19279,12 +19415,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text16193"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -19297,12 +19435,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text16199"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><g
@@ -19315,12 +19455,14 @@
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:FontAwesome" />
 
 
+
 <text
    id="text16205"
    xml:space="preserve"
    x="12.751104"
    y="11.683915"
    style="font-size:13.80119514px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Calibri"> </text>
+
 
 
 </g><path
@@ -19919,4 +20061,59 @@
          id="rect26138"
          rx="2" /></flowRegion><flowPara
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;font-family:Open Sans Semibold;-inkscape-font-specification:'Open Sans Semibold, Semi-Bold'"
-       id="flowPara26140">FILTRAR</flowPara></flowRoot></g></svg>
+       id="flowPara26140">FILTRAR</flowPara></flowRoot></g><rect
+   style="fill:#333333;fill-opacity:1;stroke:none"
+   id="rect10739"
+   width="180"
+   height="775.42365"
+   x="-4781"
+   y="4504.167"
+   ry="0" /><g
+   id="g10741"
+   transform="matrix(1,0,0,2.7875811,-4786.6495,-17739.346)"><rect
+     style="fill:#eeeeee;fill-opacity:1;stroke:none"
+     id="rect10743"
+     width="180"
+     height="278.60007"
+     x="-174.35062"
+     y="7979.5029"
+     ry="0" /></g><rect
+   style="fill:#ffffff;fill-opacity:1;stroke:none"
+   id="rect10745"
+   width="180"
+   height="777.81702"
+   x="-5141"
+   y="4504.167"
+   ry="0" /><rect
+   style="fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter8259)"
+   id="rect8240"
+   width="398.20251"
+   height="136.6358"
+   x="-5053.3945"
+   y="4589.3667"
+   ry="4.0710673"
+   rx="3.9299464" /><rect
+   rx="3.9299464"
+   ry="4.0710673"
+   y="4735.3667"
+   x="-5053.3945"
+   height="136.6358"
+   width="398.20251"
+   id="rect8255"
+   style="fill:#ededed;fill-opacity:1;stroke:none;filter:url(#filter8273)" /><rect
+   style="fill:#333333;fill-opacity:1;stroke:none;filter:url(#filter8287)"
+   id="rect8257"
+   width="398.20251"
+   height="136.6358"
+   x="-5053.3945"
+   y="4885.3667"
+   ry="4.0710673"
+   rx="3.9299464" /><rect
+   rx="3.9299464"
+   ry="4.0710673"
+   y="5035.3667"
+   x="-5053.3945"
+   height="136.6358"
+   width="398.20251"
+   id="rect8301"
+   style="fill:#00a600;fill-opacity:1;stroke:none;filter:url(#filter8287)" /></svg>

@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="prototipos de tela.svg">
   <defs
      id="defs4">
     <marker
@@ -102,9 +102,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="375"
-     inkscape:cy="520"
+     inkscape:zoom="0.28387856"
+     inkscape:cx="-4430.6189"
+     inkscape:cy="70.060652"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -121,7 +121,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -776,5 +776,217 @@
        width="454.28574"
        id="rect5983"
        style="fill:none;stroke:#aa0000;stroke-width:2.66199994;stroke-miterlimit:4;stroke-dasharray:7.98599999, 7.98599999;stroke-dashoffset:0" />
+    <rect
+       style="fill:#b3b3b3;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712206, 7.98712206;stroke-dashoffset:0"
+       id="rect4615-6-7-1"
+       width="582.85712"
+       height="760"
+       x="-5025.5532"
+       y="-773.78333"
+       transform="scale(1,-1)" />
+    <rect
+       y="13.783331"
+       x="-5401.5532"
+       height="760"
+       width="377.14285"
+       id="rect4626-7-7-7"
+       style="fill:#4d4d4d;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712206, 7.98712206;stroke-dashoffset:0" />
+    <rect
+       y="13.783331"
+       x="-4442.4102"
+       height="760"
+       width="322.85715"
+       id="rect4628-5-9-4"
+       style="fill:#999999;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712206, 7.98712206;stroke-dashoffset:0" />
+    <flowRoot
+       transform="translate(-4191.1811,-630.1712)"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       id="flowRoot4539-9-9-0"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4541-8-0-9"><rect
+           y="915.21936"
+           x="-1168.5714"
+           height="165.71428"
+           width="320"
+           id="rect4543-4-8-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara4545-0-3-8">NAV</flowPara><flowPara
+         id="flowPara4547-3-8-8">(permanent)</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4515-7-9-2"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#aa0000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       transform="translate(-3773.5004,-628.1712)"><flowRegion
+         id="flowRegion4517-5-1-4"><rect
+           id="rect4519-2-3-5"
+           width="320"
+           height="165.71428"
+           x="-1168.5714"
+           y="915.21936"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#aa0000;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara4521-2-2-5">MAIN</flowPara><flowPara
+         id="flowPara4523-0-8-1">(permanent)</flowPara></flowRoot>    <flowRoot
+       transform="translate(-3228.1902,-629.90753)"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       id="flowRoot4527-4-3-7"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4529-2-8-1"><rect
+           y="915.21936"
+           x="-1168.5714"
+           height="165.71428"
+           width="320"
+           id="rect4531-2-6-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara4533-5-5-5">ASIDE</flowPara><flowPara
+         id="flowPara4535-8-3-2">(side panel)</flowPara></flowRoot>    <rect
+       transform="scale(1,-1)"
+       y="-767.21191"
+       x="-5016.9814"
+       height="740"
+       width="568.57141"
+       id="rect5981-6"
+       style="fill:none;stroke:#aa0000;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712192, 7.98712192;stroke-dashoffset:0" />
+    <rect
+       style="fill:#666666;fill-rule:evenodd;stroke:#000000;stroke-width:0.44995841px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3336-3-4-1"
+       width="1281.8533"
+       height="80.058235"
+       x="-5401.374"
+       y="-66.454178" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3374-9-4"
+       style="font-size:66.44381714px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       transform="matrix(0.60724656,0,0,0.60724656,-4835.4038,-37.007098)"><flowRegion
+         id="flowRegion3376-8-2"><rect
+           id="rect3378-7-3"
+           width="745.11993"
+           height="189.83948"
+           x="-6.5200834"
+           y="-17.789408"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara3380-9-22">HEADER</flowPara></flowRoot>    <rect
+       y="-104.85845"
+       x="-5442.501"
+       height="840.28265"
+       width="1364.1073"
+       id="rect4720-2-9-1"
+       style="fill:none;stroke:#000000;stroke-width:81.37969971;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-5395.2412"
+       y="-83.478073"
+       id="text3293"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3295"
+         x="-5395.2412"
+         y="-83.478073">Manter Sorteio</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712206, 7.98712206;stroke-dashoffset:0"
+       id="rect4615-6-7-1-6"
+       width="582.85712"
+       height="760"
+       x="-5025.1733"
+       y="-1762.4413"
+       transform="scale(1,-1)" />
+    <rect
+       y="1002.4413"
+       x="-5459.1733"
+       height="760"
+       width="377.14285"
+       id="rect4626-7-7-7-8"
+       style="fill:#4d4d4d;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712206, 7.98712206;stroke-dashoffset:0" />
+    <rect
+       y="1002.4413"
+       x="-4442.0303"
+       height="760"
+       width="322.85715"
+       id="rect4628-5-9-4-5"
+       style="fill:#999999;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712206, 7.98712206;stroke-dashoffset:0" />
+    <flowRoot
+       transform="translate(-4190.8012,358.48676)"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       id="flowRoot4539-9-9-0-7"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4541-8-0-9-6"><rect
+           y="915.21936"
+           x="-1168.5714"
+           height="165.71428"
+           width="320"
+           id="rect4543-4-8-4-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara4545-0-3-8-8">NAV</flowPara><flowPara
+         id="flowPara4547-3-8-8-9">(permanent)</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4515-7-9-2-2"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#aa0000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       transform="translate(-3773.1205,360.48676)"><flowRegion
+         id="flowRegion4517-5-1-4-7"><rect
+           id="rect4519-2-3-5-9"
+           width="320"
+           height="165.71428"
+           x="-1168.5714"
+           y="915.21936"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#aa0000;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara4521-2-2-5-5">MAIN</flowPara><flowPara
+         id="flowPara4523-0-8-1-4">(permanent)</flowPara></flowRoot>    <flowRoot
+       transform="translate(-3227.8103,358.75043)"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       id="flowRoot4527-4-3-7-3"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4529-2-8-1-1"><rect
+           y="915.21936"
+           x="-1168.5714"
+           height="165.71428"
+           width="320"
+           id="rect4531-2-6-1-2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara4533-5-5-5-3">ASIDE</flowPara><flowPara
+         id="flowPara4535-8-3-2-3">(side panel)</flowPara></flowRoot>    <rect
+       transform="scale(1,-1)"
+       y="-1755.8699"
+       x="-5016.6016"
+       height="740"
+       width="568.57141"
+       id="rect5981-6-4"
+       style="fill:none;stroke:#aa0000;stroke-width:2.66237402;stroke-miterlimit:4;stroke-dasharray:7.98712192, 7.98712192;stroke-dashoffset:0" />
+    <rect
+       style="fill:#666666;fill-rule:evenodd;stroke:#000000;stroke-width:0.37730619px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3336-3-4-1-1"
+       width="904.83344"
+       height="79.74781"
+       x="-5033.0601"
+       y="922.35901" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3374-9-4-1"
+       style="font-size:66.44381714px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       transform="matrix(0.60724656,0,0,0.60724656,-4835.0239,951.65086)"><flowRegion
+         id="flowRegion3376-8-2-3"><rect
+           id="rect3378-7-3-8"
+           width="745.11993"
+           height="189.83948"
+           x="-6.5200834"
+           y="-17.789408"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara3380-9-22-7">HEADER</flowPara></flowRoot>    <rect
+       y="885.54651"
+       x="-5067.2046"
+       height="913.14777"
+       width="977.12292"
+       id="rect4720-2-9-1-4"
+       style="fill:none;stroke:#000000;stroke-width:71.79998016;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-5394.8613"
+       y="905.17987"
+       id="text3293-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3295-7"
+         x="-5394.8613"
+         y="905.17987">Manter Sorteio</tspan></text>
   </g>
 </svg>

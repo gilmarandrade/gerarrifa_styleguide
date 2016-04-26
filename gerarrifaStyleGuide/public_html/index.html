@@ -6,6 +6,7 @@
 
         <title>Your page title</title>
         <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/panels.css">
         <link rel="stylesheet" href="css/forms.css">
@@ -13,7 +14,7 @@
         <script src="js/panels.js"></script>
         <script src="js/forms.js"></script>
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
                 resizeLayout();
                 $(window).resize(resizeLayout);
 
@@ -24,25 +25,25 @@
                 $("#btCloseAside").click(closeAside);
 
 
-                $(".checkbox_input").each(function() {
+                $(".checkbox_input").each(function () {
                     if ($(this).prop("checked")) {
                         $(this).parent().addClass("is-checked");
                     } else {
 
                     }
                 });
-                $(".checkbox_input").change(function() {
+                $(".checkbox_input").change(function () {
                     $(this).parent().toggleClass("is-checked");
                 });
 
-                $(".radio_input").each(function() {
+                $(".radio_input").each(function () {
                     if ($(this).prop("checked")) {
                         var name = $(this).attr("name");
                         $("input[name='" + name + "']").parent().removeClass("is-checked");
                         $(this).parent().addClass("is-checked");
                     }
                 });
-                $(".radio_input").change(function() {
+                $(".radio_input").change(function () {
                     console.log($(this));
                     if ($(this).prop("checked")) {
                         var name = $(this).attr("name");
@@ -64,6 +65,41 @@
     <body class="nav-closed">
         <div class="grid-g">
             <main id="main" class="grid-u">
+                <style>
+                    .card {
+                        width: 512px;
+                        margin:10px;
+                        background:green;
+                    }
+                    .card > .card_title {
+                        color: #fff;
+                        height: 176px;
+                        background: url('../assets/demos/welcome_card.jpg') center / cover;
+                    }
+                    .card > .card_menu {
+                        color: #fff;
+                    }
+                </style>
+
+                <div class="card">
+                    <div class="card_title">
+                        <h2 class="card_title-text">Welcome</h2>
+                    </div>
+                     <div class="card_rich-area">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                    </div>
+                    <div class="card_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                    </div>
+                    <div class="card_actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+
                 <p>main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content</p>
                 <p> main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content main content </p>
                 <p>

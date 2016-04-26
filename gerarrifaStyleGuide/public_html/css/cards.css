@@ -1,0 +1,45 @@
+/**
+ * Cards
+ */
+
+
+
+/**
+* xsm (xsmall)
+* >= 480px
+*/
+@media screen and (min-width: 30em) {
+}
+/**
+* sm (small)
+* >= 600px
+*/
+@media screen and (min-width: 37.5em) {
+   
+}
+/**
+* md (medium)
+* >= 768px
+*/
+@media screen and (min-width: 48em) {
+}
+/**
+* lg (large)
+* >= 1024px
+*/
+@media screen and (min-width: 64em) {
+   
+}
+/**
+* xlg (xlg)
+* >= 1280px
+*/
+@media screen and (min-width: 80em) {
+   
+}
+/**
+* xxlg (xxlarge)
+* >= 1920px
+*/
+@media screen and (min-width: 120em) {
+}

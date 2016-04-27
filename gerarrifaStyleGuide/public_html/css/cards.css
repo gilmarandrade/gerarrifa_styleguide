@@ -1,8 +1,112 @@
 /**
  * Cards
  */
+.card {
+    background:green;
+}
+.card.card-border-radius{
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: #000 2px 2px 2px;
+}
+.card.card-border-radius > :first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card.card-border-radius > :last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card > .card_header {
+    background: red;
+    padding: 16px;
+    min-height: 56px;
+}
+.card .card_header .card_title{
+    margin: 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Open Sans SemiBold";
+    color: rgba(0,0,0,.87);
+}
+.card .card_header .card_subtitle{
+    margin: 0;
+    font-size: 20px;
+    font-family: "Open Sans Light";
+    color: rgba(0,0,0,.87);
+}
+.card_header.card_header-small .card_title{
+    font-size: 20px;
+}
+.card_header.card_header-ellipsis > *{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_header.card_header--avatar{
+    background: blue;
+    min-height: 36px;
+}
+.card_header--avatar > *{
+   margin:4px;
+}
+
+.card .divider{
+    border-bottom: 1px solid black;
+}
 
 
+.avatar{
+    background: red;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.avatar img{
+    width: 36px;
+    height: 36px; 
+    margin: 6px 7px;
+    border-radius: 50%;
+    float: left;
+}
+.avatar span{
+    background: purple;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 48px;
+    float:left;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.avatar.avatar--two-line span:first-of-type{
+    background: yellow;
+    font-family: "Open Sans SemiBold";
+    font-size: 16px;
+    line-height: 18px;
+    float: none;
+    display: block;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 6px;
+}
+.avatar.avatar--two-line span:nth-of-type(2){
+    background: orange;
+    font-family: "Open Sans Light";
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    float:none;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 /**
 * xsm (xsmall)
@@ -15,7 +119,7 @@
 * >= 600px
 */
 @media screen and (min-width: 37.5em) {
-   
+
 }
 /**
 * md (medium)
@@ -28,14 +132,14 @@
 * >= 1024px
 */
 @media screen and (min-width: 64em) {
-   
+
 }
 /**
 * xlg (xlg)
 * >= 1280px
 */
 @media screen and (min-width: 80em) {
-   
+
 }
 /**
 * xxlg (xxlarge)

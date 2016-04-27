@@ -1,27 +1,43 @@
 @font-face {
   font-family: 'Open Sans Light';
-  src: local('Open Sans'), url('../font/OpenSans-Light.ttf') ;
+  src: url('../font/OpenSans-Light.ttf') ;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: local('Open Sans'), url('../font/OpenSans-Regular.ttf') ;
+  src: url('../font/OpenSans-Regular.ttf') ;
 }
 @font-face {
   font-family: 'Open Sans SemiBold';
-  src: local('Open Sans'), url('../font/OpenSans-Semibold.ttf') ;
+  src: url('../font/OpenSans-Semibold.ttf') ;
 }
 @font-face {
   font-family: 'Open Sans Bold';
-  font-weight: bold;
-  src: local('Open Sans'), url('../font/OpenSans-ExtraBold.ttf') ;
+  src: url('../font/OpenSans-Bold.ttf') ;
 }
 @font-face {
   font-family: 'Open Sans ExtraBold';
-  src: local('Open Sans'), url('../font/OpenSans-ExtraBold.ttf') ;
+  src: url('../font/OpenSans-ExtraBold.ttf') ;
+}
+@font-face {
+  font-family: 'Static Bold';
+  src: url('../font/Static_Bold.otf') ;
 }
 
-
-
-.card{
+.f1{
+    font-family: "Open Sans Light", sans-serif;
+}
+.f2{
     font-family: "Open Sans", sans-serif;
+}
+.f3{
+    font-family: "Open Sans SemiBold", sans-serif;
+}
+.f4{
+    font-family: "Open Sans Bold", sans-serif;
+}
+.f5{
+    font-family: "Open Sans ExtraBold", sans-serif;
+}
+.f6{
+    font-family: "Static Bold", sans-serif;
 }

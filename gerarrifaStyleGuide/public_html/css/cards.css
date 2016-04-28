@@ -4,16 +4,16 @@
 .card {
     background:green;
 }
-.card.card-border-radius{
+.card.card--border-radius{
     margin: 10px;
     border-radius: 5px;
     box-shadow: #000 2px 2px 2px;
 }
-.card.card-border-radius > :first-child{
+.card.card--border-radius > :first-child{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.card.card-border-radius > :last-child{
+.card.card--border-radius > :last-child{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -49,7 +49,7 @@
     min-height: 36px;
 }
 .card_header--avatar > *{
-   margin:4px;
+    margin:4px;
 }
 
 .card .divider{
@@ -58,11 +58,14 @@
 
 
 .avatar{
-    background: red;
+    /*background: red;*/
     height: 48px;
     display: inline-block;
     position: relative;
     overflow: hidden;
+}
+.avatar.avatar--one-line, .avatar.avatar--two-line {
+    width: 100%;
 }
 .avatar img{
     width: 36px;
@@ -71,41 +74,30 @@
     border-radius: 50%;
     float: left;
 }
-.avatar span{
-    background: purple;
+.avatar.avatar--one-line span{
     font-family: "Open Sans";
     font-size: 16px;
     line-height: 48px;
     float:left;
-    max-width: 200px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    color:rgba(0,0,0,0.87);
 }
 .avatar.avatar--two-line span:first-of-type{
-    background: yellow;
     font-family: "Open Sans SemiBold";
     font-size: 16px;
     line-height: 18px;
-    float: none;
     display: block;
-    max-width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin-top: 6px;
+    white-space: nowrap;
+    color:rgba(0,0,0,0.87);
 }
 .avatar.avatar--two-line span:nth-of-type(2){
-    background: orange;
     font-family: "Open Sans Light";
     font-size: 16px;
     line-height: 18px;
     display: block;
-    float:none;
-    max-width: 200px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    color:rgba(0,0,0,0.87);
 }
 
 /**

@@ -456,3 +456,6 @@ th {
     display: block;
 }
 
+*{
+    margin: 0;
+}

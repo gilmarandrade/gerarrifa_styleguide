@@ -2,12 +2,12 @@
  * Cards
  */
 .card {
-    background:green;
+    background:gray;
 }
 .card.card--border-radius{
     margin: 10px;
     border-radius: 5px;
-    box-shadow: #000 2px 2px 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .card.card--border-radius > :first-child{
     border-top-left-radius: 5px;
@@ -17,8 +17,12 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.card .card--divider:not(:last-child){
+    border-bottom: 1px solid black;
+}
+
 .card > .card_header {
-    background: red;
+    background: rgba(255,255,0,0.7);
     padding: 16px;
     min-height: 56px;
 }
@@ -35,26 +39,32 @@
     font-family: "Open Sans Light";
     color: rgba(0,0,0,.87);
 }
-.card_header.card_header-small .card_title{
+.card_header.card_header--small .card_title{
     font-size: 20px;
 }
-.card_header.card_header-ellipsis > *{
+.card_header.card_header--ellipsis > *{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .card_header.card_header--avatar{
-    background: blue;
     min-height: 36px;
 }
 .card_header--avatar > *{
     margin:4px;
 }
 
-.card .divider{
-    border-bottom: 1px solid black;
+.card > .card_text {
+    background: rgba(0,255,0,0.7);
+    padding:16px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: rgba(0,0,0,0.87);
 }
+.card_text > :not(:last-child){
+    margin-bottom: 16px;
+}
+
 
 
 .avatar{

@@ -63,6 +63,9 @@
     font-size: 16px;
     color: rgba(0,0,0,0.87);
 }
+.card > .card_text.card_text--justify{
+    text-align: justify;
+}
 .card_text > :not(:last-child){
     margin-bottom: 16px;
 }

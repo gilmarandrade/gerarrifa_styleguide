@@ -36,9 +36,11 @@ section > header h1{
  */
 .align--left{
     float:left;
+    text-align: left;
 }
 .align--right{
     float:right;
+    text-align: right;
 }
 .align--center{
     text-align: center;
@@ -46,6 +48,12 @@ section > header h1{
 .align--clear{
     clear: both;
 }
+.align--justify{
+    text-align: justify;
+}
+.card_header.align--center, .card_header.align--left, .card_header.align--right, .card_text.align--center, .card_text.align--left, .card_text.align--right, .card_actions.align--center, .card_actions.align--left, .card_actions.align--right{
+    float:none;
+} 
 
 .card {
     background: brown;
@@ -138,12 +146,11 @@ section > header h1{
 .card_actions{
     background: rgba(0,0,255,.7);
     border-bottom: 1px dotted black;
-}
-.card_actions.card_actions--small{
+
     min-height: 48px;
     padding-right: 8px;
 }
-.card_actions.card_actions--small [class *= "align--"] > *{
+.card_actions .avatar, .card_actions .checkbox{
     margin:-2.5px;
     margin:0;
     margin-left: 8px;
@@ -153,7 +160,7 @@ section > header h1{
     min-height: 56px;
     padding-right: 8px;
 }
-.card_actions.card_actions--medium [class *= "align--"] > *{
+.card_actions--medium .avatar, .card_actions--medium .checkbox {
     margin:-2.5px;
     margin:0;
     margin-left: 8px;
@@ -166,13 +173,13 @@ section > header h1{
     min-height: 72px;
     padding-right: 16px;
 }
-.card_actions.card_actions--large [class *= "align--"] > *{
+.card_actions--large .avatar, .card_actions--large .checkbox{
     margin-left: 16px;
     margin-right:-2.5px;
     margin-right: 0;
     margin-top:10px;
     margin-bottom:10px;
-    background: blueviolet; 
+    background: greenyellow; 
 }
 
 /**

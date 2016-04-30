@@ -2,14 +2,11 @@
 Avatar
 */
 .avatar{
-    /*background: red;*/
     height: 48px;
     display: inline-block;
     position: relative;
     overflow: hidden;
-}
-.avatar.avatar--one-line, .avatar.avatar--two-line {
-    //width: 100%;
+    text-align: left;
 }
 .avatar img{
     width: 36px;

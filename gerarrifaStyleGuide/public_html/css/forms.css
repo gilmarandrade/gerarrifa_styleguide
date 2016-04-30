@@ -16,6 +16,8 @@
 }
 .checkbox_input{
     position: absolute;
+    top:0;
+    left:0;
     // width: 0;
     // height: 0;
     // border:none;
@@ -23,17 +25,23 @@
     //-moz-appearance: none;
 }
 .checkbox_label{
-    margin-left: 50px;
+    //margin-left: 50px;
     font-family: "Open Sans";
     font-size: 16px;
     color:rgba(0,0,0,.87);
     line-height: 48px;
+    float:left;
 }
 .checkbox_box-outline{
+    float:left;
     border: 2px solid gray;
-    position: absolute;
-    top:15px;
-    left:16px;
+    //position: absolute;
+    //top:15px;
+    //left:16px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
     display: inline-block;
     box-sizing: border-box;
     width: 18px;
@@ -44,11 +52,11 @@
     /*z-index: 2;*/
 }
 .checkbox_tick-outline{
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    width: 100%;
+    //position: absolute;
+    //top:0;
+    //left:0;
+    //height: 100%;
+    //width: 100%;
     transition: background .3s cubic-bezier(.4,0,.2,1);
 }
 .is-checked .checkbox_box-outline{

@@ -1,6 +1,52 @@
+
+/**
+ * Section
+ */
+section{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    word-spacing: -0.43em;
+    /*padding-left: .25em;
+    padding-right: .25em;*/
+}
+section.light-theme{
+    background: wheat;
+}
+section.dark-theme{
+    background: midnightblue;
+}
+section > header{
+    margin:16px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    width: 100%;
+}
+section > header h1{
+    font-family: "Static Bold";
+    font-size: 34px;
+}
+
 /**
  * Cards
  */
+.align--left{
+    float:left;
+}
+.align--right{
+    float:right;
+}
+.align--center{
+    text-align: center;
+}
+.align--clear{
+    clear: both;
+}
+
 .card {
     background: brown;
     display: inline-block;
@@ -111,7 +157,6 @@
     margin:-2.5px;
     margin:0;
     margin-left: 8px;
-    
     margin-top:4px;
     margin-bottom:0px;
     background: blueviolet;
@@ -122,71 +167,13 @@
     padding-right: 16px;
 }
 .card_actions.card_actions--large [class *= "align--"] > *{
-    
     margin-left: 16px;
     margin-right:-2.5px;
     margin-right: 0;
-    
     margin-top:10px;
     margin-bottom:10px;
     background: blueviolet; 
 }
-.align--left{
-    float:left;
-}
-.align--right{
-    float:right;
-}
-.align--center{
-    text-align: center;
-}
-.align--clear{
-    clear: both;
-}
-
-.avatar{
-    /*background: red;*/
-    height: 48px;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-.avatar.avatar--one-line, .avatar.avatar--two-line {
-    //width: 100%;
-}
-.avatar img{
-    width: 36px;
-    height: 36px; 
-    margin: 6px 7px;
-    border-radius: 50%;
-    float: left;
-}
-.avatar.avatar--one-line span{
-    font-family: "Open Sans";
-    font-size: 16px;
-    line-height: 48px;
-    float:left;
-    white-space: nowrap;
-    color:rgba(0,0,0,0.87);
-}
-.avatar.avatar--two-line span:first-of-type{
-    font-family: "Open Sans SemiBold";
-    font-size: 16px;
-    line-height: 18px;
-    display: block;
-    margin-top: 6px;
-    white-space: nowrap;
-    color:rgba(0,0,0,0.87);
-}
-.avatar.avatar--two-line span:nth-of-type(2){
-    font-family: "Open Sans Light";
-    font-size: 16px;
-    line-height: 18px;
-    display: block;
-    white-space: nowrap;
-    color:rgba(0,0,0,0.87);
-}
-
 
 /**
 * xsm (xsmall)

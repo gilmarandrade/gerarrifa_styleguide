@@ -182,6 +182,11 @@ section > header h1{
     background: greenyellow; 
 }
 
+.card_container{
+    background: rgba(255, 100, 0,.7);
+    border-bottom: 1px dotted black;
+}
+
 /**
 * xsm (xsmall)
 * >= 480px

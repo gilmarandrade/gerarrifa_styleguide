@@ -13,7 +13,7 @@
    height="297mm"
    id="svg11483"
    version="1.1"
-   inkscape:version="0.48.1 "
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="cards.svg">
   <defs
      id="defs11485">
@@ -671,9 +671,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="1064.6498"
-     inkscape:cy="-2855.2301"
+     inkscape:zoom="0.1423077"
+     inkscape:cx="498.74558"
+     inkscape:cy="-1805.1583"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -11212,7 +11212,7 @@
        height="156.97771"
        width="16"
        id="rect6167-3"
-       style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none" />
+       style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none" />
     <rect
        y="1819.0518"
        x="-2887"
@@ -11424,17 +11424,17 @@
        x="-4833.2847"
        y="1083.6116" />
     <rect
-       style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:none"
+       style="fill:#ffff00;fill-opacity:1;stroke:none"
        id="rect6446"
        width="50"
        height="50"
        x="-4840.3745"
-       y="481.82858" />
+       y="432.21143" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot6448"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       transform="translate(-5118.4514,238.90874)"><flowRegion
+       transform="translate(-5134.4514,192.90867)"><flowRegion
          id="flowRegion6450"><rect
            id="rect6452"
            width="229.1026"
@@ -11442,15 +11442,15 @@
            x="367.69553"
            y="257.57416"
            style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
-         id="flowPara6454">primary text</flowPara></flowRoot>    <rect
-       style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none"
+         id="flowPara6454">header</flowPara></flowRoot>    <rect
+       style="fill:#ff00ff;fill-opacity:1;stroke:none"
        id="rect6457"
        width="50"
        height="50"
        x="-4840.3745"
-       y="559.77783" />
+       y="498.21924" />
     <flowRoot
-       transform="translate(-5118.4514,318.90874)"
+       transform="translate(-5134.4514,258.91648)"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
        id="flowRoot6459"
        xml:space="preserve"><flowRegion
@@ -11462,17 +11462,17 @@
            width="229.1026"
            id="rect6463" /></flowRegion><flowPara
          id="flowPara6465">rich area</flowPara></flowRoot>    <rect
-       style="opacity:1;fill:#00ff00;fill-opacity:1;stroke:none"
+       style="fill:#00ff00;fill-opacity:1;stroke:none"
        id="rect6467"
        width="50"
        height="50"
        x="-4840.3745"
-       y="637.82861" />
+       y="563.96924" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot6469"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
-       transform="translate(-5117.9045,394.90875)"><flowRegion
+       transform="translate(-5133.9045,324.66648)"><flowRegion
          id="flowRegion6471"><rect
            id="rect6473"
            width="229.1026"
@@ -11480,15 +11480,15 @@
            x="367.69553"
            y="257.57416"
            style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
-         id="flowPara6475">supporting text</flowPara></flowRoot>    <rect
-       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none"
+         id="flowPara6475">text</flowPara></flowRoot>    <rect
+       style="fill:#0000ff;fill-opacity:1;stroke:none"
        id="rect6477"
        width="50"
        height="50"
        x="-4840.3745"
-       y="715.98486" />
+       y="629.97705" />
     <flowRoot
-       transform="translate(-5117.8108,474.90875)"
+       transform="translate(-5133.8108,390.67429)"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
        id="flowRoot6479"
        xml:space="preserve"><flowRegion
@@ -11511,5 +11511,24 @@
            height="45.07143"
            width="288.57144"
            id="rect5472-5" /></flowRegion><flowPara
-         id="flowPara5474-9">Exemplos de Cards</flowPara></flowRoot>  </g>
+         id="flowPara5474-9">Exemplos de Cards</flowPara></flowRoot>    <rect
+       y="695.98486"
+       x="-4840.3745"
+       height="50"
+       width="50"
+       id="rect5263"
+       style="fill:#ff6400;fill-opacity:1;stroke:none" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5265"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       transform="translate(-5133.8108,456.6821)"><flowRegion
+         id="flowRegion5267"><rect
+           id="rect5269"
+           width="229.1026"
+           height="79.195961"
+           x="367.69553"
+           y="257.57416"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Open Sans;-inkscape-font-specification:Open Sans" /></flowRegion><flowPara
+         id="flowPara5271">container</flowPara></flowRoot>  </g>
 </svg>

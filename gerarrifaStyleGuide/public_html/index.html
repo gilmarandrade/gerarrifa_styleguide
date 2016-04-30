@@ -16,7 +16,7 @@
         <script src="js/panels.js"></script>
         <script src="js/forms.js"></script>
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
                 resizeLayout();
                 $(window).resize(resizeLayout);
 
@@ -27,25 +27,25 @@
                 $("#btCloseAside").click(closeAside);
 
 
-                $(".checkbox_input").each(function() {
+                $(".checkbox_input").each(function () {
                     if ($(this).prop("checked")) {
                         $(this).parent().addClass("is-checked");
                     } else {
 
                     }
                 });
-                $(".checkbox_input").change(function() {
+                $(".checkbox_input").change(function () {
                     $(this).parent().toggleClass("is-checked");
                 });
 
-                $(".radio_input").each(function() {
+                $(".radio_input").each(function () {
                     if ($(this).prop("checked")) {
                         var name = $(this).attr("name");
                         $("input[name='" + name + "']").parent().removeClass("is-checked");
                         $(this).parent().addClass("is-checked");
                     }
                 });
-                $(".radio_input").change(function() {
+                $(".radio_input").change(function () {
                     console.log($(this));
                     if ($(this).prop("checked")) {
                         var name = $(this).attr("name");
@@ -338,7 +338,7 @@
                                 </div>
 
 
-                                
+
                                 <div class="card_actions card_actions--medium align--center">
                                     <span class="avatar avatar--one-line">
                                         <img alt="imagem" src="img/imagem-teste.jpg"/>
@@ -359,12 +359,12 @@
                                         <span class="checkbox_label">Checkbox 2</span>
                                     </label>
                                 </div>
-                               
 
 
-                               
 
-                              
+
+
+
                                 <div class="card_actions card_actions--large align--right">
                                     <span class="avatar avatar--one-line">
                                         <img alt="imagem" src="img/imagem-teste.jpg"/>
@@ -387,7 +387,7 @@
                                 </div> 
 
 
-                               
+
                                 <div class="card_actions card_actions--medium">
                                     <div class="align--left">
                                         <span class="avatar avatar--one-line">
@@ -431,7 +431,7 @@
                                     </div>
                                     <div class="align--clear"></div>
                                 </div> 
-                         
+
                                 <div class="card_actions align--left">
                                     <span class="avatar avatar--one-line">
                                         <img alt="imagem" src="img/imagem-teste.jpg"/>
@@ -495,6 +495,22 @@
                             </div> 
                         </div>
                     </div>
+
+                    <div class="card grid-u-3-12">
+                        <div class="card_margin">
+                            <div class="card_box">
+                                <div class="card_header align--right">
+                                    <h2 class="header_title">pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                    <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                </div>
+                                <div class="card_container">
+                                    fdgfgfhfhfh
+                                </div> 
+                            </div>
+
+                        </div>
+
+                    </div>
                 </section>
 
 
@@ -518,6 +534,8 @@
                         </a>
                     </div>
                 </div>
+
+
 
                 <p class="f1">Texto</p>
                 <p class="f2">Texto</p>

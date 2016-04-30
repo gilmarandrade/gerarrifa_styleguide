@@ -8,16 +8,14 @@
   ==================================================================== */
 
 .checkbox{
-    background: #c0c0c0;
-    position: relative;
-    //vertical-align: middle;
+    height: 48px;
     display: inline-block;
-    height: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 .checkbox_input{
-    background: pink;
     position: absolute;
-    top:-10px;
     // width: 0;
     // height: 0;
     // border:none;
@@ -25,18 +23,21 @@
     //-moz-appearance: none;
 }
 .checkbox_label{
-    background: orange;
-    margin-left: 20px;
+    margin-left: 50px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color:rgba(0,0,0,.87);
+    line-height: 48px;
 }
 .checkbox_box-outline{
     border: 2px solid gray;
     position: absolute;
-    top:3px;
-    left:0;
+    top:15px;
+    left:16px;
     display: inline-block;
     box-sizing: border-box;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     cursor: pointer;
     overflow: hidden;
     border-radius: 2px;

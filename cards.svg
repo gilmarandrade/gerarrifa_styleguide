@@ -13,7 +13,7 @@
    height="297mm"
    id="svg11483"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.1 "
    sodipodi:docname="cards.svg">
   <defs
      id="defs11485">
@@ -671,16 +671,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-3948.0058"
-     inkscape:cy="-1218.2124"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="1064.6498"
+     inkscape:cy="-2855.2301"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1535"
-     inkscape:window-height="876"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -5689,6 +5689,14 @@
        id="rect6116"
        style="opacity:0.3;fill:#00ffff;fill-opacity:1;stroke:none" />
     <rect
+       ry="0"
+       y="1189.3496"
+       x="1283.3661"
+       height="48"
+       width="50"
+       id="rect6410"
+       style="opacity:0.3;fill:#008000;fill-opacity:1;stroke:none" />
+    <rect
        y="1205.3496"
        x="1299.9666"
        height="16"
@@ -6268,14 +6276,6 @@
        height="48"
        width="50"
        id="rect6406"
-       style="opacity:0.3;fill:#008000;fill-opacity:1;stroke:none" />
-    <rect
-       ry="0"
-       y="1189.3496"
-       x="1283.3661"
-       height="48"
-       width="50"
-       id="rect6410"
        style="opacity:0.3;fill:#008000;fill-opacity:1;stroke:none" />
     <rect
        style="opacity:0.3;fill:#008000;fill-opacity:1;stroke:none"

@@ -1,7 +1,17 @@
+function initPanels() {
+    resizeLayout();
+    $(window).resize(resizeLayout);
+
+    $("#btNav").click(toggleNav);
+    $("#nav_curtain").click(closeNav);
+
+    $("#btAside").click(toggleAside);
+    $("#btCloseAside").click(closeAside);
+}
+
 function resizeLayout() {
     if ($(window).width() >= 1280) {
-    } else {
-    }
+    } else {}
 }
 
 function toggleNav() {

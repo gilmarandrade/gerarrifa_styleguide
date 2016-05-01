@@ -112,12 +112,13 @@
 }
 .checkbox.is-disabled{
     opacity: .26;
+    cursor: default;
 }
 .checkbox.is-disabled .checkbox_box-outline{
-     border-color: rgb(0,0,0);
+    border-color: rgb(0,0,0);
 }
 .checkbox.is-disabled.is-checked .checkbox_tick-outline{
-     background: rgb(0,0,0);
+    background: rgb(0,0,0);
 }
 
 .checkbox:before{
@@ -204,12 +205,13 @@
 
 .radiobutton.is-disabled{
     opacity: .26;
+    cursor: default;
 }
 .radiobutton.is-disabled .radiobutton_box-outline{
-     border-color: rgb(0,0,0);
+    border-color: rgb(0,0,0);
 }
 .radiobutton.is-disabled.is-checked .radiobutton_tick-outline{
-     background: rgb(0,0,0);
+    background: rgb(0,0,0);
 }
 
 .radiobutton:before{
@@ -230,6 +232,107 @@
     transform: scale(1);
     opacity: 1; 
 }
+
+
+/* Switch
+  ==================================================================== */
+
+.switch{
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .3s cubic-bezier(.4,0,.2,1);
+}
+.switch_input{
+    position: absolute;
+    top:0;
+    left:0;
+    // width: 0;
+    // height: 0;
+    // border:none;
+    //appearance: none;
+    //-moz-appearance: none;
+}
+.switch_label{
+    font-family: "Open Sans";
+    font-size: 16px;
+    color:rgba(0,0,0,.87);
+    line-height: 48px;
+    float:left;
+}
+.switch_box-outline{
+    float:left;
+    border: 2px solid rgba(0,0,0,.87);
+    background: transparent;
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 18px;
+    /*overflow: hidden;*/
+    border-radius: 10px;
+    position: relative;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.switch_tick-outline{
+    position: absolute;
+    top:2px;
+    left:2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.is-checked .switch_box-outline{
+    border-color: red;
+    background: red;
+}
+.is-checked .switch_tick-outline{
+    background: rgb(238,238,238);
+    left:14px;
+}
+.switch.is-disabled{
+    opacity: .26;
+    cursor: default;
+}
+.switch.is-disabled .switch_box-outline{
+    border-color: rgb(0,0,0);
+    background: transparent;
+}
+.switch.is-disabled.is-checked .switch_box-outline{
+    background: rgb(0,0,0);
+}
+.switch.is-disabled.is-checked .switch_tick-outline{
+    background: rgb(238, 238, 238);
+}
+
+.switch .switch_tick-outline:before{
+    background: rgba(255, 0, 0, .3);
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    margin-top:-13px;
+    margin-left: -13px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transform: scale(.5);
+    opacity: 0;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.switch:hover:not(.is-disabled) .switch_tick-outline:before{
+    transform: scale(1);
+    opacity: 1; 
+}
+
 
 /**
 * xsm (xsmall)

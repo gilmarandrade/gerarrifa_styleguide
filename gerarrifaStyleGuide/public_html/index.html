@@ -11,10 +11,9 @@
         <link rel="stylesheet" href="css/panels.css">
         <link rel="stylesheet" href="css/cards.css">
         <link rel="stylesheet" href="css/widgets.css">
-        <link rel="stylesheet" href="css/forms.css">
         <script src="js/jquery-2.2.3.min.js"></script>
         <script src="js/panels.js"></script>
-        <script src="js/forms.js"></script>
+        <script src="js/widgets.js"></script>
         <script>
             $(document).ready(function() {
                 resizeLayout();
@@ -26,33 +25,9 @@
                 $("#btAside").click(toggleAside);
                 $("#btCloseAside").click(closeAside);
 
+                initCheckbox();
+                initRadiobutton();
 
-                $(".checkbox_input").each(function() {
-                    if ($(this).prop("checked")) {
-                        $(this).parent().addClass("is-checked");
-                    } else {
-
-                    }
-                });
-                $(".checkbox_input").change(function() {
-                    $(this).parent().toggleClass("is-checked");
-                });
-
-                $(".radio_input").each(function() {
-                    if ($(this).prop("checked")) {
-                        var name = $(this).attr("name");
-                        $("input[name='" + name + "']").parent().removeClass("is-checked");
-                        $(this).parent().addClass("is-checked");
-                    }
-                });
-                $(".radio_input").change(function() {
-                    console.log($(this));
-                    if ($(this).prop("checked")) {
-                        var name = $(this).attr("name");
-                        $("input[name='" + name + "']").parent().removeClass("is-checked");
-                        $(this).parent().addClass("is-checked");
-                    }
-                });
             });
         </script>
         <style>
@@ -933,6 +908,95 @@
                     </div>
                 </section>
 
+                <section class="dark-theme">
+                    <header>
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box">
+                            <div class="card_actions align--left">
+                                <label class="checkbox" for="checkbox-x1">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-x1" value="testex1">
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Checkbox x1</span>
+                                </label>
+                                <label class="checkbox" for="checkbox-x2">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-x2" value="testex2" checked>
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Checkbox x2</span>
+                                </label>
+                                <label class="radiobutton" for="radiobutton-x1">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-x" id="radiobutton-x1" value="testex1" checked>
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Radio Button x1</span>
+                                </label>
+                                <label class="radiobutton" for="radiobutton-x2">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-x" id="radiobutton-x2"  value="testex2">
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Radio Button x2</span>
+                                </label>
+                                <label class="radiobutton" for="radiobutton-x3">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-x" id="radiobutton-x3"  value="testex3">
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Radio Button x3</span>
+                                </label>
+                            </div>
+                            <div class="card_actions">
+                                <label class="radiobutton" for="radiobutton-y1">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-y" id="radiobutton-y1" value="testey1">
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Radio Button y1</span>
+                                </label>
+                                <label class="radiobutton" for="radiobutton-y2">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-y" id="radiobutton-y2"  value="testey2" checked>
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Radio Button y2</span>
+                                </label>
+                                <label class="radiobutton" for="radiobutton-y3">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-y" id="radiobutton-y3"  value="testey3" disabled>
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Radio Button y3</span>
+                                </label>
+                                <button onclick="disableR()">disable radiobuttons</button>
+                                <button onclick="disableC()">disable checkbox</button>
+                                <script>
+                                    function disableR() {
+                                        if ($(".radiobutton_input").prop('disabled') == true) {
+                                            $(".radiobutton_input").prop('disabled', false);
+                                        } else {
+                                            $(".radiobutton_input").prop('disabled', true);
+                                        }
+                                        updateRadiobutton();
+                                    }
+                                    function disableC() {
+                                        if ($(".checkbox_input").prop('disabled') == true) {
+                                            $(".checkbox_input").prop('disabled', false);
+                                        } else {
+                                            $(".checkbox_input").prop('disabled', true);
+                                        }
+                                        updateCheckbox();
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 
 

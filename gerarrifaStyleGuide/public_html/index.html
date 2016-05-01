@@ -16,7 +16,7 @@
         <script src="js/panels.js"></script>
         <script src="js/forms.js"></script>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 resizeLayout();
                 $(window).resize(resizeLayout);
 
@@ -27,25 +27,25 @@
                 $("#btCloseAside").click(closeAside);
 
 
-                $(".checkbox_input").each(function () {
+                $(".checkbox_input").each(function() {
                     if ($(this).prop("checked")) {
                         $(this).parent().addClass("is-checked");
                     } else {
 
                     }
                 });
-                $(".checkbox_input").change(function () {
+                $(".checkbox_input").change(function() {
                     $(this).parent().toggleClass("is-checked");
                 });
 
-                $(".radio_input").each(function () {
+                $(".radio_input").each(function() {
                     if ($(this).prop("checked")) {
                         var name = $(this).attr("name");
                         $("input[name='" + name + "']").parent().removeClass("is-checked");
                         $(this).parent().addClass("is-checked");
                     }
                 });
-                $(".radio_input").change(function () {
+                $(".radio_input").change(function() {
                     console.log($(this));
                     if ($(this).prop("checked")) {
                         var name = $(this).attr("name");
@@ -139,27 +139,29 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
                             </div> 
+                            <div class="card_container" style="height:180px;">
+                                <div class="card grid-u-1-2">
+                                    <div class="card_header card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--justify">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                                <div class="card grid-u-1-2">
+                                    <div class="card_header align--center card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                    </div>
-                    <div class="card grid-u-1-2">
-                        <div class="card_header card_header--ellipsis">
-                            <h2 class="header_title">Title Goes Here</h2>
-                            <h3 class="header_subtitle">Subtitle Goes Here</h3>
-                        </div>
-                        <div class="card_text align--justify">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
-                        </div>
-                    </div>
-                    <div class="card grid-u-1-2">
-                        <div class="card_header align--center card_header--ellipsis">
-                            <h2 class="header_title">Title Goes Here</h2>
-                            <h3 class="header_subtitle">Subtitle Goes Here</h3>
-                        </div>
-                        <div class="card_text align--center">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
-                        </div>
-                    </div>
                 </section>
                 <section class="light-theme">
                     <header>
@@ -496,20 +498,438 @@
                         </div>
                     </div>
 
-                    <div class="card grid-u-3-12">
+                    <div class="card grid-u-11-12">
                         <div class="card_margin">
                             <div class="card_box">
                                 <div class="card_header align--right">
                                     <h2 class="header_title">pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
                                     <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
                                 </div>
-                                <div class="card_container">
-                                    fdgfgfhfhfh
-                                </div> 
+                                <div class="card_container" style="height:300px;">
+                                    <div class="card grid-u-4-12">
+                                        <div class="card_box">
+                                            <div class="card_header align--center">
+                                                <h2 class="header_title">pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                            </div>
+                                            <div class="card_header align--center"> 
+                                                <span class="avatar avatar--one-line">
+                                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                    <span>Jonas Connor</span>
+                                                </span></div>
+                                            <div class="card_text align--justify">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            </div> 
+                                            <div class="card_actions align--right">
+                                                <label class="checkbox" for="checkbox-a">
+                                                    <input type="checkbox" id="checkbox-a" class="checkbox_input" value="teste1" checked>
+                                                    <span class="checkbox_box-outline">
+                                                        <span class="checkbox_tick-outline"></span>
+                                                    </span>
+                                                    <span class="checkbox_label">Checkbox 1</span>
+                                                </label>
+                                                <label class="checkbox" for="checkbox-b">
+                                                    <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                    <span class="checkbox_box-outline">
+                                                        <span class="checkbox_tick-outline"></span>
+                                                    </span>
+                                                    <span class="checkbox_label">Checkbox 2</span>
+                                                </label>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="card grid-u-8-12">
+                                        <div class="card_box">
+                                            <div class="card_header card_header--ellipsis align--left">
+                                                <h2 class="header_title">pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                            </div>
+                                            <div class="card_actions card_actions--large align--right">
+                                                <span class="avatar avatar--one-line">
+                                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                    <span>Jonas Connor Alexander Van</span>
+                                                </span>
+                                                <label class="checkbox" for="checkbox-a">
+                                                    <input type="checkbox" id="checkbox-a" class="checkbox_input" value="teste1" checked>
+                                                    <span class="checkbox_box-outline">
+                                                        <span class="checkbox_tick-outline"></span>
+                                                    </span>
+                                                    <span class="checkbox_label">Checkbox 1</span>
+                                                </label>
+                                            </div>  
+                                            <div class="card_container" style="height:150px;">
+                                                <div class="card">
+                                                    <div class="card_box">
+                                                        <div class="card_text align--right">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                        </div>
+                                                        <div class="card_actions card_actions--large align--center">
+                                                            <span class="avatar avatar--one-line">
+                                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                                <span>Jonas Connor Alexander Van</span>
+                                                            </span>
+                                                            <label class="checkbox" for="checkbox-a">
+                                                                <input type="checkbox" id="checkbox-a" class="checkbox_input" value="teste1" checked>
+                                                                <span class="checkbox_box-outline">
+                                                                    <span class="checkbox_tick-outline"></span>
+                                                                </span>
+                                                                <span class="checkbox_label">Checkbox 1</span>
+                                                            </label>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card_actions card_actions--large">
+                                    <label class="checkbox" for="checkbox-b">
+                                        <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                        <span class="checkbox_box-outline">
+                                            <span class="checkbox_tick-outline"></span>
+                                        </span>
+                                        <span class="checkbox_label">Checkbox 2</span>
+                                    </label>
+                                </div>
                             </div>
-
                         </div>
+                    </div>
 
+                    <div class="card grid-u-2-3">
+                        <div class="card_margin">
+                            <div class="card_box">
+                                <div class="card_container" style="height:250px">
+                                    <div class="card" style="width:800px;">
+                                        <div class="card_box">
+                                            <div class="card_text align--right">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            </div>
+                                            <div class="card_actions card_actions--medium align--center">
+                                                <label class="checkbox" for="checkbox-b">
+                                                    <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                    <span class="checkbox_box-outline">
+                                                        <span class="checkbox_tick-outline"></span>
+                                                    </span>
+                                                    <span class="checkbox_label">Checkbox 2</span>
+                                                </label>
+                                            </div>
+                                            <div class="card_header card_header--ellipsis align--right">
+                                                <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card_text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card grid-u-9-12">
+                        <div class="card_margin">
+                            <div class="card_box">
+                                <div class="card_text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend.</p>
+                                </div>
+                                <div class="card_container">
+                                    <div class="card">
+                                        <div class="card_box">
+                                            <div class="card_text align--right">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            </div>
+                                            <div class="card_actions card_actions--medium align--center">
+                                                <label class="checkbox" for="checkbox-b">
+                                                    <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                    <span class="checkbox_box-outline">
+                                                        <span class="checkbox_tick-outline"></span>
+                                                    </span>
+                                                    <span class="checkbox_label">Checkbox 2</span>
+                                                </label>
+                                            </div>
+                                            <div class="card_header card_header--ellipsis align--right">
+                                                <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card grid-u-8-12">
+                        <div class="card_margin">
+                            <div class="card_box">
+                                <div class="card_text align--right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend.</p>
+                                </div>
+                                <div class="card_container">
+                                    <div class="card grid-u-1-2">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_actions card_actions--medium align--center">
+                                                    <label class="checkbox" for="checkbox-b">
+                                                        <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                        <span class="checkbox_box-outline">
+                                                            <span class="checkbox_tick-outline"></span>
+                                                        </span>
+                                                        <span class="checkbox_label">Checkbox 2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                    <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card grid-u-1-2">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_actions card_actions--medium align--center">
+                                                    <label class="checkbox" for="checkbox-b">
+                                                        <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                        <span class="checkbox_box-outline">
+                                                            <span class="checkbox_tick-outline"></span>
+                                                        </span>
+                                                        <span class="checkbox_label">Checkbox 2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                    <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card grid-u-1-2">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_actions card_actions--medium align--center">
+                                                    <label class="checkbox" for="checkbox-b">
+                                                        <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                        <span class="checkbox_box-outline">
+                                                            <span class="checkbox_tick-outline"></span>
+                                                        </span>
+                                                        <span class="checkbox_label">Checkbox 2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                    <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card grid-u-1-2">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card_text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card grid-u-1">
+                        <div class="card_margin">
+                            <div class="card_box">
+                                <div class="card_container">
+                                    <div class="card grid-u-1-4">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_actions card_actions--medium align--center">
+                                                    <label class="checkbox" for="checkbox-b">
+                                                        <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                        <span class="checkbox_box-outline">
+                                                            <span class="checkbox_tick-outline"></span>
+                                                        </span>
+                                                        <span class="checkbox_label">Checkbox 2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                    <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card grid-u-1-4">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_actions card_actions--medium align--center">
+                                                    <label class="checkbox" for="checkbox-b">
+                                                        <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                        <span class="checkbox_box-outline">
+                                                            <span class="checkbox_tick-outline"></span>
+                                                        </span>
+                                                        <span class="checkbox_label">Checkbox 2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                    <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card grid-u-1-4">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_actions card_actions--medium align--center">
+                                                    <label class="checkbox" for="checkbox-b">
+                                                        <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                        <span class="checkbox_box-outline">
+                                                            <span class="checkbox_tick-outline"></span>
+                                                        </span>
+                                                        <span class="checkbox_label">Checkbox 2</span>
+                                                    </label>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                    <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card grid-u-1-4">
+                                        <div class="card_margin">
+                                            <div class="card_box">
+                                                <div class="card_text align--right">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                                </div>
+                                                <div class="card_header card_header--ellipsis align--right">
+                                                    <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card grid-u-1">
+                        <div class="card_box">
+                            <div class="card_container">
+                                <div class="card grid-u-1-4">
+                                    <div class="card_box">
+                                        <div class="card_text align--right">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--center">
+                                            <label class="checkbox" for="checkbox-b">
+                                                <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox 2</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header card_header--ellipsis align--right">
+                                            <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                            <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="card grid-u-1-4">
+                                    <div class="card_box">
+                                        <div class="card_text align--right">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--center">
+                                            <label class="checkbox" for="checkbox-b">
+                                                <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox 2</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header card_header--ellipsis align--right">
+                                            <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                            <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card grid-u-1-4">
+                                    <div class="card_box">
+                                        <div class="card_text align--right">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--center">
+                                            <label class="checkbox" for="checkbox-b">
+                                                <input type="checkbox" id="checkbox-b" class="checkbox_input" value="teste2" checked>
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox 2</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header card_header--ellipsis align--right">
+                                            <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                            <h3 class="header_subtitle">Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card grid-u-1-4">
+                                    <div class="card_box">
+                                        <div class="card_text align--right">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                        </div>
+                                        <div class="card_header card_header--ellipsis align--right">
+                                            <h2 class="header_title">pp pqq Title Goes Here pp pqq qjjj Title Goes Here pp pqq qjjj Title Goes Here</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 

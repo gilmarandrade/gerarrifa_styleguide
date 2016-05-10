@@ -297,6 +297,32 @@
 }
 
 
+
+
+/* Botão
+  ==================================================================== */
+.button{
+    font-family: "Open Sans SemiBold";
+    font-size:14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height:36px;
+    border:none;
+    display:inline-block;
+    padding:0 16px;
+    border-radius: 4px;
+    background:transparent;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+}
+.button--raised-primary, .button--raised-secondary{
+    box-shadow:  0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.button--raised-primary:active, .button--raised-secondary:active, .button--raised-primary.is-active, .button--raised-secondary.is-active{
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+
+
 /**
 * xsm (xsmall)
 * >= 480px

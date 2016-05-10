@@ -1,240 +1,262 @@
-
-/**
- * Section
- */
-section{
-    padding-top: 16px;
-    padding-bottom: 16px; 
-    word-spacing: -0.43em;
-}
-
-section > header{
-    margin:16px;
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
-    width: 100%;
-}
-section > header h1{
-    font-family: "Static Bold";
-    font-size: 34px;
-}
-
-/**
- * Cards
- */
-.align--left{
-    float:left;
-    text-align: left;
-}
-.align--right{
-    float:right;
-    text-align: right;
-}
-.align--center{
-    text-align: center;
-}
-.align--clear{
-    clear: both;
-}
-.align--justify{
-    text-align: justify;
-}
-.card_header.align--center, .card_header.align--left, .card_header.align--right, .card_text.align--center, .card_text.align--left, .card_text.align--right, .card_actions.align--center, .card_actions.align--left, .card_actions.align--right{
-    float:none;
-} 
-
-.card {
-    /*background: brown;*/
-    display: inline-block;
-    *display: inline; /* IE < 8: fake inline-block */
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
-}
-.card .card_margin{
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-
-
-}
-.card > .card_margin > .card_box{
-    margin-top: .25em;
-    margin-bottom: .25em;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-    overflow: hidden;
-}
-.card > .card_margin > .card_box > :first-child{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.card > .card_margin > .card_box > :last-child{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.card .card--divider:not(:last-child){
-    border-bottom: 1px solid black;
-}
-
-.card_container{
-    overflow: auto;
-    /*word-spacing: -0.43em;*/
-    word-spacing: -0.30em;
-    /*background: rgba(255, 100, 0,.7);*/
-    /*border-bottom: 1px dotted black;*/
-}
-.card_header {
-    /*background: rgba(255,255,0,0.7);*/
-    padding: 16px;
-    min-height: 56px;
-    /*border-bottom: 1px dotted black;*/
-}
-.card_header .header_title{
-    margin: 0;
-    font-size: 24px;
-    line-height: 28px;
-    font-family: "Open Sans SemiBold";
-    color: rgba(0,0,0,.87);
-}
-.card_header .header_subtitle{
-    margin: 0;
-    font-size: 20px;
-    font-family: "Open Sans Light";
-    color: rgba(0,0,0,.87);
-}
-.card_header.card_header--small .header_title{
-    font-size: 20px;
-}
-.card_header.card_header--ellipsis .header_title, .card_header.card_header--ellipsis .header_subtitle{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.card_header.card_header--avatar{
-    min-height: 36px;
-}
-.card_header--avatar > *{
-    margin:4px;
-}
-
-.card_text {
-    /*background: rgba(0,255,0,0.7);*/
-    padding:16px;
-    font-family: "Open Sans";
-    font-size: 16px;
-    color: rgba(0,0,0,0.87);
-    /*border-bottom: 1px dotted black;*/
-}
-.card_text.card_text--justify{
-    text-align: justify;
-}
-.card_text > :not(:last-child){
-    margin-bottom: 16px;
-}
-
-.card_rich-area{
-    /*background: rgba(255,0,255,0.7);*/
-    height: 200px;
-    /*border-bottom: 1px dotted black;*/
-}
-
-.card_actions{
-    /*background: rgba(0,0,255,.7);*/
-    /*border-bottom: 1px dotted black;*/
-
-    min-height: 48px;
-    padding-right: 8px;
-}
-.card_actions .avatar, .card_actions .checkbox, .card_actions .radiobutton, .card_actions .switch{
-    margin:-2.5px;
-    margin:0;
-    margin-left: 8px;
-    /*background: orange;*/
-}
-.card_actions.card_actions--medium{
-    min-height: 56px;
-    padding-right: 8px;
-}
-.card_actions--medium .avatar, .card_actions--medium .checkbox, .card_actions--medium .radiobutton, .card_actions--medium .switch {
-    margin:-2.5px;
-    margin:0;
-    margin-left: 8px;
-    margin-top:4px;
-    margin-bottom:0px;
-    /*background: blueviolet;*/
-}
-
-.card_actions.card_actions--large{
-    min-height: 72px;
-    padding-right: 16px;
-}
-.card_actions--large .avatar, .card_actions--large .checkbox, .card_actions--large .radiobutton, .card_actions--large .switch{
-    margin-left: 16px;
-    margin-right:-2.5px;
-    margin-right: 0;
-    margin-top:10px;
-    margin-bottom:10px;
-    /*background: greenyellow; */
-}
-
-
 /*
 Theme
 */
 
-.card.light-theme, .card.white-theme, .card.dark-theme{
-    background: transparent;   
-}
 
-/*Light Theme
+/*Light Theme / White Theme
 ================================================*/
 section.light-theme{
     background: rgb(238,238,238);
 }
-section.light-theme h1{
+section.white-theme{
+    background: rgb(255,255,255);
+}
+section.light-theme > header > h1, section.white-theme > header > h1{
     color: rgba(0,0,0,.87);
 }
-
-.light-theme .card_box{
+.card_box.light-theme {
     background: rgb(238,238,238);
 }
-
+.card_box.white-theme {
+    background: rgb(255,255,255);
+}
 .card_header.light-theme, .card_text.light-theme, .card_actions.light-theme, .card_rich-area.light-theme, .card_container.light-theme{
     background: rgb(238,238,238);
 }
-
-
-/*White Theme
-================================================*/
-.white-theme{
+.card_header.white-theme, .card_text.white-theme, .card_actions.white-theme, .card_rich-area.white-theme, .card_container.white-theme{
     background: rgb(255,255,255);
 }
-section.white-theme h1{
+.card_header.light-theme .header_title, .card_header.light-theme .header_subtitle, .card_text.light-theme, .card_actions.light-theme{
     color: rgba(0,0,0,.87);
 }
-.white-theme .card_box{
-    background: rgb(255,255,255);
+.card_header.white-theme .header_title, .card_header.white-theme .header_subtitle, .card_text.white-theme, .card_actions.white-theme{
+    color: rgba(0,0,0,.87);
+}
+.avatar.light-theme{
+    color: rgba(0,0,0,.87);
+}
+.avatar.white-theme{
+    color: rgba(0,0,0,.87);
 }
 
 
 /*Dark Theme
 ================================================*/
-.dark-theme{
+section.dark-theme{
     background: rgb(51,51,51);
 }
-section.dark-theme h1{
+section.dark-theme > header > h1{
     color: rgba(255,255,255,.87);
 }
-.dark-theme .card_box{
+.card_box.dark-theme {
     background: rgb(51,51,51);
 }
+.card_header.dark-theme, .card_text.dark-theme, .card_actions.dark-theme, .card_rich-area.dark-theme, .card_container.dark-theme{
+    background: rgb(51,51,51);  
+}
+.card_header.dark-theme .header_title, .card_header.dark-theme .header_subtitle, .card_text.dark-theme, .card_actions.dark-theme{
+    color: rgba(255,255,255,.87);
+}
+.avatar.dark-theme{
+    color: rgba(255,255,255,.87);
+}
+
+
+/**
+Checkbox
+=======================
+*/
+/*light*/
+.checkbox[class*="-light"] .checkbox_label{
+    color:rgba(0,0,0,.87);
+}
+.checkbox[class*="-light"] .checkbox_box-outline{
+   border-color: rgba(0,0,0,.87);
+}
+.checkbox[class*="-light"].is-disabled .checkbox_box-outline{
+    border-color: rgb(0,0,0) !important;
+}
+.checkbox[class*="-light"].is-disabled.is-checked .checkbox_tick-outline{
+    background: rgb(0,0,0) !important;
+    color: rgb(255,255,255) !important;
+}
+.checkbox[class*="-light"].is-checked .checkbox_tick-outline{
+    color: rgb(255,255,255);
+}
+/*dark*/
+.checkbox[class*="-dark"] .checkbox_label{
+    color:rgba(255,255,255,.87);
+}
+.checkbox[class*="-dark"] .checkbox_box-outline{
+   border-color: rgba(255,255,255,.87);
+}
+.checkbox[class*="-dark"].is-disabled .checkbox_box-outline{
+    border-color: rgb(255,255,255) !important;
+}
+.checkbox[class*="-dark"].is-disabled.is-checked .checkbox_tick-outline{
+    background: rgb(255,255,255) !important;
+    color: rgb(0,0,0) !important;
+}
+.checkbox[class*="-dark"].is-checked .checkbox_tick-outline{
+    color: rgb(51,51,51);
+}
+
+/*green*/
+.checkbox[class*="green"].is-checked .checkbox_box-outline{
+    border-color: rgb(0,166,0);
+}
+.checkbox[class*="green"].is-checked .checkbox_tick-outline{
+    background: rgb(0,166,0);
+}
+.checkbox[class*="green"]:before{
+    background: rgba(0, 125, 0, .3);
+}
+
+/*blue*/
+.checkbox[class*="blue"].is-checked .checkbox_box-outline{
+    border-color: rgb(18,157,227);
+}
+.checkbox[class*="blue"].is-checked .checkbox_tick-outline{
+    background: rgb(18,157,227);
+}
+.checkbox[class*="blue"]:before{
+    background: rgba(24, 95, 156, .3);
+}
+
+
+
+/**
+Radiobutton
+=======================
+*/
+/*light*/
+.radiobutton[class*="-light"] .radiobutton_label{
+    color:rgba(0,0,0,.87);
+}
+.radiobutton[class*="-light"] .radiobutton_box-outline{
+    border-color: rgba(0,0,0,.87);
+}
+.radiobutton[class*="-light"].is-disabled .radiobutton_box-outline{
+    border-color: rgb(0,0,0) !important;
+}
+.radiobutton[class*="-light"].is-disabled.is-checked .radiobutton_tick-outline{
+    background: rgb(0,0,0) !important;
+}
+/*dark*/
+.radiobutton[class*="-dark"] .radiobutton_label{
+    color:rgba(255,255,255,.87);
+}
+.radiobutton[class*="-dark"] .radiobutton_box-outline{
+    border-color: rgba(255,255,255,.87);
+}
+.radiobutton[class*="-dark"].is-disabled .radiobutton_box-outline{
+    border-color: rgb(255,255,255) !important;
+}
+.radiobutton[class*="-dark"].is-disabled.is-checked .radiobutton_tick-outline{
+    background: rgb(255,255,255) !important;
+}
+
+/*green*/
+.radiobutton[class*="green"] .radiobutton_tick-outline{
+    background: rgb(0,166,0);   
+}
+.radiobutton[class*="green"].is-checked .radiobutton_box-outline{
+    border-color: rgb(0,166,0);
+}
+.radiobutton[class*="green"].is-checked .radiobutton_box-outline{
+    border-color: rgb(0,166,0);
+}
+.radiobutton[class*="green"]:before{
+    background: rgba(0,126,0, .3);
+}
+
+/*blue*/
+.radiobutton[class*="blue"] .radiobutton_tick-outline{
+    background: rgb(18,157,227);   
+}
+.radiobutton[class*="blue"].is-checked .radiobutton_box-outline{
+    border-color: rgb(18,157,227);  
+}
+.radiobutton[class*="blue"].is-checked .radiobutton_box-outline{
+    border-color: rgb(18,157,227);
+}
+.radiobutton[class*="blue"]:before{
+    background: rgba(24,95,156, .3);
+}
+
+
+/**
+Switch
+=======================
+*/
+/*light*/
+.switch[class*="light"] .switch_label{
+     color:rgba(0,0,0,.87);
+}
+.switch[class*="light"] .switch_box-outline{
+    border-color: rgba(0,0,0,.87);
+}
+.switch[class*="light"] .switch_tick-outline{
+    background: rgba(0,0,0,.87);
+}
+.switch[class*="light"].is-checked .switch_tick-outline{
+    background: rgb(238,238,238);
+}
+.switch[class*="light"].is-disabled .switch_box-outline{
+    border-color: rgb(0,0,0) !important;
+    background: transparent !important;
+}
+.switch[class*="light"].is-disabled.is-checked .switch_box-outline{
+    background: rgb(0,0,0)!important;
+}
+.switch[class*="light"].is-disabled.is-checked .switch_tick-outline{
+    background: rgb(238, 238, 238) !important;
+}
+/*dark*/
+.switch[class*="dark"] .switch_label{
+     color:rgba(255,255,255,.87);
+}
+.switch[class*="dark"] .switch_box-outline{
+    border-color: rgba(255,255,255,.87);
+}
+.switch[class*="dark"] .switch_tick-outline{
+    background: rgba(255,255,255,.87);
+}
+.switch[class*="dark"].is-checked .switch_tick-outline{
+    background: rgb(51,51,51);
+}
+.switch[class*="dark"].is-disabled .switch_box-outline{
+    border-color: rgb(255,255,255) !important;
+    background: transparent !important;
+}
+.switch[class*="dark"].is-disabled.is-checked .switch_box-outline{
+    background: rgb(255,255,255)!important;
+}
+.switch[class*="dark"].is-disabled.is-checked .switch_tick-outline{
+    background: rgb(51, 51, 51) !important;
+}
+
+/*green*/
+.switch[class*="green"].is-checked .switch_box-outline{
+    border-color: rgb(0,166,0);
+    background: rgb(0,166,0);
+}
+.switch[class*="green"] .switch_tick-outline:before{
+    background: rgba(0,126, 0, .3);
+}
+
+
+/*blue*/
+.switch[class*="blue"].is-checked .switch_box-outline{
+    border-color: rgb(18, 157,227);
+    background: rgb(18, 157,227);
+}
+.switch[class*="blue"] .switch_tick-outline:before{
+    background: rgba(24, 95, 156, .3);
+}
+
+
+
 
 
 

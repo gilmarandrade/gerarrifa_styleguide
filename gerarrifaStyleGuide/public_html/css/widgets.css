@@ -3,6 +3,7 @@
  * -avatar
  * -checkbox
  * -radiobutton
+ * -switch
  */
 
 
@@ -64,11 +65,12 @@
     position: absolute;
     top:0;
     left:0;
-    // width: 0;
-    // height: 0;
-    // border:none;
-    //appearance: none;
-    //-moz-appearance: none;
+    width: 0;
+    height: 0;
+    border:none;
+    appearance: none;
+    -moz-appearance: none;
+    opacity: 0;
 }
 .checkbox_label{
     font-family: "Open Sans";
@@ -142,11 +144,12 @@
     position: absolute;
     top:0;
     left:0;
-    // width: 0;
-    // height: 0;
-    // border:none;
-    //appearance: none;
-    //-moz-appearance: none;
+    width: 0;
+    height: 0;
+    border:none;
+    appearance: none;
+    -moz-appearance: none;
+    opacity:0;
 }
 .radiobutton_label{
     font-family: "Open Sans";
@@ -224,11 +227,12 @@
     position: absolute;
     top:0;
     left:0;
-    // width: 0;
-    // height: 0;
-    // border:none;
-    //appearance: none;
-    //-moz-appearance: none;
+    width: 0;
+    height: 0;
+    border:none;
+    appearance: none;
+    -moz-appearance: none;
+    opacity:0;
 }
 .switch_label{
     font-family: "Open Sans";

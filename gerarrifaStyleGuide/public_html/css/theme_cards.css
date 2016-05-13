@@ -400,12 +400,19 @@ Icon Toggle
 .icon-toggle[class*="light"].is-disabled{
     color: rgba(0,0,0,.26);
 }
+.icon-toggle[class*="light"].is-disabled.is-checked i{
+    color: rgba(0,0,0,.26);
+}
 .icon-toggle[class*="light"].is-disabled.is-checked i:after{
     background: rgba(0,0,0,.12);
+}
+.icon-toggle[class*="light"].is-checked i{
+    color: rgba(255,255,255,.87);
 }
 .icon-toggle[class*="light"].is-checked i:after{
     background: rgba(255,255,255,.87);
 }
+
 /*dark*/
 .icon-toggle[class*="dark"]{
     color: rgba(255,255,255,.87);
@@ -419,6 +426,7 @@ Icon Toggle
 .icon-toggle[class*="dark"].is-checked i:after{
     background: rgba(0,0,0,.87);
 }
+
 /*green*/
 .icon-toggle[class*="green"] i:after{
     background: rgba(0,125,0,.3);
@@ -427,8 +435,19 @@ Icon Toggle
     background: rgba(0,166,0,1);
 }
 /*blue*/
+.icon-toggle[class*="blue"] i:after{
+    background: rgba(24, 95, 156,.3);
+}
+.icon-toggle[class*="blue"].is-checked i:after{
+    background: rgba(18, 157, 227,1);
+}
 /*yellow*/
-
+.icon-toggle[class*="yellow"] i:after{
+    background: rgba(209, 144, 5,.3);
+}
+.icon-toggle[class*="yellow"].is-checked i:after{
+    background: rgba(247, 170,6,1);
+}
 /**
 * xsm (xsmall)
 * >= 480px

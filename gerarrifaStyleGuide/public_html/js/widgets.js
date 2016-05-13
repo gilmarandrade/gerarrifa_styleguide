@@ -27,6 +27,14 @@ function initRadiobutton() {
     updateRadiobutton();
 }
 
+function initIconToggle() {
+    $(".icon-toggle_input").change(function() {
+        $(this).parent().toggleClass("is-checked");
+    });
+    
+    updateIconToggle();
+}
+
 function updateCheckbox() {
     $(".checkbox_input").each(function() {
         if ($(this).prop("checked")) {
@@ -65,6 +73,22 @@ function updateRadiobutton() {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         }
+        if ($(this).prop("disabled")) {
+            $(this).parent().addClass("is-disabled");
+        } else {
+            $(this).parent().removeClass("is-disabled");
+        }
+    });
+}
+
+function updateIconToggle() {
+    $(".icon-toggle_input").each(function() {
+        if ($(this).prop("checked")) {
+            $(this).parent().addClass("is-checked");
+        }else{
+            $(this).parent().removeClass("is-checked");
+        }
+        
         if ($(this).prop("disabled")) {
             $(this).parent().addClass("is-disabled");
         } else {

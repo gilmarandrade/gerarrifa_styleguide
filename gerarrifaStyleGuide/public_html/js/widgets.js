@@ -27,12 +27,31 @@ function initRadiobutton() {
     updateRadiobutton();
 }
 
-function initIconToggle() {
-    $(".icon-toggle_input").change(function() {
+function initIcontoggle() {
+    $(".icontoggle_input").change(function() {
         $(this).parent().toggleClass("is-checked");
     });
     
-    updateIconToggle();
+    updateIcontoggle();
+}
+
+function initTogglebutton() {
+    /*seleção exclusiva*/
+    $(".togglebutton_radio-input").on("change", function() {
+        console.log('toggle button changed');
+        if ($(this).prop("checked")) {
+            var name = $(this).attr("name");
+            $("input[name='" + name + "']").parent().removeClass("is-checked");
+            $(this).parent().addClass("is-checked");
+        }
+    });
+    
+    /*seleção multipla*/
+    $(".togglebutton_checkbox-input").change(function() {
+        $(this).parent().toggleClass("is-checked");
+    });
+
+    updateTogglebutton();
 }
 
 function updateCheckbox() {
@@ -68,7 +87,7 @@ function updateSwitch() {
 }
 
 function updateRadiobutton() {
-    $("input[type='radio']").parent().removeClass("is-checked");
+    $(".radiobutton_input").parent().removeClass("is-checked");
     $(".radiobutton_input").each(function() {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
@@ -81,8 +100,38 @@ function updateRadiobutton() {
     });
 }
 
-function updateIconToggle() {
-    $(".icon-toggle_input").each(function() {
+function updateIcontoggle() {
+    $(".icontoggle_input").each(function() {
+        if ($(this).prop("checked")) {
+            $(this).parent().addClass("is-checked");
+        }else{
+            $(this).parent().removeClass("is-checked");
+        }
+        
+        if ($(this).prop("disabled")) {
+            $(this).parent().addClass("is-disabled");
+        } else {
+            $(this).parent().removeClass("is-disabled");
+        }
+    });
+}
+
+function updateTogglebutton() {
+    /*seleção exclusiva*/
+    $(".togglebutton_radio-input").parent().removeClass("is-checked");
+    $(".togglebutton_radio-input").each(function() {
+        if ($(this).prop("checked")) {
+            $(this).parent().addClass("is-checked");
+        }
+        if ($(this).prop("disabled")) {
+            $(this).parent().addClass("is-disabled");
+        } else {
+            $(this).parent().removeClass("is-disabled");
+        }
+    });
+    
+    /*seleção multipla*/
+     $(".togglebutton_checkbox-input").each(function() {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         }else{

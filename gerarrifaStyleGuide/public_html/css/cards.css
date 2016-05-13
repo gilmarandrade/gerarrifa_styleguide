@@ -164,7 +164,7 @@ section > header h1{
     margin-left: 8px;
     //background: orange;
 }
-.card_actions .button{
+.card_actions .button, .card_actions .icon-toggle{
     margin-top:6px;
     margin-bottom:6px;
     margin-left: 8px;
@@ -180,7 +180,7 @@ section > header h1{
     margin-bottom:0px;
     //background: blueviolet;
 }
-.card_actions--medium .button {
+.card_actions--medium .button, .card_actions--medium .icon-toggle {
     margin-top:10px;
     margin-bottom:10px;
     margin-left: 8px;
@@ -197,7 +197,7 @@ section > header h1{
     margin-bottom:10px;
     //background: greenyellow;
 }
-.card_actions--large .button{
+.card_actions--large .button, .card_actions--large .icon-toggle{
     margin-left: 16px;
     margin-top: 18px;
     margin-bottom: 18px;

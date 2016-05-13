@@ -390,6 +390,46 @@ Button
 
 
 /**
+Icon Toggle
+=======================
+*/
+/*light*/
+.icon-toggle[class*="light"]{
+    color: rgba(0,0,0,.87);
+}
+.icon-toggle[class*="light"].is-disabled{
+    color: rgba(0,0,0,.26);
+}
+.icon-toggle[class*="light"].is-disabled.is-checked i:after{
+    background: rgba(0,0,0,.12);
+}
+.icon-toggle[class*="light"].is-checked i:after{
+    background: rgba(255,255,255,.87);
+}
+/*dark*/
+.icon-toggle[class*="dark"]{
+    color: rgba(255,255,255,.87);
+}
+.icon-toggle[class*="dark"].is-disabled{
+    color: rgba(255,255,255,.26);
+}
+.icon-toggle[class*="dark"].is-disabled.is-checked i:after{
+    background: rgba(255,255,255,.12);
+}
+.icon-toggle[class*="dark"].is-checked i:after{
+    background: rgba(0,0,0,.87);
+}
+/*green*/
+.icon-toggle[class*="green"] i:after{
+    background: rgba(0,125,0,.3);
+}
+.icon-toggle[class*="green"].is-checked i:after{
+    background: rgba(0,166,0,1);
+}
+/*blue*/
+/*yellow*/
+
+/**
 * xsm (xsmall)
 * >= 480px
 */

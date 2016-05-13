@@ -4,6 +4,7 @@
  * -checkbox
  * -radiobutton
  * -switch
+ * -button
  */
 
 
@@ -313,6 +314,7 @@
     border-radius: 4px;
     background:transparent;
     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    pointer-events: auto;
 }
 .button--raised-primary, .button--raised-secondary{
     box-shadow:  0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
@@ -320,8 +322,70 @@
 .button--raised-primary:active, .button--raised-secondary:active, .button--raised-primary.is-active, .button--raised-secondary.is-active{
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
 }
+.button i{
+    font-size:18px;
+    line-height: 36px;
+}
+.button--only-icon{
+     padding:0;
+     width:36px;
+     text-align: center;
+}
+.button--only-icon i{
+    font-size:22px;
+    padding:0;
+    width:36px;
+    text-align: center;
+}
+.button:disabled, .button.is-disabled{
+    pointer-events: none;
+}
 
-
+.icon-toggle{
+    font-family: "Open Sans SemiBold";
+    font-size:14px;
+    line-height:36px;
+    border:none;
+    display:inline-block;
+    padding: 0;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.icon-toggle i{
+    position: relative;
+    font-size:16px;
+    width:36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+.icon-toggle i:after{
+    content: " ";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transform: scale(.5);
+    opacity: 0;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    z-index: -1;
+}
+.icon-toggle:hover:not(.is-disabled) i:after{
+    transform: scale(1);
+    opacity: 1; 
+}
+.icon-toggle.is-disabled{
+    //opacity: .26;
+    pointer-events: none;
+}
+.icon-toggle.is-checked i:after{
+    pointer-events: none;
+    transform: scale(1);
+    opacity: 1; 
+}
 
 /**
 * xsm (xsmall)

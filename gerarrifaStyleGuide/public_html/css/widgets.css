@@ -462,6 +462,83 @@
     pointer-events: none;
 }
 
+
+/* Dropdown
+  ==================================================================== */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown_button{
+    position: relative;
+    font-family: "Open Sans";
+    font-size:14px;
+    height:100%;
+    border:none;
+    display:inline-block;
+    padding:0 24px 0 16px;
+    background:transparent;
+    color:rgba(0,0,0,.87);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    pointer-events: auto;
+}
+.dropdown_button:after{
+    content: "\f0d7";
+    //content: "\f0d8";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 8px;
+}
+.dropdown_options{
+    position: absolute;
+    background: white;
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    transition: transform .3s cubic-bezier(.4,0,.2,1) .3s, opacity .2s cubic-bezier(.4,0,.2,1) .3s;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.5);
+}
+.dropdown_button:focus + .dropdown_options{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: transform .3s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1);
+}
+.dropdown_options.dropdown_options--top-left{
+    top:0;
+    left:0;
+}
+.dropdown_options.dropdown_options--top-right{
+    top:0;
+    right:0;
+}
+.dropdown_options.dropdown_options--bottom-left{
+    bottom:0;
+    left:0;
+}
+.dropdown_options.dropdown_options--bottom-right{
+    bottom:0;
+    right:0;
+}
+.dropdown_options li{
+    line-height: 48px;
+    cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+.dropdown_button:hover, .dropdown_options li:hover{
+    background: rgba(153,153,153, .2);
+}
+
+
 /**
 * xsm (xsmall)
 * >= 480px

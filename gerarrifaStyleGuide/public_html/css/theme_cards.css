@@ -434,6 +434,9 @@ Icon Toggle
 .icontoggle[class*="green"].is-checked i:after{
     background: rgba(0,166,0,1);
 }
+.icontoggle[class*="green"].is-checked:hover i:after{
+    background: rgb(0,126,0);
+}
 /*blue*/
 .icontoggle[class*="blue"] i:after{
     background: rgba(24, 95, 156,.3);
@@ -441,12 +444,18 @@ Icon Toggle
 .icontoggle[class*="blue"].is-checked i:after{
     background: rgba(18, 157, 227,1);
 }
+.icontoggle[class*="blue"].is-checked:hover i:after{
+    background: rgb(24, 95, 156);
+}
 /*yellow*/
 .icontoggle[class*="yellow"] i:after{
     background: rgba(209, 144, 5,.3);
 }
 .icontoggle[class*="yellow"].is-checked i:after{
     background: rgba(247, 170,6,1);
+}
+.icontoggle[class*="yellow"].is-checked:hover i:after{
+    background: rgb(209, 144, 5);
 }
 
 
@@ -492,6 +501,9 @@ Toggle Button
      background:rgb(0,166,0);
      color: rgba(255,255,255,.87);
 }
+.togglebutton[class*="green"] .togglebutton_button.is-checked:hover{
+     background:rgb(0,126,0);
+}
 /*blue*/
 .togglebutton[class*="blue"] .togglebutton_button:active, .togglebutton[class*="blue"] .togglebutton_button.is-active{
      background: rgb(18, 218, 211);
@@ -501,6 +513,9 @@ Toggle Button
      background:rgb(18, 157, 227);
      color: rgba(255,255,255,.87);
 }
+.togglebutton[class*="blue"] .togglebutton_button.is-checked:hover{
+     background:rgb(24, 95, 156);
+}
 /*yellow*/
 .togglebutton[class*="yellow"] .togglebutton_button:active, .togglebutton[class*="yellow"] .togglebutton_button.is-active{
      background: rgb(249, 197, 23);
@@ -509,6 +524,9 @@ Toggle Button
 .togglebutton[class*="yellow"] .togglebutton_button.is-checked{
      background:rgb(247, 170, 6);
      color: rgba(255,255,255,.87);
+}
+.togglebutton[class*="yellow"] .togglebutton_button.is-checked:hover{
+     background:rgb(209, 144, 5);
 }
 
 /**

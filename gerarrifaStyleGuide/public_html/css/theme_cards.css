@@ -529,6 +529,76 @@ Toggle Button
      background:rgb(209, 144, 5);
 }
 
+
+/**
+Dropdown
+=======================
+*/
+.dropdown_button:not(:disabled):hover, .dropdown_button:not(.is-disabled):hover, .dropdown_options li:not(.is-disabled):hover{
+    background: rgba(153,153,153, .2);
+}
+/*light*/
+.dropdown[class*="light"] .dropdown_button{
+    color:rgba(0,0,0,.87); 
+}
+.dropdown[class*="light"] .dropdown_options{
+    background: rgb(255,255,255);
+    color: rgba(0,0,0,.87);
+}
+.dropdown[class*="light"] .dropdown_button:active, .dropdown[class*="light"] .dropdown_button.is-active, .dropdown[class*="light"] .dropdown_button:active{
+    background: rgba(153,153,153,.4);
+}
+.dropdown[class*="light"].is-disabled .dropdown_button, .dropdown[class*="light"] .dropdown_button.is-disabled, .dropdown[class*="light"] .dropdown_button:disabled, .dropdown[class*="light"] .dropdown_options li.is-disabled{
+    color: rgba(0,0,0,.26) !important;
+    background: transparent !important;
+    cursor: default;
+}
+.dropdown[class*="light"] .dropdown_options li.is-disabled.is-active{
+   color: rgba(0,0,0,.26) !important;
+    background: rgba(0,0,0,.12) !important;
+}
+/*dark*/
+.dropdown[class*="dark"] .dropdown_button{
+    color:rgba(255,255,255,.87); 
+}
+.dropdown[class*="dark"] .dropdown_options{
+    background: rgb(51,51,51);
+    color: rgba(255,255,255,.87);
+}
+.dropdown[class*="dark"] .dropdown_button:active, .dropdown[class*="dark"] .dropdown_button.is-active, .dropdown[class*="dark"] .dropdown_button:active{
+    background: rgba(153,153,153,.4);
+}
+.dropdown[class*="dark"].is-disabled .dropdown_button, .dropdown[class*="dark"] .dropdown_button.is-disabled, .dropdown[class*="dark"] .dropdown_button:disabled, .dropdown[class*="dark"] .dropdown_options li.is-disabled{
+    color: rgba(255,255,255,.26) !important;
+    background: transparent !important;
+    cursor: default;
+}
+.dropdown[class*="dark"] .dropdown_options li.is-disabled.is-active{
+   color: rgba(255,255,255,.26) !important;
+    background: rgba(255,255,255,.12) !important;
+}
+
+/*green*/
+.dropdown[class*="green"] .dropdown_options li.is-active{
+    color:rgb(0,166,0);
+}
+.dropdown[class*="green"] .dropdown_button:active, .dropdown[class*="green"] .dropdown_button.is-active, .dropdown[class*="green"] .dropdown_button:active{
+    color:rgba(0,166,0, .87);
+}
+/*blue*/
+.dropdown[class*="blue"] .dropdown_options li.is-active{
+    color:rgb(18, 157, 227);
+}
+.dropdown[class*="blue"] .dropdown_button:active, .dropdown[class*="blue"] .dropdown_button.is-active, .dropdown[class*="blue"] .dropdown_button:active{
+    color:rgba(18,157,227, .87);
+}
+/*yellow*/
+.dropdown[class*="yellow"] .dropdown_options li.is-active{
+    color:rgb(247, 170, 6);
+}
+.dropdown[class*="yellow"] .dropdown_button:active, .dropdown[class*="yellow"] .dropdown_button.is-active, .dropdown[class*="yellow"] .dropdown_button:active{
+    color:rgba(247,170,6, .87);
+}
 /**
 * xsm (xsmall)
 * >= 480px

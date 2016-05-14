@@ -54,6 +54,19 @@ function initTogglebutton() {
     updateTogglebutton();
 }
 
+function initDropdown() {
+    $(".dropdown_options li").click(function(){
+        $(this).parent().prev().html($(this).html());
+        $(this).parent().find("li").each(function(){
+            $(this).removeClass("is-active");
+        });
+        $(this).addClass("is-active");
+        $(this).parent().next().attr("value", $(this).data("value"));
+    });
+    
+    updateDropdown();
+}
+
 function updateCheckbox() {
     $(".checkbox_input").each(function() {
         if ($(this).prop("checked")) {
@@ -142,6 +155,17 @@ function updateTogglebutton() {
             $(this).parent().addClass("is-disabled");
         } else {
             $(this).parent().removeClass("is-disabled");
+        }
+    });
+}
+
+function updateDropdown() {
+    $(".dropdown .dropdown_options li").each(function() {
+        if ($(this).hasClass("is-active")) {
+            $(this).parent().prev().html($(this).html());
+            $(this).parent().next().attr("value", $(this).data("value"));
+        }else{
+            $(this).parent().removeClass("is-checked");
         }
     });
 }

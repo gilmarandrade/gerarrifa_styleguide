@@ -67,6 +67,7 @@ function initDropdown() {
     updateDropdown();
 }
 function initTextfield() {
+    /*textfield*/
     $(".textfield_input").keydown(function() {
         if ($(this).val() == "") {
             $(this).parent().removeClass("is-dirty");
@@ -88,8 +89,37 @@ function initTextfield() {
     $(".textfield_input").blur(function() {
         $(this).parent().removeClass("is-focused");
     });
-    
-    /*>>falta verificar required, disabled*/
+
+
+
+    /*selectfield*/
+    $(".selectfield_input").focus(function() {
+        $(this).parent().addClass("is-focused");
+        if ($(this).html() == "") {
+            $(this).parent().removeClass("is-dirty");
+        } else {
+            $(this).parent().addClass("is-dirty");
+        }
+    });
+    $(".selectfield_input").blur(function() {
+        $(this).parent().removeClass("is-focused");
+        if ($(this).html() == "") {
+            $(this).parent().removeClass("is-dirty");
+        } else {
+            $(this).parent().addClass("is-dirty");
+        }
+    });
+    $(".selectfield_options li").click(function() {
+        $(this).parent().prev().html($(this).html());
+        $(this).parent().find("li").each(function() {
+            $(this).removeClass("is-active");
+        });
+        $(this).addClass("is-active");
+        $(this).parent().next().attr("value", $(this).data("value"));
+        $(this).closest(".selectfield").addClass("is-dirty");
+    });
+
+    /*>>falta verificar required*/
     updateTextfield();
 }
 
@@ -191,20 +221,45 @@ function updateDropdown() {
             $(this).parent().prev().html($(this).html());
             $(this).parent().next().attr("value", $(this).data("value"));
         } else {
-            $(this).parent().removeClass("is-checked");
+            //$(this).parent().removeClass("is-checked");
         }
     });
 }
 function updateTextfield() {
+    /*textfield*/
     $(".textfield_input").each(function() {
         if ($(this).val() == "") {
             $(this).parent().removeClass("is-dirty");
         } else {
             $(this).parent().addClass("is-dirty");
         }
+
+        if ($(this).prop("disabled")) {
+            $(this).parent().addClass("is-disabled");
+        } else {
+            $(this).parent().removeClass("is-disabled");
+        }
     });
-    
-     $(".textfield_input").each(function() {
+
+
+
+    /*selectfield*/
+    $(".selectfield .selectfield_options li").each(function() {
+        if ($(this).hasClass("is-active")) {
+            $(this).parent().prev().html($(this).html());
+            $(this).parent().next().attr("value", $(this).data("value"));
+            $(this).closest(".selectfield").addClass("is-dirty");
+        } else {
+            //$(this).parent().removeClass("is-checked");
+        }
+    });
+    $(".selectfield_input").each(function() {
+        if ($(this).html() == "") {
+            $(this).parent().removeClass("is-dirty");
+        } else {
+            $(this).parent().addClass("is-dirty");
+        }
+
         if ($(this).prop("disabled")) {
             $(this).parent().addClass("is-disabled");
         } else {

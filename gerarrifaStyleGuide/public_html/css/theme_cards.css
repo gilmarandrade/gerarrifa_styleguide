@@ -531,29 +531,33 @@ Toggle Button
 
 
 /**
-Dropdown
+Dropdown & Selectfield_options
 =======================
 */
-.dropdown_button:not(:disabled):hover, .dropdown_button:not(.is-disabled):hover, .dropdown_options li:not(.is-disabled):hover{
+.dropdown_button:not(:disabled):hover, .dropdown_button:not(.is-disabled):hover, .dropdown_options li:not(.is-disabled):hover,
+.selectfield_options li:not(.is-disabled):hover{
     background: rgba(153,153,153, .2);
 }
 /*light*/
 .dropdown[class*="light"] .dropdown_button{
     color:rgba(0,0,0,.87); 
 }
-.dropdown[class*="light"] .dropdown_options{
+.dropdown[class*="light"] .dropdown_options,
+.selectfield[class*="light"] .selectfield_options{
     background: rgb(255,255,255);
     color: rgba(0,0,0,.87);
 }
 .dropdown[class*="light"] .dropdown_button:active, .dropdown[class*="light"] .dropdown_button.is-active, .dropdown[class*="light"] .dropdown_button:active{
     background: rgba(153,153,153,.4);
 }
-.dropdown[class*="light"].is-disabled .dropdown_button, .dropdown[class*="light"] .dropdown_button.is-disabled, .dropdown[class*="light"] .dropdown_button:disabled, .dropdown[class*="light"] .dropdown_options li.is-disabled{
+.dropdown[class*="light"].is-disabled .dropdown_button, .dropdown[class*="light"] .dropdown_button.is-disabled, .dropdown[class*="light"] .dropdown_button:disabled, .dropdown[class*="light"] .dropdown_options li.is-disabled,
+.selectfield[class*="light"] .selectfield_options li.is-disabled{
     color: rgba(0,0,0,.26) !important;
     background: transparent !important;
     cursor: default;
 }
-.dropdown[class*="light"] .dropdown_options li.is-disabled.is-active{
+.dropdown[class*="light"] .dropdown_options li.is-disabled.is-active,
+.selectfield[class*="light"] .selectfield_options li.is-disabled.is-active{
    color: rgba(0,0,0,.26) !important;
     background: rgba(0,0,0,.12) !important;
 }
@@ -561,39 +565,45 @@ Dropdown
 .dropdown[class*="dark"] .dropdown_button{
     color:rgba(255,255,255,.87); 
 }
-.dropdown[class*="dark"] .dropdown_options{
+.dropdown[class*="dark"] .dropdown_options,
+.selectfield[class*="dark"] .selectfield_options{
     background: rgb(51,51,51);
     color: rgba(255,255,255,.87);
 }
 .dropdown[class*="dark"] .dropdown_button:active, .dropdown[class*="dark"] .dropdown_button.is-active, .dropdown[class*="dark"] .dropdown_button:active{
     background: rgba(153,153,153,.4);
 }
-.dropdown[class*="dark"].is-disabled .dropdown_button, .dropdown[class*="dark"] .dropdown_button.is-disabled, .dropdown[class*="dark"] .dropdown_button:disabled, .dropdown[class*="dark"] .dropdown_options li.is-disabled{
+.dropdown[class*="dark"].is-disabled .dropdown_button, .dropdown[class*="dark"] .dropdown_button.is-disabled, .dropdown[class*="dark"] .dropdown_button:disabled, .dropdown[class*="dark"] .dropdown_options li.is-disabled,
+.selectfield[class*="dark"] .selectfield_options li.is-disabled{
     color: rgba(255,255,255,.26) !important;
     background: transparent !important;
     cursor: default;
 }
-.dropdown[class*="dark"] .dropdown_options li.is-disabled.is-active{
+.dropdown[class*="dark"] .dropdown_options li.is-disabled.is-active,
+.selectfield[class*="dark"] .selectfield_options li.is-disabled.is-active{
    color: rgba(255,255,255,.26) !important;
     background: rgba(255,255,255,.12) !important;
 }
 
 /*green*/
-.dropdown[class*="green"] .dropdown_options li.is-active{
+.dropdown[class*="green"] .dropdown_options li.is-active,
+.selectfield[class*="green"] .selectfield_options li.is-active{
     color:rgb(0,166,0);
 }
 .dropdown[class*="green"] .dropdown_button:active, .dropdown[class*="green"] .dropdown_button.is-active, .dropdown[class*="green"] .dropdown_button:active{
     color:rgba(0,166,0, .87);
 }
 /*blue*/
-.dropdown[class*="blue"] .dropdown_options li.is-active{
+.dropdown[class*="blue"] .dropdown_options li.is-active,
+.selectfield[class*="blue"] .selectfield_options li.is-active{
     color:rgb(18, 157, 227);
 }
 .dropdown[class*="blue"] .dropdown_button:active, .dropdown[class*="blue"] .dropdown_button.is-active, .dropdown[class*="blue"] .dropdown_button:active{
     color:rgba(18,157,227, .87);
 }
 /*yellow*/
-.dropdown[class*="yellow"] .dropdown_options li.is-active{
+.dropdown[class*="yellow"] .dropdown_options li.is-active,
+.selectfield[class*="yellow"] .selectfield_options li.is-active{
     color:rgb(247, 170, 6);
 }
 .dropdown[class*="yellow"] .dropdown_button:active, .dropdown[class*="yellow"] .dropdown_button.is-active, .dropdown[class*="yellow"] .dropdown_button:active{
@@ -601,79 +611,87 @@ Dropdown
 }
 
 /**
-Textfield
+Textfield & Selectfield
 =======================
 */
 /*light*/
-.textfield[class*="light"] .textfield_input{
+.textfield[class*="light"] .textfield_input, .selectfield[class*="light"] .selectfield_input{
     border-color: rgba(0,0,0,.54);
     color: rgba(0,0,0,.87);
 }
-.textfield[class*="light"] .textfield_label{
+.textfield[class*="light"] .textfield_label, .selectfield[class*="light"] .selectfield_label{
     color: rgba(0,0,0,.54);
 }
-.textfield[class*="light"].is-disabled .textfield_input{
+.textfield[class*="light"].is-disabled .textfield_input, .selectfield[class*="light"].is-disabled .selectfield_input{
     border-color: rgba(0,0,0,.54);
     color:rgba(0,0,0,.54);
 }
-.textfield[class*="light"].is-disabled .textfield_label{
+.textfield[class*="light"].is-disabled .textfield_label, .selectfield[class*="light"].is-disabled .selectfield_label{
     color:rgba(0,0,0,.54) !important;
 }
-.textfield[class*="light"].is-invalid:after{
+.textfield[class*="light"].is-invalid:after, .selectfield[class*="light"].is-invalid:after{
     border-color: rgb(213,0,0);
 }
-.textfield[class*="light"].is-invalid .textfield_helper{
-    color: rgb(213,0,0);
+.textfield[class*="light"].is-invalid .textfield_helper, 
+.selectfield[class*="light"].is-invalid .selectfield_helper, .selectfield[class*="light"].is-invalid .selectfield_input:after{
+    color: rgb(213,0,0) !important;
 }
-.textfield[class*="light"].textfield--floating-label.is-dirty.is-invalid .textfield_label, .textfield[class*="light"].textfield--floating-label.is-focused.is-invalid .textfield_label{
+.textfield[class*="light"].textfield--floating-label.is-dirty.is-invalid .textfield_label, .textfield[class*="light"].textfield--floating-label.is-focused.is-invalid .textfield_label,
+.selectfield[class*="light"].is-dirty.is-invalid .selectfield_label, .selectfield[class*="light"].is-focused.is-invalid .selectfield_label{
     color: rgb(213,0,0) !important;
 }
 /*dark*/
-.textfield[class*="dark"] .textfield_input{
+.textfield[class*="dark"] .textfield_input, .selectfield[class*="dark"] .selectfield_input{
     border-color: rgba(255,255,255,.54);
     color: rgba(255,255,255,.87);
 }
-.textfield[class*="dark"] .textfield_label{
+.textfield[class*="dark"] .textfield_label, .selectfield[class*="dark"] .selectfield_label{
     color: rgba(255,255,255,.54);
 }
-.textfield[class*="dark"].is-disabled .textfield_input{
+.textfield[class*="dark"].is-disabled .textfield_input, .selectfield[class*="dark"].is-disabled .selectfield_input{
     border-color: rgba(255,255,255,.54);
     color:rgba(255,255,255,.54);
 }
-.textfield[class*="dark"].is-disabled .textfield_label{
+.textfield[class*="dark"].is-disabled .textfield_label, .selectfield[class*="dark"].is-disabled .selectfield_label{
     color:rgba(255,255,255,.54) !important;
 }
-.textfield[class*="dark"].is-invalid:after{
+.textfield[class*="dark"].is-invalid:after, .selectfield[class*="dark"].is-invalid:after{
     border-color: rgb(255,110,110);
 }
-.textfield[class*="dark"].is-invalid .textfield_helper{
-    color: rgb(255,110,110);
+.textfield[class*="dark"].is-invalid .textfield_helper, 
+.selectfield[class*="dark"].is-invalid .selectfield_helper, .selectfield[class*="dark"].is-invalid .selectfield_input:after{
+    color: rgb(255,110,110) !important;
 }
-.textfield[class*="dark"].textfield--floating-label.is-dirty.is-invalid .textfield_label, .textfield[class*="dark"].textfield--floating-label.is-focused.is-invalid .textfield_label{
+.textfield[class*="dark"].textfield--floating-label.is-dirty.is-invalid .textfield_label, .textfield[class*="dark"].textfield--floating-label.is-focused.is-invalid .textfield_label,
+.selectfield[class*="dark"].is-dirty.is-invalid .selectfield_label, .selectfield[class*="dark"].is-focused.is-invalid .selectfield_label{
     color: rgb(255,110,110) !important;
 }
 
 /*green*/
-.textfield[class*="green"]:after{
+.textfield[class*="green"]:after, .selectfield[class*="green"]:after{
     border-color: rgb(0,166,0);
 }
-.textfield[class*="green"].textfield--floating-label.is-dirty .textfield_label, .textfield[class*="green"].textfield--floating-label.is-focused .textfield_label{
+.textfield[class*="green"].textfield--floating-label.is-focused .textfield_label, 
+.selectfield[class*="green"].is-focused .selectfield_label, .selectfield[class*="green"].is-focused .selectfield_input:after{
     color: rgb(0,166,0);
 }
 /*blue*/
-.textfield[class*="blue"]:after{
+.textfield[class*="blue"]:after, .selectfield[class*="blue"]:after{
     border-color: rgb(18, 157, 227);
 }
-.textfield[class*="blue"].textfield--floating-label.is-dirty .textfield_label, .textfield[class*="blue"].textfield--floating-label.is-focused .textfield_label{
+.textfield[class*="blue"].textfield--floating-label.is-focused .textfield_label, 
+.selectfield[class*="blue"].is-focused .selectfield_label, .selectfield[class*="blue"].is-focused .selectfield_input:after{
     color: rgb(18, 157, 227);
 }
 /*yellow*/
-.textfield[class*="yellow"]:after{
+.textfield[class*="yellow"]:after, .selectfield[class*="yellow"]:after{
     border-color: rgb(247, 170, 6);
 }
-.textfield[class*="yellow"].textfield--floating-label.is-dirty .textfield_label, .textfield[class*="yellow"].textfield--floating-label.is-focused .textfield_label{
+.textfield[class*="yellow"].textfield--floating-label.is-focused .textfield_label, 
+.selectfield[class*="yellow"].is-focused .selectfield_label, .selectfield[class*="yellow"].is-focused .selectfield_input:after{
     color: rgb(247, 170, 6);
 }
+
 /**
 * xsm (xsmall)
 * >= 480px

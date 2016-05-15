@@ -614,9 +614,10 @@ Textfield
 }
 .textfield[class*="light"].is-disabled .textfield_input{
     border-color: rgba(0,0,0,.54);
+    color:rgba(0,0,0,.54);
 }
 .textfield[class*="light"].is-disabled .textfield_label{
-    color:rgba(0,0,0,.54);
+    color:rgba(0,0,0,.54) !important;
 }
 .textfield[class*="light"].is-invalid:after{
     border-color: rgb(213,0,0);
@@ -637,9 +638,10 @@ Textfield
 }
 .textfield[class*="dark"].is-disabled .textfield_input{
     border-color: rgba(255,255,255,.54);
+    color:rgba(255,255,255,.54);
 }
 .textfield[class*="dark"].is-disabled .textfield_label{
-    color:rgba(255,255,255,.54);
+    color:rgba(255,255,255,.54) !important;
 }
 .textfield[class*="dark"].is-invalid:after{
     border-color: rgb(255,110,110);

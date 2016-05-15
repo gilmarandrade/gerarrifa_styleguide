@@ -203,5 +203,13 @@ function updateTextfield() {
             $(this).parent().addClass("is-dirty");
         }
     });
+    
+     $(".textfield_input").each(function() {
+        if ($(this).prop("disabled")) {
+            $(this).parent().addClass("is-disabled");
+        } else {
+            $(this).parent().removeClass("is-disabled");
+        }
+    });
 
 }

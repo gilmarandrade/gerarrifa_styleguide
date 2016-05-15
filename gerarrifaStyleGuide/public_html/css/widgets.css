@@ -583,18 +583,17 @@
     left:16px;
 }
 .textfield_input{
-    margin: 21px 0 21px 8px;
+    margin: 21px 0 21px 16px;
     padding: 0;
     border:0;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    height: 29px;
+    min-height: 29px;
     font-size: 16px;
     font-family: "Open Sans";
-    position: absolute;
-    left:8px;
     width: calc(100% - 16px);
     background: transparent;
+    resize: vertical;
 }
 .textfield_label{
     position: absolute;
@@ -641,11 +640,9 @@
    overflow: hidden;
    white-space: nowrap;
 }
-.textfield.is-disabled{
-  pointer-events: none;
-}
 .textfield.is-disabled .textfield_input{
     border-style: dashed;
+    cursor: not-allowed;
 }
 .textfield.is-disabled .textfield_label{
   cursor: not-allowed;

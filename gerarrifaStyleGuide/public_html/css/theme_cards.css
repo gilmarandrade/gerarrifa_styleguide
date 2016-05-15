@@ -599,6 +599,79 @@ Dropdown
 .dropdown[class*="yellow"] .dropdown_button:active, .dropdown[class*="yellow"] .dropdown_button.is-active, .dropdown[class*="yellow"] .dropdown_button:active{
     color:rgba(247,170,6, .87);
 }
+
+/**
+Textfield
+=======================
+*/
+/*light*/
+.textfield[class*="light"] .textfield_input{
+    border-color: rgba(0,0,0,.54);
+    color: rgba(0,0,0,.87);
+}
+.textfield[class*="light"] .textfield_label{
+    color: rgba(0,0,0,.54);
+}
+.textfield[class*="light"].is-disabled .textfield_input{
+    border-color: rgba(0,0,0,.54);
+}
+.textfield[class*="light"].is-disabled .textfield_label{
+    color:rgba(0,0,0,.54);
+}
+.textfield[class*="light"].is-invalid:after{
+    border-color: rgb(213,0,0);
+}
+.textfield[class*="light"].is-invalid .textfield_helper{
+    color: rgb(213,0,0);
+}
+.textfield[class*="light"].textfield--floating-label.is-dirty.is-invalid .textfield_label, .textfield[class*="light"].textfield--floating-label.is-focused.is-invalid .textfield_label{
+    color: rgb(213,0,0) !important;
+}
+/*dark*/
+.textfield[class*="dark"] .textfield_input{
+    border-color: rgba(255,255,255,.54);
+    color: rgba(255,255,255,.87);
+}
+.textfield[class*="dark"] .textfield_label{
+    color: rgba(255,255,255,.54);
+}
+.textfield[class*="dark"].is-disabled .textfield_input{
+    border-color: rgba(255,255,255,.54);
+}
+.textfield[class*="dark"].is-disabled .textfield_label{
+    color:rgba(255,255,255,.54);
+}
+.textfield[class*="dark"].is-invalid:after{
+    border-color: rgb(255,110,110);
+}
+.textfield[class*="dark"].is-invalid .textfield_helper{
+    color: rgb(255,110,110);
+}
+.textfield[class*="dark"].textfield--floating-label.is-dirty.is-invalid .textfield_label, .textfield[class*="dark"].textfield--floating-label.is-focused.is-invalid .textfield_label{
+    color: rgb(255,110,110) !important;
+}
+
+/*green*/
+.textfield[class*="green"]:after{
+    border-color: rgb(0,166,0);
+}
+.textfield[class*="green"].textfield--floating-label.is-dirty .textfield_label, .textfield[class*="green"].textfield--floating-label.is-focused .textfield_label{
+    color: rgb(0,166,0);
+}
+/*blue*/
+.textfield[class*="blue"]:after{
+    border-color: rgb(18, 157, 227);
+}
+.textfield[class*="blue"].textfield--floating-label.is-dirty .textfield_label, .textfield[class*="blue"].textfield--floating-label.is-focused .textfield_label{
+    color: rgb(18, 157, 227);
+}
+/*yellow*/
+.textfield[class*="yellow"]:after{
+    border-color: rgb(247, 170, 6);
+}
+.textfield[class*="yellow"].textfield--floating-label.is-dirty .textfield_label, .textfield[class*="yellow"].textfield--floating-label.is-focused .textfield_label{
+    color: rgb(247, 170, 6);
+}
 /**
 * xsm (xsmall)
 * >= 480px

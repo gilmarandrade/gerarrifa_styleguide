@@ -8,6 +8,7 @@
  * -icontoggle
  * -togglebuton
  * -dropdown
+ * -textfield
  */
 
 
@@ -557,6 +558,99 @@
 .dropdown_options li.is-disabled{
     pointer-events: none;
 }
+
+/* Textfield
+  ==================================================================== */
+.textfield{
+    min-height: 72px; 
+    position: relative;
+    max-width: 100%;
+    min-width: 60px;
+    display: inline-block;
+}
+.textfield:after{
+    content:"";
+    width: 0%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    position: absolute;
+    left:45%;
+    bottom: 21px;
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+}
+.textfield.is-focused:after, .textfield.is-invalid:after{
+    width: calc(100% - 16px);
+    left:16px;
+}
+.textfield_input{
+    margin: 21px 0 21px 8px;
+    padding: 0;
+    border:0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 29px;
+    font-size: 16px;
+    font-family: "Open Sans";
+    position: absolute;
+    left:8px;
+    width: calc(100% - 16px);
+    background: transparent;
+}
+.textfield_label{
+    position: absolute;
+    left:16px;
+    right: 0px;
+    top:21px;
+    font-size: 16px;
+    font-family: "Open Sans";
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    pointer-events: auto;
+    opacity: 1;
+    transition: top .2s cubic-bezier(.4,0,.2,1);
+    cursor: text;
+}
+.textfield.is-dirty .textfield_label{
+    opacity: 0;
+    pointer-events: none;
+}
+.textfield.textfield--floating-label.is-dirty .textfield_label, .textfield--floating-label.is-focused .textfield_label{
+    top:0;
+    opacity: 1;
+    pointer-events: none;
+    font-family: "Open Sans Semibold";
+    font-size: 12px;
+    line-height: 21px;
+}
+.textfield.is-required .textfield_label:after{
+    content:"*";
+}
+.textfield_helper{
+    position: absolute;
+    bottom:0;
+    left:16px;
+    font-family: "Open Sans Semibold";
+    font-size: 12px;
+    line-height: 21px;
+    display: none;
+}
+.textfield.is-invalid .textfield_helper{
+   display: block;
+   overflow: hidden;
+   white-space: nowrap;
+}
+.textfield.is-disabled{
+  pointer-events: none;
+}
+.textfield.is-disabled .textfield_input{
+    border-style: dashed;
+}
+.textfield.is-disabled .textfield_label{
+  cursor: not-allowed;
+}
+
 
 
 /**

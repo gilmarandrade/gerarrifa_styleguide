@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Theme Text Fields</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+
+            });
+        </script>
+        <style>
+            .group-button{
+                position: fixed;
+                top:0;
+            }
+        </style>
+
+    </head>
+
+    <body class="nav-closed">
+        <div class="grid-g">
+            <main id="main" class="grid-u">
+          
+         
+        
+                <section class="light-theme">
+                    <header>
+                        <h1>Text Field</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_margin">
+                            <div class="card_box white-theme">
+                                <div class="card_actions card_actions--large grid-g">
+                                    <div class="textfield grid-u-1-2 green-light">
+                                        <input class="textfield_input" type="text" id="sample1" >
+                                        <label class="textfield_label" for="sample1">Label...</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="textfield grid-u-1-2 textfield--floating-label blue-light">
+                                        <input class="textfield_input" type="text" id="sample2" value="preenchido">
+                                        <label class="textfield_label" for="sample2">Label Float</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-2-12 textfield--floating-label is-required yellow-light">
+                                        <input class="textfield_input" type="text" id="sample3" >
+                                        <label class="textfield_label" for="sample3">Required</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-4-12 textfield--floating-label is-invalid green-light">
+                                        <input class="textfield_input" type="text" id="sample4" >
+                                        <label class="textfield_label" for="sample4">Invalid</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-6-12 textfield--floating-label is-disabled blue-light">
+                                        <input class="textfield_input" type="text" id="sample5" disabled>
+                                        <label class="textfield_label" for="sample5">Disabled</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="textfield grid-u-10-12 textfield--floating-label yellow-light">
+                                        <input class="textfield_input" type="password" id="sample6">
+                                        <label class="textfield_label" for="sample6">Senha</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="grid-u-2-12">
+                                        <button class="button button--raised-primary green-light">raised button</button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="card_actions card_actions--large light-theme grid-g">
+                                    <div class="textfield grid-u-1-2 green-light">
+                                        <input class="textfield_input" type="text" id="samplea1" >
+                                        <label class="textfield_label" for="samplea1">Label...</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="textfield grid-u-1-2 textfield--floating-label blue-light">
+                                        <input class="textfield_input" type="text" id="samplea2" value="preenchido">
+                                        <label class="textfield_label" for="samplea2">Label Float</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-2-12 textfield--floating-label is-required yellow-light">
+                                        <input class="textfield_input" type="text" id="samplea3" >
+                                        <label class="textfield_label" for="samplea3">Required</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-4-12 textfield--floating-label is-invalid green-light">
+                                        <input class="textfield_input" type="text" id="samplea4" >
+                                        <label class="textfield_label" for="samplea4">Invalid</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-6-12 textfield--floating-label is-disabled blue-light">
+                                        <input class="textfield_input" type="text" id="samplea5" disabled>
+                                        <label class="textfield_label" for="samplea5">Disabled</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="textfield grid-u-10-12 textfield--floating-label yellow-light">
+                                        <input class="textfield_input" type="password" id="samplea6">
+                                        <label class="textfield_label" for="samplea6">Senha</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="grid-u-2-12">
+                                        <button class="button button--raised-primary green-light">raised button</button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="card_actions card_actions--large dark-theme grid-g">
+                                    <div class="textfield grid-u-1-2 green-dark">
+                                        <input class="textfield_input" type="text" id="sampleb1" >
+                                        <label class="textfield_label" for="sampleb1">Label...</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="textfield grid-u-1-2 textfield--floating-label blue-dark">
+                                        <input class="textfield_input" type="text" id="sampleb2" value="preenchido" >
+                                        <label class="textfield_label" for="sampleb2">Label Float</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-2-12 textfield--floating-label is-required yellow-dark">
+                                        <input class="textfield_input" type="text" id="sampleb3" >
+                                        <label class="textfield_label" for="sampleb3">Required</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-4-12 textfield--floating-label is-invalid green-dark">
+                                        <input class="textfield_input" type="text" id="sampleb4" >
+                                        <label class="textfield_label" for="sampleb4">Invalid</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                     <div class="textfield grid-u-6-12 textfield--floating-label is-disabled blue-dark">
+                                        <input class="textfield_input" type="text" id="sampleb5" disabled>
+                                        <label class="textfield_label" for="sampleb5">Disabled</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="textfield grid-u-10-12 textfield--floating-label yellow-dark">
+                                        <input class="textfield_input" type="password" id="sampleb6">
+                                        <label class="textfield_label" for="sampleb6">Senha</label>
+                                        <span class="textfield_helper">Usuário ou senha incorretos.</span>
+                                    </div>
+                                    <div class="grid-u-2-12">
+                                        <button class="button button--raised-primary green-dark">raised button</button>
+                                    </div>
+       
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <aside id="aside" class="grid-u">aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="grid-u">nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content </nav>
+        </div>
+        <div class="group-button"><button id="btNav">nav</button></div>
+    </body>
+</html>

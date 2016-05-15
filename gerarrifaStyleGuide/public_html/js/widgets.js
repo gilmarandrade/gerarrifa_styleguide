@@ -123,6 +123,29 @@ function initTextfield() {
     updateTextfield();
 }
 
+function initTab() {
+    /*seleção exclusiva*/
+    $(".tab_input").on("change", function() {
+        if ($(this).prop("checked")) {
+            var name = $(this).attr("name");
+            var id = $(this).attr("id");
+            $("input[name='" + name + "']").parent().removeClass("is-checked");
+            $(this).parent().addClass("is-checked");
+
+            $(".tab_container").each(function() {
+                if ($(this).data("group") == name) {
+                    $(this).removeClass("is-active");
+                }
+                if ($(this).data("id") == id) {
+                    $(this).addClass("is-active");
+                }
+            });
+        }
+    });
+
+    updateTab();
+}
+
 function updateCheckbox() {
     $(".checkbox_input").each(function() {
         if ($(this).prop("checked")) {
@@ -266,5 +289,32 @@ function updateTextfield() {
             $(this).parent().removeClass("is-disabled");
         }
     });
+
+}
+
+function updateTab() {
+    /*seleção exclusiva*/
+    $(".tab_input").parent().removeClass("is-checked");
+    $(".tab_input").each(function() {
+        if ($(this).prop("checked")) {
+            $(this).parent().addClass("is-checked");
+            var name = $(this).attr("name");
+            var id = $(this).attr("id");
+            $(".tab_container").each(function() {
+                if ($(this).data("group") == name) {
+                    $(this).removeClass("is-active");
+                }
+                if ($(this).data("id") == id) {
+                    $(this).addClass("is-active");
+                }
+            });
+        }
+        if ($(this).prop("disabled")) {
+            $(this).parent().addClass("is-disabled");
+        } else {
+            $(this).parent().removeClass("is-disabled");
+        }
+    });
+
 
 }

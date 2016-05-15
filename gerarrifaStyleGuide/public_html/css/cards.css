@@ -171,7 +171,10 @@ section > header h1{
 }
 .card_actions .dropdown{
     height: 48px;
-     margin-left: 8px;
+    margin-left: 8px;
+}
+.card_actions .tab .tab_button{
+    line-height: 48px;
 }
 .card_actions.card_actions--medium{
     min-height: 56px;
@@ -193,6 +196,9 @@ section > header h1{
     height: 56px;
      margin-left: 8px;
 }
+.card_actions--medium .tab .tab_button{
+    line-height: 56px;
+}
 
 .card_actions.card_actions--large{
     min-height: 72px;
@@ -213,6 +219,9 @@ section > header h1{
 .card_actions--large .dropdown{
     height: 72px;
     margin-left: 16px;
+}
+.card_actions--large .tab .tab_button{
+    line-height: 72px;
 }
 
 

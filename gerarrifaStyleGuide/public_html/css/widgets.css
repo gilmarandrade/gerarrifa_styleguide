@@ -110,7 +110,7 @@
     font-family: FontAwesome;
 }
 .is-checked .checkbox_tick-outline::after{
-   content: "\f00c";
+    content: "\f00c";
 }
 .checkbox.is-disabled{
     opacity: .26;
@@ -331,9 +331,9 @@
     line-height: 36px;
 }
 .button--only-icon{
-     padding:0;
-     width:36px;
-     text-align: center;
+    padding:0;
+    width:36px;
+    text-align: center;
 }
 .button--only-icon i{
     font-size:22px;
@@ -519,11 +519,11 @@
 }
 .dropdown_button:not(.is-disabled):focus + .dropdown_options--top-left ,  .dropdown_button:not(:disabled):focus + .dropdown_options--top-left,
 .dropdown_button:not(.is-disabled):focus + .dropdown_options--bottom-left ,  .dropdown_button:not(:disabled):focus + .dropdown_options--bottom-left{
-   margin-left:0px;
+    margin-left:0px;
 }
 .dropdown_button:not(.is-disabled):focus + .dropdown_options--top-right ,  .dropdown_button:not(:disabled):focus + .dropdown_options--top-right,
 .dropdown_button:not(.is-disabled):focus + .dropdown_options--bottom-right ,  .dropdown_button:not(:disabled):focus + .dropdown_options--bottom-right{
-   margin-right:0px;
+    margin-right:0px;
 }
 .dropdown_options.dropdown_options--top-left{
     top:0;
@@ -641,16 +641,16 @@
     display: none;
 }
 .textfield.is-invalid .textfield_helper, .selectfield.is-invalid .selectfield_helper{
-   display: block;
-   overflow: hidden;
-   white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .textfield.is-disabled .textfield_input, .selectfield.is-disabled .selectfield_input{
     border-style: dashed;
     cursor: not-allowed;
 }
 .textfield.is-disabled .textfield_label, .selectfield.is-disabled .selectfield_label{
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 .selectfield_label{
@@ -671,7 +671,7 @@
     background: transparent;
     resize: vertical;
     position: relative;
-    
+
 
     display:inline-block;
     pointer-events: auto;
@@ -707,7 +707,7 @@
     transition: transform .3s cubic-bezier(.4,0,.2,1) .3s, opacity .2s cubic-bezier(.4,0,.2,1) .3s, margin .01s linear .8s;
     opacity: 0;
     transform: scale(0.5);
-    
+
     top:52px;
     left:16px;
     margin-left:-1000px;
@@ -732,6 +732,70 @@
 }
 .selectfield_options li.is-disabled{
     pointer-events: none;
+}
+
+/* Tab
+  ==================================================================== */
+.tab{
+    position: relative;
+    display: inline-block;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1);
+}
+.tab_input{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+    border:none;
+    appearance: none;
+    -moz-appearance: none;
+    opacity: 0;
+}
+.tab .tab_button{
+    font-family: "Open Sans SemiBold";
+    font-size:14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height:36px;
+    border:none;
+    display:inline-block;
+    padding:0 16px;
+    pointer-events: auto;   
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    cursor:pointer;
+    position: relative;
+}
+.tab_button:after{
+    content:"";
+    width: 0%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    position: absolute;
+    left:45%;
+    bottom: 0px;
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+}
+.tab_button.is-checked:after{
+    width:100%;
+    left:0px;
+}
+.tab .tab_button:not(:first-child){
+    margin-left: -5px;
+}
+
+.tab_button i{
+    font-size:18px;
+    line-height: 36px;
+}
+.tab_button:disabled, .tab_button.is-disabled{
+    pointer-events: none;
+}
+.tab_container{
+    display: none;
+}
+.tab_container.is-active{
+    display: block;
 }
 /**
 * xsm (xsmall)

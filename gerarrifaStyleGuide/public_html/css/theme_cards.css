@@ -501,7 +501,7 @@ Toggle Button
      background:rgb(0,166,0);
      color: rgba(255,255,255,.87);
 }
-.togglebutton[class*="green"] .togglebutton_button.is-checked:hover{
+.togglebutton[class*="green"] .togglebutton_button.is-checked:hover, .togglebutton[class*="green"] .togglebutton_button.is-checked:hover{
      background:rgb(0,126,0);
 }
 /*blue*/
@@ -692,6 +692,61 @@ Textfield & Selectfield
     color: rgb(247, 170, 6);
 }
 
+
+/**
+Tab
+=======================
+*/
+.tab_button:hover{
+    background:rgba(153,153,153, .2);
+}  
+/*light*/
+.tab[class*="light"] .tab_button{
+    color: rgba(0,0,0,.87);
+}
+.tab[class*="light"] .tab_button.is-disabled{
+    color: rgba(0,0,0,.26) !important;
+    background: transparent !important;
+}
+.tab[class*="light"] .tab_button.is-disabled.is-checked{
+    color: rgba(0,0,0,.26) !important;
+    background: rgba(0,0,0,.12) !important;
+}
+/*dark*/
+.tab[class*="dark"] .tab_button{
+    color: rgba(255,255,255,.87);
+}
+.tab[class*="dark"] .tab_button.is-disabled{
+    color: rgba(255,255,255,.26) !important;
+    background: transparent !important;
+}
+.tab[class*="dark"] .tab_button.is-disabled.is-checked{
+    color: rgba(255,255,255,.26) !important;
+    background: rgba(255,255,255,.12) !important;
+}
+
+/*green*/
+.tab[class*="green"] .tab_button:active, .tab[class*="green"] .tab_button.is-active, .tab[class*="green"] .tab_button.is-checked{
+     color: rgb(0,166,0);
+} 
+.tab[class*="green"] .tab_button:after{
+    border-bottom-color :rgb(0,166,0);
+}  
+/*blue*/
+.tab[class*="blue"] .tab_button:active, .tab[class*="blue"] .tab_button.is-active, .tab[class*="blue"] .tab_button.is-checked{
+     color: rgb(18, 157, 227);
+} 
+.tab[class*="blue"] .tab_button:after{
+    border-bottom-color:rgb(18, 157, 227);
+}  
+
+/*yellow*/
+.tab[class*="yellow"] .tab_button:active, .tab[class*="yellow"] .tab_button.is-active, .tab[class*="yellow"] .tab_button.is-checked{
+     color: rgb(247, 170, 6);
+} 
+.tab[class*="yellow"] .tab_button:after{
+    border-bottom-color :rgb(247, 170, 6);
+}
 /**
 * xsm (xsmall)
 * >= 480px

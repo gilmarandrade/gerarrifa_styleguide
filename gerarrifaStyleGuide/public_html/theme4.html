@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tabs</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+
+            });
+        </script>
+        <style>
+            .group-button{
+                position: fixed;
+                top:0;
+            }
+        </style>
+
+    </head>
+
+    <body class="nav-closed">
+        <div class="grid-g">
+            <main id="main" class="grid-u">
+                <section class="light-theme">
+                    <header>
+                        <h1>Tabs</h1>
+                    </header>
+                    <div class="card grid-u-1-2">
+                        <div class="card_margin">
+                            <div class="card_box white-theme">
+                                <div class="card_actions card--divider white-theme">
+                                    <div class="tab yellow-light">
+                                        <label class="tab_button" for="tab1">
+                                            <input type="radio" class="tab_input" name="t-1" id="tab1" value="testey1">
+                                            <span class="tab_label"><i class="fa fa-fw fa-align-center"></i> aba 1</span>
+                                        </label>
+                                        <label class="tab_button" for="tab2">
+                                            <input type="radio" class="tab_input" checked name="t-1" id="tab2" value="testey1">
+                                            <span class="tab_label">aba 2</span>
+                                        </label>
+                                        <label class="tab_button" for="tab3">
+                                            <input type="radio" class="tab_input" name="t-1" id="tab3" value="testey1">
+                                            <span class="tab_label"><i class="fa fa-fw fa-align-right"></i></span>
+                                        </label>
+                                        <label class="tab_button" for="tab4">
+                                            <input type="radio" class="tab_input" name="t-1" id="tab4" value="testey1">
+                                            <span class="tab_label"><i class="fa fa-fw fa-align-justify"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="card_container">
+                                    <div class="tab_container" data-group="t-1" data-id="tab1">
+                                        <div class="card_header align--left white-theme">
+                                            <h2 class="header_title">Aba 1</h2>
+                                        </div>
+                                        <div class="card_header align--right card_header--ellipsis white-theme">
+                                            <h2 class="header_title">Lorem ipsum dolor sit amet</h2>
+                                            <h3 class="header_subtitle">Mauris sagittis pellentesque lacus eleifend lacinia</h3>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--center white-theme">
+                                            <label class="checkbox blue-light" for="checkbox-as">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-as" value="testeas">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox as</span>
+                                            </label>
+                                            <label class="checkbox green-light" for="checkbox-a">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-a" value="testea">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox a</span>
+                                            </label>
+                                            <label class="checkbox green-light" for="checkbox-az">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-az" value="testeaz" disabled>
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox az</span>
+                                            </label>
+
+                                            <label class="radiobutton green-light" for="radiobutton-q">
+                                                <input type="radio" class="radiobutton_input" name="radiobutton-q" id="radiobutton-q" value="testeq">
+                                                <span class="radiobutton_box-outline">
+                                                    <span class="radiobutton_tick-outline"></span>
+                                                </span>
+                                                <span class="radiobutton_label">Radio Button q</span>
+                                            </label>
+                                            <label class="switch green-light" for="switch-q">
+                                                <input type="checkbox" class="switch_input" id="switch-q" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch q</span>
+                                            </label>
+                                            <label class="switch blue-light" for="switch-n">
+                                                <input type="checkbox" class="switch_input" id="switch-n" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch n</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header align--left card_header--avatar white-theme">
+                                            <span class="avatar avatar--one-line light-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab_container" data-group="t-1" data-id="tab2">
+                                        <div class="card_header align--left white-theme">
+                                            <h2 class="header_title">Aba 2</h2>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--left white-theme">
+                                            <label class="checkbox yellow-dark" for="checkbox-www">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-www" value="testeas">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox ww</span>
+                                            </label>
+                                            <label class="radiobutton yellow-dark" for="radiobutton-www">
+                                                <input type="radio" class="radiobutton_input" name="radiobutton-www" id="radiobutton-www" value="testeq">
+                                                <span class="radiobutton_box-outline">
+                                                    <span class="radiobutton_tick-outline"></span>
+                                                </span>
+                                                <span class="radiobutton_label">Radio Button ww</span>
+                                            </label>
+                                            <label class="switch yellow-dark" for="switch-www">
+                                                <input type="checkbox" class="switch_input" id="switch-www" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch ww</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header align--left card_header--avatar white-theme">
+                                            <span class="avatar avatar--one-line light-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="card_text align--left card--divider white-theme">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab_container" data-group="t-1" data-id="tab3">
+                                        <div class="card_header align--left white-theme">
+                                            <h2 class="header_title">Aba 3</h2>
+                                        </div>
+
+                                        <div class="card_header align--left card_header--avatar white-theme">
+                                            <span class="avatar avatar--one-line light-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+                                        <div class="card_header align--center card_header--avatar white-theme">
+                                            <span class="avatar avatar--two-line white-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                                <span>Lorem Ipsum</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab_container" data-group="t-1" data-id="tab4">
+                                        <div class="card_header align--left white-theme">
+                                            <h2 class="header_title">Aba 4</h2>
+                                        </div>
+                                        <div class="card_header align--center card_header--avatar white-theme">
+                                            <span class="avatar avatar--two-line white-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                                <span>Lorem Ipsum</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="card grid-u-1-2">
+                        <div class="card_margin">
+                            <div class="card_box dark-theme">
+                                <div class="card_actions">
+                                    <div class="tab green-dark">
+                                        <label class="tab_button" for="tabb1">
+                                            <input type="radio" class="tab_input" name="t-2" id="tabb1" value="testey1">
+                                            <span class="tab_label"><i class="fa fa-fw fa-align-center"></i> aba 1</span>
+                                        </label>
+                                        <label class="tab_button" for="tabb2">
+                                            <input type="radio" class="tab_input" checked name="t-2" id="tabb2" value="testey1">
+                                            <span class="tab_label">aba 2</span>
+                                        </label>
+                                        <label class="tab_button" for="tabbo">
+                                            <input type="radio" class="tab_input" name="t-2" id="tabbo" disabled value="testey1">
+                                            <span class="tab_label"><i class="fa fa-fw fa-align-right"></i></span>
+                                        </label>
+                                        <label class="tab_button" for="tabb3">
+                                            <input type="radio" class="tab_input" name="t-2" id="tabb3" value="testey1">
+                                            <span class="tab_label"><i class="fa fa-fw fa-align-right"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="card_container" style="height:200px;">
+                                    <div class="tab_container" data-group="t-2" data-id="tabb1">
+                                        <div class="card_header align--left dark-theme">
+                                            <h2 class="header_title">Aba 1</h2>
+                                        </div>
+                                        <div class="card_header align--right card_header--ellipsis dark-theme ">
+                                            <h2 class="header_title">Lorem ipsum dolor sit amet</h2>
+                                            <h3 class="header_subtitle">Mauris sagittis pellentesque lacus eleifend lacinia</h3>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--center ">
+                                            <label class="checkbox blue-dark" for="checkbox-as">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-as" value="testeas">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox as</span>
+                                            </label>
+                                            <label class="checkbox green-dark" for="checkbox-a">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-a" value="testea">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox a</span>
+                                            </label>
+                                            <label class="checkbox green-dark" for="checkbox-az">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-az" value="testeaz" disabled>
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox az</span>
+                                            </label>
+
+                                            <label class="radiobutton green-dark" for="radiobutton-q">
+                                                <input type="radio" class="radiobutton_input" name="radiobutton-q" id="radiobutton-q" value="testeq">
+                                                <span class="radiobutton_box-outline">
+                                                    <span class="radiobutton_tick-outline"></span>
+                                                </span>
+                                                <span class="radiobutton_label">Radio Button q</span>
+                                            </label>
+                                            <label class="switch green-dark" for="switch-q">
+                                                <input type="checkbox" class="switch_input" id="switch-q" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch q</span>
+                                            </label>
+                                            <label class="switch blue-dark" for="switch-n">
+                                                <input type="checkbox" class="switch_input" id="switch-n" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch n</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header align--left card_header--avatar dark-theme">
+                                            <span class="avatar avatar--one-line dark-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab_container" data-group="t-2" data-id="tabb2">
+                                        <div class="card_header align--left dark-theme">
+                                            <h2 class="header_title">Aba 2</h2>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--left dark-theme">
+                                            <label class="checkbox yellow-dark" for="checkbox-www">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-www" value="testeas">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox ww</span>
+                                            </label>
+                                            <label class="radiobutton yellow-dark" for="radiobutton-www">
+                                                <input type="radio" class="radiobutton_input" name="radiobutton-www" id="radiobutton-www" value="testeq">
+                                                <span class="radiobutton_box-outline">
+                                                    <span class="radiobutton_tick-outline"></span>
+                                                </span>
+                                                <span class="radiobutton_label">Radio Button ww</span>
+                                            </label>
+                                            <label class="switch yellow-dark" for="switch-www">
+                                                <input type="checkbox" class="switch_input" id="switch-www" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch ww</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header align--left card_header--avatar dark-theme">
+                                            <span class="avatar avatar--one-line dark-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="card_text align--left card--divider dark-theme">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab_container" data-group="t-2" data-id="tabb3">
+                                        <div class="card_header align--left dark-theme">
+                                            <h2 class="header_title">Aba 3</h2>
+                                        </div>
+
+                                        <div class="card_header align--left card_header--avatar dark-theme">
+                                            <span class="avatar avatar--one-line dark-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+                                        <div class="card_header align--center card_header--avatar dark-theme">
+                                            <span class="avatar avatar--two-line dark-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                                <span>Lorem Ipsum</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>      
+                        </div>
+                    </div>
+                    
+                    <div class="card grid-u-1">
+                        <div class="card_margin">
+                            <div class="card_box light-theme">
+                                <div class="card_actions">
+                                    <div class="tab blue-light">
+                                        <label class="tab_button" for="tabv1">
+                                            <input type="radio" class="tab_input" name="t-u" id="tabv1" value="testey1">
+                                            <span class="tab_label">aba um aqui</span>
+                                        </label>
+                                        <label class="tab_button" for="tabv2">
+                                            <input type="radio" class="tab_input" checked name="t-u" id="tabv2" value="testey1">
+                                            <span class="tab_label">aba dois aqui também</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="card_container" style="height:200px;">
+                                    <div class="tab_container" data-group="t-u" data-id="tabv1">                                        
+                                        <div class="card_header align--right card_header--ellipsis light-theme">
+                                            <h2 class="header_title">Lorem ipsum dolor sit amet</h2>
+                                            <h3 class="header_subtitle">Mauris sagittis pellentesque lacus eleifend lacinia</h3>
+                                        </div>
+                                        <div class="card_actions card_actions--medium align--center light-theme">
+                                            <label class="checkbox blue-light" for="checkbox-asu">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-asu" value="testeas">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox as</span>
+                                            </label>
+                                            <label class="checkbox green-light" for="checkbox-au">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-au" value="testea">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox a</span>
+                                            </label>
+                                            <label class="checkbox green-light" for="checkbox-azu">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-azu" value="testeaz" disabled>
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox az</span>
+                                            </label>
+
+                                            <label class="radiobutton green-light" for="radiobutton-qu1">
+                                                <input type="radio" class="radiobutton_input" name="radiobutton-qu" id="radiobutton-qu1" value="testeq">
+                                                <span class="radiobutton_box-outline">
+                                                    <span class="radiobutton_tick-outline"></span>
+                                                </span>
+                                                <span class="radiobutton_label">Radio Button q</span>
+                                            </label>
+                                            <label class="radiobutton green-light" for="radiobutton-qu2">
+                                                <input type="radio" class="radiobutton_input" name="radiobutton-qu" id="radiobutton-qu2" value="testeq">
+                                                <span class="radiobutton_box-outline">
+                                                    <span class="radiobutton_tick-outline"></span>
+                                                </span>
+                                                <span class="radiobutton_label">Radio Button q</span>
+                                            </label>
+                                            <label class="switch green-light" for="switch-qu">
+                                                <input type="checkbox" class="switch_input" id="switch-qu" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch q</span>
+                                            </label>
+                                            <label class="switch blue-light" for="switch-nu">
+                                                <input type="checkbox" class="switch_input" id="switch-nu" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch n</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header align--left card_header--avatar light-theme">
+                                            <span class="avatar avatar--one-line light-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab_container" data-group="t-u" data-id="tabv2">
+                                       
+                                        <div class="card_actions card_actions--medium align--left light-theme">
+                                            <label class="checkbox yellow-light" for="checkbox-wwww">
+                                                <input type="checkbox" class="checkbox_input" id="checkbox-wwww" value="testeas">
+                                                <span class="checkbox_box-outline">
+                                                    <span class="checkbox_tick-outline"></span>
+                                                </span>
+                                                <span class="checkbox_label">Checkbox ww</span>
+                                            </label>
+                                         
+                                            <label class="switch yellow-light" for="switch-wwww">
+                                                <input type="checkbox" class="switch_input" id="switch-wwww" value="testeq">
+                                                <span class="switch_box-outline">
+                                                    <span class="switch_tick-outline"></span>
+                                                </span>
+                                                <span class="switch_label">switch ww</span>
+                                            </label>
+                                        </div>
+                                        <div class="card_header align--left card_header--avatar light-theme">
+                                            <span class="avatar avatar--one-line light-theme">
+                                                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                                <span>Jonas Connor Alexander Van</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="card_text align--left card--divider light-theme">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>      
+                        </div>
+                    </div>
+                </section>
+    
+            </main>
+            <aside id="aside" class="grid-u">aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="grid-u">nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content nav content </nav>
+        </div>
+        <div class="group-button"><button id="btNav">nav</button></div>
+    </body>
+</html>

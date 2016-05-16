@@ -110,10 +110,15 @@
     height: 100%;
     width: 100%;
     transition: background .3s cubic-bezier(.4,0,.2,1);
-    font-family: FontAwesome;
 }
 .is-checked .checkbox_tick-outline::after{
     content: "\f00c";
+    font-family: FontAwesome;
+font-size: 16px;
+top: 0;
+left:0;
+position: absolute;
+font-weight: normal;
 }
 .checkbox.is-disabled{
     opacity: .26;
@@ -1012,16 +1017,13 @@
     border-top:1px solid rgba(0,0,0,.26);
     border-bottom:1px solid rgba(0,0,0,.26);
 }
-.table thead th:hover{
-    background: rgb(238,238,238);
-}
 .table tbody tr:hover{
     background: rgb(238,238,238);
 }
 .table thead th, .table tfoot th{
     font-family: "Open Sans SemiBold";
     font-size: 12px;
-    opacity:.54;
+    color:rgba(0,0,0,.54);
     text-align: right;
     padding: 0 16px;
     text-transform: uppercase;
@@ -1034,10 +1036,9 @@ thead th:before{
     left:0px;
 }
 thead th.sort--asc, thead th.sort--des{
-    opacity: .87;
+    color:rgba(0,0,0,.87);
 }
 thead th.sort--disabled{
-    pointer-events: none;
 }
 thead th.sort--asc:before{
     content:"\f062";
@@ -1058,7 +1059,7 @@ thead th.sort--des:before{
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: normal;
-    opacity:.87;
+    color:rgba(0,0,0,.87);
     text-align: right;
     padding: 0 16px;
 }
@@ -1070,7 +1071,10 @@ th.table_cell--non-numeric, td.table_cell--non-numeric{
 }
 
 tfoot{
-    
+
+}
+tr.row--selected{
+    background: rgba(24, 95, 156, .3)
 }
 /**
 * xsm (xsmall)

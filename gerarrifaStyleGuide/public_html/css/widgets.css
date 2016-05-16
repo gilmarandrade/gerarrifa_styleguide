@@ -9,6 +9,9 @@
  * -togglebuton
  * -dropdown
  * -textfield
+ * -tab
+
+ * -list
  */
 
 
@@ -61,7 +64,7 @@
     height: 48px;
     display: inline-block;
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     cursor: pointer;
     opacity: 1;
     transition: opacity .3s cubic-bezier(.4,0,.2,1);
@@ -140,7 +143,7 @@
     height: 48px;
     display: inline-block;
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     cursor: pointer;
     opacity: 1;
     transition: opacity .3s cubic-bezier(.4,0,.2,1);
@@ -223,7 +226,7 @@
     height: 48px;
     display: inline-block;
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     cursor: pointer;
     opacity: 1;
     transition: opacity .3s cubic-bezier(.4,0,.2,1);
@@ -358,6 +361,7 @@
     cursor: pointer;
     pointer-events: auto;
     position: relative;
+    height: 48px;
 }
 .icontoggle_input{
     position: absolute;
@@ -378,6 +382,7 @@
     text-align: center;
     border-radius: 50%;
     z-index: 1;
+    margin: 6px 7px;
 }
 .icontoggle i:after{
     content: " ";
@@ -412,7 +417,28 @@
     display:none;
 }
 
-
+/* Icon
+  ==================================================================== */
+.icon{
+    font-family: "Open Sans SemiBold";
+    font-size:14px;
+    line-height:36px;
+    border:none;
+    display:inline-block;
+    padding: 0;
+    position: relative;
+    height: 48px;
+}
+.icon i{
+    position: relative;
+    font-size:20px;
+    width:36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+    margin: 6px 7px;
+}
 
 /* Toggle Button
   ==================================================================== */
@@ -796,6 +822,148 @@
 }
 .tab_container.is-active{
     display: block;
+}
+
+/* List
+  ==================================================================== */
+.list{
+    word-spacing: normal;
+    //background: blue;
+}
+.list_item{
+    //background: red;
+
+
+}
+.list_item{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.list--secondary-content .list_item{
+    padding-right: 0px; 
+}
+.list--two-line .list_item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.list--secondary-content .list_item [class*="body"], .list--secondary-content .list_item [class*="caption"], .list--secondary-content .list_item [class*="text"]  {
+    width: calc(100% - 65px);
+}
+.list--secondary-content .list_item > :first-child{
+    float:left; 
+}
+.list--secondary-content .list_item > :last-child{
+    float: none;
+}
+.list--secondary-content .list_item .button{
+    margin: 6px 7px;
+}
+.text--two-line{
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+.text--two-line span:first-child{
+    font-family: "Open Sans SemiBold";
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    margin-top: 6px;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.text--two-line span:last-child{
+    font-family: "Open Sans Light";
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list_item .body--light{
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 48px;
+    white-space: nowrap;
+    color:rgba(0,0,0,.87);
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+.list_item .body{
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 48px;
+    white-space: nowrap;
+    color:rgba(0,0,0,.87);
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+.list_item .body--semibold{
+    font-family: "Open Sans SemiBold";
+    font-size: 16px;
+    line-height: 48px;
+    white-space: nowrap;
+    color:rgba(0,0,0,.87);
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+.list_item .body--bold{
+    font-family: "Open Sans Bold";
+    font-size: 16px;
+    line-height: 48px;
+    white-space: nowrap;
+    color:rgba(0,0,0,.87);
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+.list_item .caption{
+    font-family: "Open Sans Light";
+    font-size: 12px;
+    line-height: 48px;
+    white-space: nowrap;
+    color:rgba(0,0,0,.54);
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+.list_item .caption--upper{
+    font-family: "Open Sans Light";
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 48px;
+    white-space: nowrap;
+    color:rgba(0,0,0,.54);
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+.list_item .caption--bold{
+    font-family: "Open Sans ExtraBold";
+    font-size: 12px;
+    line-height: 48px;
+    white-space: nowrap;
+    color:rgba(0,0,0,.54);
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
 }
 /**
 * xsm (xsmall)

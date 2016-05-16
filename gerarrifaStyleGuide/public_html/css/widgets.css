@@ -992,6 +992,86 @@
     max-width: 100%;
     overflow: hidden;
 }
+
+
+
+/* Table
+  ==================================================================== */
+.table{
+    word-spacing: normal;
+    min-width: 100%;
+}
+.table thead{
+    height:56px;
+}
+.table tbody{
+}
+.table tfoot{
+}
+.table tr{
+    border-top:1px solid rgba(0,0,0,.26);
+    border-bottom:1px solid rgba(0,0,0,.26);
+}
+.table thead th:hover{
+    background: rgb(238,238,238);
+}
+.table tbody tr:hover{
+    background: rgb(238,238,238);
+}
+.table thead th, .table tfoot th{
+    font-family: "Open Sans SemiBold";
+    font-size: 12px;
+    opacity:.54;
+    text-align: right;
+    padding: 0 16px;
+    text-transform: uppercase;
+    pointer-events: true;
+}
+thead th:before{
+    font-family: "FontAwesome";
+    font-size: 16px;
+    position: relative;
+    left:0px;
+}
+thead th.sort--asc, thead th.sort--des{
+    opacity: .87;
+}
+thead th.sort--disabled{
+    pointer-events: none;
+}
+thead th.sort--asc:before{
+    content:"\f062";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    position: relative;
+    left:0px;
+}
+thead th.sort--des:before{
+    content:"\f063";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    position: relative;
+    left:0px;
+}
+.table td{
+    height: 48px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: normal;
+    opacity:.87;
+    text-align: right;
+    padding: 0 16px;
+}
+.table tfoot td, table .table_cell--header{
+    font-family: "Open Sans SemiBold";
+}
+th.table_cell--non-numeric, td.table_cell--non-numeric{
+    text-align: left !important;
+}
+
+tfoot{
+    
+}
 /**
 * xsm (xsmall)
 * >= 480px

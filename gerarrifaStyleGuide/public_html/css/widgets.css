@@ -830,6 +830,8 @@
   ==================================================================== */
 .list{
     word-spacing: normal;
+    list-style: none;
+    padding:0;
 }
 .list_item{
     position:relative;

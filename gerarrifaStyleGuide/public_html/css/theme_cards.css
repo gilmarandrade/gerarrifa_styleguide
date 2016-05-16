@@ -747,6 +747,47 @@ Tab
 .tab[class*="yellow"] .tab_button:after{
     border-bottom-color :rgb(247, 170, 6);
 }
+
+
+
+/**
+List
+=======================
+*/
+/*white*/
+.list[class*="white"]{
+    background: rgb(255,255,255);
+    color:rgb(0,0,0);
+}
+.list[class*="white"] *{
+    color:rgb(0,0,0);
+}
+.list[class*="white"] .card--divider{
+    border-color: rgba(0,0,0,.87);
+}
+/*light*/
+.list[class*="light"]{
+    background: rgb(238,238,238);
+    color:rgb(0,0,0);
+}
+.list[class*="light"] *{
+    color:rgb(0,0,0);
+}
+.list[class*="light"] .card--divider{
+    border-color: rgba(0,0,0,.87);
+}
+/*dark*/
+.list[class*="dark"]{
+    background: rgb(51,51,51);
+    color:rgb(255,255,255);
+}
+.list[class*="dark"] *{
+    color:rgb(255,255,255);
+}
+.list[class*="dark"] .card--divider{
+    border-color: rgba(255,255,255,.87);
+}
+
 /**
 * xsm (xsmall)
 * >= 480px

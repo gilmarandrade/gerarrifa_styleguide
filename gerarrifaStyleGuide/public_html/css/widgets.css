@@ -824,16 +824,15 @@
     display: block;
 }
 
+
+
 /* List
   ==================================================================== */
 .list{
     word-spacing: normal;
-    //background: blue;
 }
 .list_item{
-    //background: red;
-
-
+    position:relative;
 }
 .list_item{
     padding-left: 16px;
@@ -875,6 +874,7 @@
     max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
+    opacity: .87;
 }
 .text--two-line span:last-child{
     font-family: "Open Sans Light";
@@ -885,6 +885,7 @@
     max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
+    opacity: .87;
 }
 
 .list_item .body--light{
@@ -892,7 +893,7 @@
     font-size: 16px;
     line-height: 48px;
     white-space: nowrap;
-    color:rgba(0,0,0,.87);
+    opacity: .87;
     display: inline-block;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -903,7 +904,7 @@
     font-size: 16px;
     line-height: 48px;
     white-space: nowrap;
-    color:rgba(0,0,0,.87);
+    opacity: .87;
     display: inline-block;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -914,7 +915,7 @@
     font-size: 16px;
     line-height: 48px;
     white-space: nowrap;
-    color:rgba(0,0,0,.87);
+    opacity: .87;
     display: inline-block;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -925,7 +926,7 @@
     font-size: 16px;
     line-height: 48px;
     white-space: nowrap;
-    color:rgba(0,0,0,.87);
+    opacity: .87;
     display: inline-block;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -936,7 +937,7 @@
     font-size: 12px;
     line-height: 48px;
     white-space: nowrap;
-    color:rgba(0,0,0,.54);
+    opacity: .87;
     display: inline-block;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -948,7 +949,7 @@
     font-size: 12px;
     line-height: 48px;
     white-space: nowrap;
-    color:rgba(0,0,0,.54);
+    opacity: .54;
     display: inline-block;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -959,11 +960,24 @@
     font-size: 12px;
     line-height: 48px;
     white-space: nowrap;
-    color:rgba(0,0,0,.54);
+    opacity: .54;
     display: inline-block;
     text-overflow: ellipsis;
     max-width: 100%;
     overflow: hidden;
+}
+.list_caption{
+    position:absolute;
+    top:0;
+    right:8px;
+    text-align: right;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+
+    font-family: "Open Sans Light";
+    font-size: 12px;
+    opacity: .54;
 }
 /**
 * xsm (xsmall)

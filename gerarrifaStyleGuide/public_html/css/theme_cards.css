@@ -763,7 +763,7 @@ List
     color:rgb(0,0,0);
 }
 .list[class*="white"] .card--divider{
-    border-color: rgba(0,0,0,.87);
+    border-color: rgba(0,0,0,.54);
 }
 /*light*/
 .list[class*="light"]{
@@ -774,7 +774,7 @@ List
     color:rgb(0,0,0);
 }
 .list[class*="light"] .card--divider{
-    border-color: rgba(0,0,0,.87);
+    border-color: rgba(0,0,0,.54);
 }
 /*dark*/
 .list[class*="dark"]{
@@ -785,7 +785,7 @@ List
     color:rgb(255,255,255);
 }
 .list[class*="dark"] .card--divider{
-    border-color: rgba(255,255,255,.87);
+    border-color: rgba(255,255,255,.54);
 }
 
 /**

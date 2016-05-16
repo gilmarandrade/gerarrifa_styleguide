@@ -981,6 +981,17 @@
     font-size: 12px;
     opacity: .54;
 }
+.list_item .subtitle{
+    font-family: "Open Sans Light";
+    font-size: 20px;
+    line-height: 48px;
+    white-space: nowrap;
+    opacity: .54;
+    display: inline-block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
 /**
 * xsm (xsmall)
 * >= 480px

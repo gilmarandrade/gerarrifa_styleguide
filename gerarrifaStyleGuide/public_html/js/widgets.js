@@ -1,5 +1,5 @@
 function initCheckbox() {
-    $(".checkbox_input").change(function() {
+    $(".checkbox_input").change(function () {
         $(this).parent().toggleClass("is-checked");
     });
 
@@ -7,7 +7,7 @@ function initCheckbox() {
 }
 
 function initSwitch() {
-    $(".switch_input").change(function() {
+    $(".switch_input").change(function () {
         $(this).parent().toggleClass("is-checked");
     });
 
@@ -15,7 +15,7 @@ function initSwitch() {
 }
 
 function initRadiobutton() {
-    $(".radiobutton_input").on("change", function() {
+    $(".radiobutton_input").on("change", function () {
         console.log('radiobutton changed');
         if ($(this).prop("checked")) {
             var name = $(this).attr("name");
@@ -28,7 +28,7 @@ function initRadiobutton() {
 }
 
 function initIcontoggle() {
-    $(".icontoggle_input").change(function() {
+    $(".icontoggle_input").change(function () {
         $(this).parent().toggleClass("is-checked");
     });
 
@@ -37,7 +37,7 @@ function initIcontoggle() {
 
 function initTogglebutton() {
     /*seleção exclusiva*/
-    $(".togglebutton_radio-input").on("change", function() {
+    $(".togglebutton_radio-input").on("change", function () {
         console.log('toggle button changed');
         if ($(this).prop("checked")) {
             var name = $(this).attr("name");
@@ -47,7 +47,7 @@ function initTogglebutton() {
     });
 
     /*seleção multipla*/
-    $(".togglebutton_checkbox-input").change(function() {
+    $(".togglebutton_checkbox-input").change(function () {
         $(this).parent().toggleClass("is-checked");
     });
 
@@ -55,9 +55,9 @@ function initTogglebutton() {
 }
 
 function initDropdown() {
-    $(".dropdown_options li").click(function() {
+    $(".dropdown_options li").click(function () {
         $(this).parent().prev().html($(this).html());
-        $(this).parent().find("li").each(function() {
+        $(this).parent().find("li").each(function () {
             $(this).removeClass("is-active");
         });
         $(this).addClass("is-active");
@@ -68,14 +68,14 @@ function initDropdown() {
 }
 function initTextfield() {
     /*textfield*/
-    $(".textfield_input").keydown(function() {
+    $(".textfield_input").keydown(function () {
         if ($(this).val() == "") {
             $(this).parent().removeClass("is-dirty");
         } else {
             $(this).parent().addClass("is-dirty");
         }
     });
-    $(".textfield_input").keyup(function() {
+    $(".textfield_input").keyup(function () {
         if ($(this).val() == "") {
             $(this).parent().removeClass("is-dirty");
         } else {
@@ -83,17 +83,17 @@ function initTextfield() {
         }
     });
 
-    $(".textfield_input").focus(function() {
+    $(".textfield_input").focus(function () {
         $(this).parent().addClass("is-focused");
     });
-    $(".textfield_input").blur(function() {
+    $(".textfield_input").blur(function () {
         $(this).parent().removeClass("is-focused");
     });
 
 
 
     /*selectfield*/
-    $(".selectfield_input").focus(function() {
+    $(".selectfield_input").focus(function () {
         $(this).parent().addClass("is-focused");
         if ($(this).html() == "") {
             $(this).parent().removeClass("is-dirty");
@@ -101,7 +101,7 @@ function initTextfield() {
             $(this).parent().addClass("is-dirty");
         }
     });
-    $(".selectfield_input").blur(function() {
+    $(".selectfield_input").blur(function () {
         $(this).parent().removeClass("is-focused");
         if ($(this).html() == "") {
             $(this).parent().removeClass("is-dirty");
@@ -109,9 +109,9 @@ function initTextfield() {
             $(this).parent().addClass("is-dirty");
         }
     });
-    $(".selectfield_options li").click(function() {
+    $(".selectfield_options li").click(function () {
         $(this).parent().prev().html($(this).html());
-        $(this).parent().find("li").each(function() {
+        $(this).parent().find("li").each(function () {
             $(this).removeClass("is-active");
         });
         $(this).addClass("is-active");
@@ -125,14 +125,14 @@ function initTextfield() {
 
 function initTab() {
     /*seleção exclusiva*/
-    $(".tab_input").on("change", function() {
+    $(".tab_input").on("change", function () {
         if ($(this).prop("checked")) {
             var name = $(this).attr("name");
             var id = $(this).attr("id");
             $("input[name='" + name + "']").parent().removeClass("is-checked");
             $(this).parent().addClass("is-checked");
 
-            $(".tab_container").each(function() {
+            $(".tab_container").each(function () {
                 if ($(this).data("group") == name) {
                     $(this).removeClass("is-active");
                 }
@@ -146,8 +146,31 @@ function initTab() {
     updateTab();
 }
 
+function initTable() {
+    $(".chekbox--row-selection-all").change(function () {
+        var checked = $(this).prop("checked");
+        $(this).closest('table').find(".chekbox--row-selection").each(function () {
+            $(this).prop("checked", checked);
+        });
+        updateCheckbox();
+        if (checked){
+            $(this).closest('table').find(".chekbox--row-selection").each(function () {
+                $(this).closest("tr").addClass("row--selected");
+            });
+        } else{
+            $(this).closest('table').find(".chekbox--row-selection").each(function () {
+                $(this).closest("tr").removeClass("row--selected");
+            });
+        }
+    });
+    
+    $(".chekbox--row-selection").change(function () {
+        $(this).closest("tr").toggleClass("row--selected");
+    });
+
+}
 function updateCheckbox() {
-    $(".checkbox_input").each(function() {
+    $(".checkbox_input").each(function () {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         } else {
@@ -163,7 +186,7 @@ function updateCheckbox() {
 }
 
 function updateSwitch() {
-    $(".switch_input").each(function() {
+    $(".switch_input").each(function () {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         } else {
@@ -180,7 +203,7 @@ function updateSwitch() {
 
 function updateRadiobutton() {
     $(".radiobutton_input").parent().removeClass("is-checked");
-    $(".radiobutton_input").each(function() {
+    $(".radiobutton_input").each(function () {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         }
@@ -193,7 +216,7 @@ function updateRadiobutton() {
 }
 
 function updateIcontoggle() {
-    $(".icontoggle_input").each(function() {
+    $(".icontoggle_input").each(function () {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         } else {
@@ -211,7 +234,7 @@ function updateIcontoggle() {
 function updateTogglebutton() {
     /*seleção exclusiva*/
     $(".togglebutton_radio-input").parent().removeClass("is-checked");
-    $(".togglebutton_radio-input").each(function() {
+    $(".togglebutton_radio-input").each(function () {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         }
@@ -223,7 +246,7 @@ function updateTogglebutton() {
     });
 
     /*seleção multipla*/
-    $(".togglebutton_checkbox-input").each(function() {
+    $(".togglebutton_checkbox-input").each(function () {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
         } else {
@@ -239,7 +262,7 @@ function updateTogglebutton() {
 }
 
 function updateDropdown() {
-    $(".dropdown .dropdown_options li").each(function() {
+    $(".dropdown .dropdown_options li").each(function () {
         if ($(this).hasClass("is-active")) {
             $(this).parent().prev().html($(this).html());
             $(this).parent().next().attr("value", $(this).data("value"));
@@ -250,7 +273,7 @@ function updateDropdown() {
 }
 function updateTextfield() {
     /*textfield*/
-    $(".textfield_input").each(function() {
+    $(".textfield_input").each(function () {
         if ($(this).val() == "") {
             $(this).parent().removeClass("is-dirty");
         } else {
@@ -267,7 +290,7 @@ function updateTextfield() {
 
 
     /*selectfield*/
-    $(".selectfield .selectfield_options li").each(function() {
+    $(".selectfield .selectfield_options li").each(function () {
         if ($(this).hasClass("is-active")) {
             $(this).parent().prev().html($(this).html());
             $(this).parent().next().attr("value", $(this).data("value"));
@@ -276,7 +299,7 @@ function updateTextfield() {
             //$(this).parent().removeClass("is-checked");
         }
     });
-    $(".selectfield_input").each(function() {
+    $(".selectfield_input").each(function () {
         if ($(this).html() == "") {
             $(this).parent().removeClass("is-dirty");
         } else {
@@ -295,12 +318,12 @@ function updateTextfield() {
 function updateTab() {
     /*seleção exclusiva*/
     $(".tab_input").parent().removeClass("is-checked");
-    $(".tab_input").each(function() {
+    $(".tab_input").each(function () {
         if ($(this).prop("checked")) {
             $(this).parent().addClass("is-checked");
             var name = $(this).attr("name");
             var id = $(this).attr("id");
-            $(".tab_container").each(function() {
+            $(".tab_container").each(function () {
                 if ($(this).data("group") == name) {
                     $(this).removeClass("is-active");
                 }

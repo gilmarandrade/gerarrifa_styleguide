@@ -632,6 +632,7 @@ td .dropdown, th .dropdown{
     background: transparent;
     resize: vertical;
     position: relative;
+    outline:none;
 }
 
 .textfield_label, .selectfield_label{

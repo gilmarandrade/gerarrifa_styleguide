@@ -341,3 +341,8 @@ function updateTab() {
 
 
 }
+jQuery(document).ready(function($){
+    $('#top_button').on('click', function() {
+        $('main').animate({scrollTop: 0 }, 700);
+    });
+});

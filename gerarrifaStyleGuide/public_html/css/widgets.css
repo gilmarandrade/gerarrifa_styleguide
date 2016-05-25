@@ -353,7 +353,17 @@ font-weight: normal;
     pointer-events: none;
 }
 
-
+#top_button{
+    position: fixed;
+    z-index: 2;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 50%;
+    opacity: .5;
+}
+#top_button:hover{
+    opacity: 1;   
+}
 /* Icon Toggle
   ==================================================================== */
 .icontoggle{

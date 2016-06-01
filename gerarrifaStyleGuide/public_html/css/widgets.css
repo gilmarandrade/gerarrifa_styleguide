@@ -353,16 +353,36 @@ font-weight: normal;
     pointer-events: none;
 }
 
+    @keyframes top_button-animation {
+       0% {
+          opacity: 0;
+       }
+       50%{ 
+         opacity: 1;
+       }
+       100%{
+        opacity: .5;
+       }
+    }
 #top_button{
     position: fixed;
     z-index: 2;
     right: 40px;
     bottom: 40px;
     border-radius: 50%;
-    opacity: .5;
+    opacity: 0;
+    width:46px;
+    height:45px;
+    pointer-events: none;
+    //transition: opacity 1s cubic-bezier(.35,-0.02,.72,1.54);
 }
-#top_button:hover{
+#top_button.top_button-visible:hover{
     opacity: 1;   
+}
+#top_button.top_button-visible{
+    opacity: .5;
+    animation: top_button-animation 1s ease;
+    pointer-events: auto;
 }
 /* Icon Toggle
   ==================================================================== */

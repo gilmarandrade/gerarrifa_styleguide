@@ -324,15 +324,23 @@ font-weight: normal;
     display:inline-block;
     padding:0 16px;
     border-radius: 4px;
-    background:transparent;
-    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    background-color:transparent;
+    background-image:none;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), .4s background-size ease;
     pointer-events: auto;
 }
+
 .button--raised-primary, .button--raised-secondary{
     box-shadow:  0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .button--raised-primary:active, .button--raised-secondary:active, .button--raised-primary.is-active, .button--raised-secondary.is-active{
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+}
+.button:active, .button.is-active{/*efeito ripple*/
+    background-size: 1000%;
 }
 .button i{
     font-size:18px;
@@ -342,6 +350,10 @@ font-weight: normal;
     padding:0;
     width:36px;
     text-align: center;
+    background-size: 500%;
+}
+.button.button--only-icon:active, .button.button--only-icon.is-active{/*efeito ripple*/
+   background-size: 1500%;
 }
 .button--only-icon i{
     font-size:22px;
@@ -353,17 +365,17 @@ font-weight: normal;
     pointer-events: none;
 }
 
-    @keyframes top_button-animation {
-       0% {
-          opacity: 0;
-       }
-       50%{ 
-         opacity: 1;
-       }
-       100%{
-        opacity: .5;
-       }
-    }
+@keyframes top_button-animation {
+   0% {
+      opacity: 0;
+   }
+   50%{ 
+     opacity: 1;
+   }
+   100%{
+    opacity: .5;
+   }
+}
 #top_button{
     position: fixed;
     z-index: 2;

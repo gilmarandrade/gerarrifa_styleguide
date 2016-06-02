@@ -297,16 +297,16 @@ Button
 =======================
 */
 .button:hover{
-    background:rgba(153,153,153, .2);
+    background-color:rgba(153,153,153, .2);
 } 
 .button:active, .button.is-active{
-    background:rgba(153,153,153,.4);
+    background-color:rgba(153,153,153,.4);
 } 
 .button--raised-primary{
     color:rgba(255,255,255,.87);
 }
 .button--raised-secondary{
-    background:white;
+    background-color:white;
 }
 
 /*light*/
@@ -315,12 +315,15 @@ Button
 }
 .button[class*="light"]:disabled, .button[class*="light"].is-disabled{
     color: rgba(0,0,0,.26) !important;
-    background: transparent !important;
+    background-color: transparent !important;
 } 
 .button[class*="raised"][class*="light"]:disabled, .button[class*="raised"][class*="light"].is-disabled{
     box-shadow:  0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-    background: rgba(0,0,0,.12) !important;
+    background-color: rgba(0,0,0,.12) !important;
 }
+.button[class*="light"]:active, .button[class*="light"].is-active{/*ripple*/
+    background-image: radial-gradient(circle, rgba(0,0,0,.1) 10%, rgba(255,255,255,.1) 11%);
+} 
 
 /*dark*/
 .button[class*="dark"]{
@@ -328,25 +331,25 @@ Button
 }
 .button[class*="dark"]:disabled, .button[class*="dark"].is-disabled{
     color: rgba(255,255,255,.26) !important;
-    background: transparent !important;
+    background-color: transparent !important;
 } 
 .button[class*="raised"][class*="dark"]:disabled, .button[class*="raised"][class*="dark"].is-disabled{
     box-shadow:  0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-    background: rgba(255,255,255,.12) !important;
+    background-color: rgba(255,255,255,.12) !important;
 }
+.button[class*="dark"]:active, .button[class*="dark"].is-active{/*ripple*/
+    background-image: radial-gradient(circle, rgba(255,255,255,.1) 10%, rgba(0,0,0,.1) 11%);
+} 
 
 /*green*/
 .button.button--flat[class*="green"]{
     color: rgba(0,166,0, .87);
 }
 .button--raised-primary[class*="green"]{
-    background:rgb(0,166,0);
+    background-color:rgb(0,166,0);
 }
 .button--raised-primary[class*="green"]:hover{
-    background:rgb(0,126,0);
-}
-.button--raised-primary[class*="green"]:active, .button--raised-primary[class*="green"].is-active{
-    background: rgb(52,202, 0);
+    background-color:rgb(0,126,0);
 }
 .button--raised-secondary[class*="green"]{
    color:rgba(0,166,0, .87);
@@ -358,13 +361,10 @@ Button
     color: rgba(18, 157, 227, .87);
 }
 .button--raised-primary[class*="blue"]{
-    background:rgb(18, 157, 227);
+    background-color:rgb(18, 157, 227);
 }
 .button--raised-primary[class*="blue"]:hover{
-    background:rgb(24, 95, 156);
-}
-.button--raised-primary[class*="blue"]:active, .button--raised-primary[class*="blue"].is-active{
-    background: rgb(18, 218, 211);
+    background-color:rgb(24, 95, 156);
 }
 .button--raised-secondary[class*="blue"]{
    color:rgba(18, 157, 227, .87);
@@ -376,13 +376,10 @@ Button
     color: rgba(247, 170, 6, .87);
 }
 .button--raised-primary[class*="yellow"]{
-    background:rgb(247, 170, 6);
+    background-color:rgb(247, 170, 6);
 }
 .button--raised-primary[class*="yellow"]:hover{
-    background:rgb(209, 144, 5);
-}
-.button--raised-primary[class*="yellow"]:active, .button--raised-primary[class*="yellow"].is-active{
-    background: rgb(249, 197, 23);
+    background-color:rgb(209, 144, 5);
 }
 .button--raised-secondary[class*="yellow"]{
    color:rgba(247, 170, 6, .87);

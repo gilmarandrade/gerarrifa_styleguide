@@ -500,7 +500,7 @@ Toggle Button
      background-color:rgb(0,166,0);
      color: rgba(255,255,255,.87);
 }
-.togglebutton[class*="green"] .togglebutton_button.is-checked:hover, .togglebutton[class*="green"] .togglebutton_button.is-checked:hover{
+.togglebutton[class*="green"] .togglebutton_button.is-checked:hover{
      background-color:rgb(0,126,0);
 }
 /*blue*/
@@ -786,6 +786,42 @@ List
 }
 .list[class*="dark"] .card--divider{
     border-color: rgba(255,255,255,.54);
+}
+
+/**
+Table
+=======================
+*/
+/*white*/
+.table[class*="white"] thead th, .table[class*="white"] tbody tr{
+    background: rgba(255,255,255,1);
+}
+.table[class*="white"] thead th:hover:not(.sort--disabled), .table[class*="white"] tbody tr:hover{
+    background: rgba(153,153,5153,.2);
+}
+
+/*green*/
+.table[class*="green"] .row--selected{
+     background: rgba(0,126,0, .3);
+}
+.table[class*="green"] .row--selected:hover{
+     background: rgba(0,126,0, .4);
+}
+
+/*blue*/
+.table[class*="blue"] .row--selected{
+     background: rgba(24, 95, 156, .3);
+}
+.table[class*="blue"] .row--selected:hover{
+     background: rgba(24, 95, 156, .4);
+}
+
+/*yellow*/
+.table[class*="yellow"] .row--selected{
+     background: rgba(209, 144, 5, .3);
+}
+.table[class*="yellow"] .row--selected:hover{
+     background: rgba(209, 144, 5, .4);
 }
 
 /**

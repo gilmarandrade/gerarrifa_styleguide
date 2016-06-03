@@ -1108,10 +1108,8 @@ td .dropdown, th .dropdown{
     border-top:1px solid rgba(0,0,0,.26);
     border-bottom:1px solid rgba(0,0,0,.26);
 }
-.table tbody tr:hover{
-    background: rgb(238,238,238);
-}
-.table thead th:not(.sort--disabled){
+
+.table thead th{
     cursor:pointer;
 }
 .table thead th, .table tfoot th{
@@ -1133,6 +1131,7 @@ thead th.sort--asc, thead th.sort--des{
     color:rgba(0,0,0,.87);
 }
 thead th.sort--disabled{
+    cursor:default;
 }
 thead th.sort--asc:before{
     content:"\f062";
@@ -1162,13 +1161,6 @@ thead th.sort--des:before{
 }
 th.table_cell--non-numeric, td.table_cell--non-numeric{
     text-align: left !important;
-}
-
-tfoot{
-
-}
-tr.row--selected{
-    background: rgba(24, 95, 156, .3)
 }
 /**
 * xsm (xsmall)

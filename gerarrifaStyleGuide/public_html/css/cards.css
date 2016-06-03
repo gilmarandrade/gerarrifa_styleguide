@@ -69,8 +69,6 @@ section > header h1{
 .card .card_margin{
     margin-left: 0.25em;
     margin-right: 0.25em;
-
-
 }
 .card > .card_margin > .card_box{
     margin-top: .25em;
@@ -96,11 +94,9 @@ section > header h1{
     overflow: auto;
     /*word-spacing: -0.43em;*/
     word-spacing: -0.30em;
-    //background: rgba(255, 100, 0,.7);
     border-bottom: 1px dotted black;
 }
 .card_header {
-    //background: rgba(255,255,0,0.7);
     padding: 16px;
     min-height: 56px;
     border-bottom: 1px dotted black;
@@ -110,7 +106,6 @@ section > header h1{
     font-size: 24px;
     line-height: 28px;
     font-family: "Open Sans SemiBold";
-   
 }
 .card_header .header_subtitle{
     margin: 0;

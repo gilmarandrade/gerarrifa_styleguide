@@ -539,7 +539,8 @@ Dropdown & Selectfield_options
     color: rgba(0,0,0,.87);
 }
 .dropdown[class*="light"] .dropdown_button:active, .dropdown[class*="light"] .dropdown_button.is-active,
-.dropdown[class*="light"] .dropdown_options li:active{
+.dropdown[class*="light"] .dropdown_options li:active,
+.selectfield[class*="light"] .selectfield_options li:active{
     background-image: radial-gradient(circle, rgba(0,0,0,.1) 10%, rgba(255,255,255,.1) 11%);
 }
 .dropdown[class*="light"].is-disabled .dropdown_button, .dropdown[class*="light"] .dropdown_button.is-disabled, .dropdown[class*="light"] .dropdown_button:disabled, .dropdown[class*="light"] .dropdown_options li.is-disabled,
@@ -563,7 +564,8 @@ Dropdown & Selectfield_options
     color: rgba(255,255,255,.87);
 }
 .dropdown[class*="dark"] .dropdown_button:active, .dropdown[class*="dark"] .dropdown_button.is-active,
-.dropdown[class*="dark"] .dropdown_options li:active{
+.dropdown[class*="dark"] .dropdown_options li:active,
+.selectfield[class*="dark"] .selectfield_options li:active{
     background-image: radial-gradient(circle, rgba(255,255,255,.1) 10%, rgba(0,0,0,.1) 11%);
 }
 .dropdown[class*="dark"].is-disabled .dropdown_button, .dropdown[class*="dark"] .dropdown_button.is-disabled, .dropdown[class*="dark"] .dropdown_button:disabled, .dropdown[class*="dark"] .dropdown_options li.is-disabled,

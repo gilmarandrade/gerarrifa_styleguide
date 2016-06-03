@@ -831,6 +831,15 @@ td .dropdown, th .dropdown{
     padding-left: 16px;
     padding-right: 16px;
     white-space: nowrap;
+    
+    transition: .4s background-size ease;
+    background-image:none;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.selectfield_options li:active{
+    background-size: 1000%;
 }
 .selectfield_options li:not(.is-disabled){
     pointer-events: auto;

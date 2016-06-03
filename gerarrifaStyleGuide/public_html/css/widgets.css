@@ -590,14 +590,14 @@ font-weight: normal;
     transition: transform .3s cubic-bezier(.4,0,.2,1) .3s, opacity .2s cubic-bezier(.4,0,.2,1) .3s, margin .01s linear .8s;
     opacity: 0;
     transform: scale(0.5);
-    height:0;
+    margin-top: -1000px;
 }
 .dropdown_button:not(.is-disabled):focus + .dropdown_options, .dropdown_button:not(:disabled):focus + .dropdown_options{
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
     transition: transform .3s cubic-bezier(.4,0,.2,1) .2s,opacity .2s cubic-bezier(.4,0,.2,1) .2s, margin .01s linear;
-    height:auto;
+    margin-top: 0px;
 }
 .dropdown_button:not(.is-disabled):focus + .dropdown_options--top-left ,  .dropdown_button:not(:disabled):focus + .dropdown_options--top-left,
 .dropdown_button:not(.is-disabled):focus + .dropdown_options--bottom-left ,  .dropdown_button:not(:disabled):focus + .dropdown_options--bottom-left{

@@ -144,8 +144,9 @@ section > header h1{
 }
 
 .card_rich-area{
-    //background: rgba(255,0,255,0.7);
-    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-bottom: 1px dotted black;
 }
 

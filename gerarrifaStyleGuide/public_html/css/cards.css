@@ -149,6 +149,12 @@ section > header h1{
     background-size: cover;
     border-bottom: 1px dotted black;
 }
+.card_rich-area--graphic{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-bottom: 1px dotted black;
+}
 
 .card_actions{
     //background: rgba(0,0,255,.7);

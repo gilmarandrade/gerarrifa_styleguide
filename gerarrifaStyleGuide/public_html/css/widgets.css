@@ -814,7 +814,7 @@ td .dropdown, th .dropdown{
     top:52px;
     left:16px;
     margin-left:-3000px;
-    height:0;
+    margin-top:-1000px;
 }
 
 .selectfield_input:not(.is-disabled):focus + .selectfield_options, .selectfield_input:not(:disabled):focus + .selectfield_options{
@@ -823,7 +823,7 @@ td .dropdown, th .dropdown{
     transform: scale(1);
     transition: transform .3s cubic-bezier(.4,0,.2,1) .2s,opacity .2s cubic-bezier(.4,0,.2,1) .2s, margin .01s linear;
     margin-left:0px;
-    height:auto;
+    margin-top:0;
 }
 .selectfield_options li{
     line-height: 48px;

@@ -876,9 +876,17 @@ td .dropdown, th .dropdown{
     display:inline-block;
     padding:0 16px;
     pointer-events: auto;   
-    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), .4s background-size ease;
     cursor:pointer;
     position: relative;
+    
+    background-image:none;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.tab .tab_button:active{
+    background-size: 1000%;
 }
 .tab_button:after{
     content:"";

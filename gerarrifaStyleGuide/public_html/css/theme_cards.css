@@ -693,7 +693,7 @@ Tab
 =======================
 */
 .tab_button:hover{
-    background:rgba(153,153,153, .2);
+    background-color:rgba(153,153,153, .2);
 }  
 /*light*/
 .tab[class*="light"] .tab_button{
@@ -701,11 +701,14 @@ Tab
 }
 .tab[class*="light"] .tab_button.is-disabled{
     color: rgba(0,0,0,.26) !important;
-    background: transparent !important;
+    background-color: transparent !important;
 }
 .tab[class*="light"] .tab_button.is-disabled.is-checked{
     color: rgba(0,0,0,.26) !important;
-    background: rgba(0,0,0,.12) !important;
+    background-color: rgba(0,0,0,.12) !important;
+}
+.tab[class*="light"] .tab_button:active{
+    background-image: radial-gradient(circle, rgba(0,0,0,.1) 10%, rgba(255,255,255,.1) 11%);
 }
 /*dark*/
 .tab[class*="dark"] .tab_button{
@@ -713,13 +716,15 @@ Tab
 }
 .tab[class*="dark"] .tab_button.is-disabled{
     color: rgba(255,255,255,.26) !important;
-    background: transparent !important;
+    background-color: transparent !important;
 }
 .tab[class*="dark"] .tab_button.is-disabled.is-checked{
     color: rgba(255,255,255,.26) !important;
-    background: rgba(255,255,255,.12) !important;
+    background-color: rgba(255,255,255,.12) !important;
 }
-
+.tab[class*="dark"] .tab_button:active{
+    background-image: radial-gradient(circle, rgba(255,255,255,.1) 10%, rgba(0,0,0,.1) 11%);
+}
 /*green*/
 .tab[class*="green"] .tab_button:active, .tab[class*="green"] .tab_button.is-active, .tab[class*="green"] .tab_button.is-checked{
      color: rgb(0,166,0);

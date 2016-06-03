@@ -527,7 +527,7 @@ Dropdown & Selectfield_options
 */
 .dropdown_button:not(:disabled):hover, .dropdown_button:not(.is-disabled):hover, .dropdown_options li:not(.is-disabled):hover,
 .selectfield_options li:not(.is-disabled):hover{
-    background: rgba(153,153,153, .2);
+    background-color: rgba(153,153,153, .2);
 }
 /*light*/
 .dropdown[class*="light"] .dropdown_button{
@@ -535,22 +535,23 @@ Dropdown & Selectfield_options
 }
 .dropdown[class*="light"] .dropdown_options,
 .selectfield[class*="light"] .selectfield_options{
-    background: rgb(255,255,255);
+    background-color: rgb(255,255,255);
     color: rgba(0,0,0,.87);
 }
-.dropdown[class*="light"] .dropdown_button:active, .dropdown[class*="light"] .dropdown_button.is-active, .dropdown[class*="light"] .dropdown_button:active{
-    background: rgba(153,153,153,.4);
+.dropdown[class*="light"] .dropdown_button:active, .dropdown[class*="light"] .dropdown_button.is-active,
+.dropdown[class*="light"] .dropdown_options li:active{
+    background-image: radial-gradient(circle, rgba(0,0,0,.1) 10%, rgba(255,255,255,.1) 11%);
 }
 .dropdown[class*="light"].is-disabled .dropdown_button, .dropdown[class*="light"] .dropdown_button.is-disabled, .dropdown[class*="light"] .dropdown_button:disabled, .dropdown[class*="light"] .dropdown_options li.is-disabled,
 .selectfield[class*="light"] .selectfield_options li.is-disabled{
     color: rgba(0,0,0,.26) !important;
-    background: transparent !important;
+    background-color: transparent !important;
     cursor: default;
 }
 .dropdown[class*="light"] .dropdown_options li.is-disabled.is-active,
 .selectfield[class*="light"] .selectfield_options li.is-disabled.is-active{
    color: rgba(0,0,0,.26) !important;
-    background: rgba(0,0,0,.12) !important;
+    background-color: rgba(0,0,0,.12) !important;
 }
 /*dark*/
 .dropdown[class*="dark"] .dropdown_button{
@@ -558,22 +559,23 @@ Dropdown & Selectfield_options
 }
 .dropdown[class*="dark"] .dropdown_options,
 .selectfield[class*="dark"] .selectfield_options{
-    background: rgb(51,51,51);
+    background-color: rgb(51,51,51);
     color: rgba(255,255,255,.87);
 }
-.dropdown[class*="dark"] .dropdown_button:active, .dropdown[class*="dark"] .dropdown_button.is-active, .dropdown[class*="dark"] .dropdown_button:active{
-    background: rgba(153,153,153,.4);
+.dropdown[class*="dark"] .dropdown_button:active, .dropdown[class*="dark"] .dropdown_button.is-active,
+.dropdown[class*="dark"] .dropdown_options li:active{
+    background-image: radial-gradient(circle, rgba(255,255,255,.1) 10%, rgba(0,0,0,.1) 11%);
 }
 .dropdown[class*="dark"].is-disabled .dropdown_button, .dropdown[class*="dark"] .dropdown_button.is-disabled, .dropdown[class*="dark"] .dropdown_button:disabled, .dropdown[class*="dark"] .dropdown_options li.is-disabled,
 .selectfield[class*="dark"] .selectfield_options li.is-disabled{
     color: rgba(255,255,255,.26) !important;
-    background: transparent !important;
+    background-color: transparent !important;
     cursor: default;
 }
 .dropdown[class*="dark"] .dropdown_options li.is-disabled.is-active,
 .selectfield[class*="dark"] .selectfield_options li.is-disabled.is-active{
    color: rgba(255,255,255,.26) !important;
-    background: rgba(255,255,255,.12) !important;
+   background-color: rgba(255,255,255,.12) !important;
 }
 
 /*green*/
@@ -581,7 +583,7 @@ Dropdown & Selectfield_options
 .selectfield[class*="green"] .selectfield_options li.is-active{
     color:rgb(0,166,0);
 }
-.dropdown[class*="green"] .dropdown_button:active, .dropdown[class*="green"] .dropdown_button.is-active, .dropdown[class*="green"] .dropdown_button:active{
+.dropdown[class*="green"] .dropdown_button:active, .dropdown[class*="green"] .dropdown_button.is-active{
     color:rgba(0,166,0, .87);
 }
 /*blue*/
@@ -589,7 +591,7 @@ Dropdown & Selectfield_options
 .selectfield[class*="blue"] .selectfield_options li.is-active{
     color:rgb(18, 157, 227);
 }
-.dropdown[class*="blue"] .dropdown_button:active, .dropdown[class*="blue"] .dropdown_button.is-active, .dropdown[class*="blue"] .dropdown_button:active{
+.dropdown[class*="blue"] .dropdown_button:active, .dropdown[class*="blue"] .dropdown_button.is-active{
     color:rgba(18,157,227, .87);
 }
 /*yellow*/
@@ -597,7 +599,7 @@ Dropdown & Selectfield_options
 .selectfield[class*="yellow"] .selectfield_options li.is-active{
     color:rgb(247, 170, 6);
 }
-.dropdown[class*="yellow"] .dropdown_button:active, .dropdown[class*="yellow"] .dropdown_button.is-active, .dropdown[class*="yellow"] .dropdown_button:active{
+.dropdown[class*="yellow"] .dropdown_button:active, .dropdown[class*="yellow"] .dropdown_button.is-active{
     color:rgba(247,170,6, .87);
 }
 

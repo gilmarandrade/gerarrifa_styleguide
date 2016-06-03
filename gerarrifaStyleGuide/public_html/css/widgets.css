@@ -562,19 +562,28 @@ font-weight: normal;
     display:inline-block;
     padding:0 24px 0 16px;
     background:transparent;
-    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), .4s background-size ease;
     pointer-events: auto;
     overflow: hidden;
     min-width: 60px;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
+    
+    background-image:none;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 .dropdown_button:after{
     content: "\f0d7";
     font-family: "FontAwesome";
     position: absolute;
     right: 8px;
+}
+.dropdown_button:active{
+    background-size: 1000%;
+    background-image: radial-gradient(circle, rgba(0,0,0,.1) 10%, rgba(255,255,255,.1) 11%);
 }
 .dropdown_options{
     position: absolute;
@@ -633,6 +642,14 @@ font-weight: normal;
     padding-left: 16px;
     padding-right: 16px;
     white-space: nowrap;
+    transition: .4s background-size ease;
+    background-image:none;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.dropdown_options li:active{
+    background-size: 1000%;
 }
 .dropdown_options li:not(.is-disabled){
     pointer-events: auto;

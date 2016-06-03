@@ -517,9 +517,16 @@ font-weight: normal;
     display:inline-block;
     padding:0 16px;
     pointer-events: auto;   
-    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
     cursor:pointer;
+    background-image:none;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), .4s background-size ease;
 }
+.togglebutton .togglebutton_button:active, .togglebutton .togglebutton_button.is-active{/*efeito ripple*/
+     background-size: 1000%;
+} 
 .togglebutton .togglebutton_button:not(:first-child){
     margin-left: -5px;
 }

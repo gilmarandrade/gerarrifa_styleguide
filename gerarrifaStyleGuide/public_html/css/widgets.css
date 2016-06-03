@@ -10,8 +10,8 @@
  * -dropdown
  * -textfield
  * -tab
-
  * -list
+ * -table
  */
 
 
@@ -1110,6 +1110,9 @@ td .dropdown, th .dropdown{
 }
 .table tbody tr:hover{
     background: rgb(238,238,238);
+}
+.table thead th:not(.sort--disabled){
+    cursor:pointer;
 }
 .table thead th, .table tfoot th{
     font-family: "Open Sans SemiBold";

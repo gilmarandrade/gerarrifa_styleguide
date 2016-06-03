@@ -147,28 +147,54 @@ function initTab() {
 }
 
 function initTable() {
-    $(".chekbox--row-selection-all").change(function () {
-        var checked = $(this).prop("checked");
-        $(this).closest('table').find(".chekbox--row-selection").each(function () {
-            $(this).prop("checked", checked);
-        });
-        updateCheckbox();
-        if (checked){
-            $(this).closest('table').find(".chekbox--row-selection").each(function () {
-                $(this).closest("tr").addClass("row--selected");
-            });
-        } else{
-            $(this).closest('table').find(".chekbox--row-selection").each(function () {
-                $(this).closest("tr").removeClass("row--selected");
-            });
+    /*ordenamento das colunas*/
+    $("table thead th:not(.sort--disabled)").click(function(){
+        if($(this).hasClass('sort--asc')){
+            $(this).removeClass('sort--asc');
+            $(this).addClass('sort--des');
+        }else if($(this).hasClass('sort--des')){
+            $(this).removeClass('sort--des');
+            $(this).addClass('sort--asc');
+        }else{
+            $(this).parent().find("th").removeClass('sort--asc sort--des');
+            $(this).addClass('sort--asc');
         }
     });
-    
-    $(".chekbox--row-selection").change(function () {
+
+        
+    /*row selection all*/
+    $(".checkbox--row-selection-all").change(function () {
+        var checked = $(this).prop("checked");
+        $(this).closest('table').find(".checkbox--row-selection").each(function () {
+            $(this).prop("checked", checked);
+        });
+        updateRowSelection();
+    });
+    /*row selection*/
+    $(".checkbox--row-selection").change(function () {
         $(this).closest("tr").toggleClass("row--selected");
     });
-
+    
+    updateTable();
 }
+function updateRowSelection() {
+    $(".checkbox--row-selection").each(function () {
+        if ($(this).prop("checked")) {
+            $(this).parent().addClass("is-checked");
+             $(this).closest("tr").addClass("row--selected");
+        } else {
+            $(this).parent().removeClass("is-checked");
+             $(this).closest("tr").removeClass("row--selected");
+        }
+
+        if ($(this).prop("disabled")) {
+            $(this).parent().addClass("is-disabled");
+        } else {
+            $(this).parent().removeClass("is-disabled");
+        }
+    });
+}
+
 function updateCheckbox() {
     $(".checkbox_input").each(function () {
         if ($(this).prop("checked")) {
@@ -341,6 +367,20 @@ function updateTab() {
 
 
 }
+
+function updateTable() {
+    /*row selection all*/
+    $(".checkbox--row-selection-all").each(function(){
+        var checked = $(this).prop("checked");
+        $(this).closest('table').find(".checkbox--row-selection").each(function () {
+            if(checked){
+                $(this).prop("checked", checked);
+            }
+        });
+        updateRowSelection();
+    });
+}
+
 jQuery(document).ready(function($){
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,

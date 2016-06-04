@@ -2,7 +2,7 @@ function initPanels() {
     resizeLayout();
     $(window).resize(resizeLayout);
 
-    $("#btNav").click(toggleNav);
+    $("#nav_button").click(toggleNav);
     $("#nav_curtain").click(closeNav);
 
     $("#btAside").click(toggleAside);

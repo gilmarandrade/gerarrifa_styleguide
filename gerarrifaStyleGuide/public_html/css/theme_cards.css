@@ -61,6 +61,42 @@ section.dark-theme > header > h1{
     color: rgba(255,255,255,.87);
 }
 
+/**
+Header
+=======================
+*/
+/*light & white*/
+header[class*="light"] .header_title,
+header[class*="white"] .header_title{
+    color:rgb(0,0,0);
+}
+header[class*="light"]{
+    background: rgb(238,238,238);
+}
+header[class*="white"]{
+    background: rgb(255,255,255);
+}
+
+/*dark*/
+header[class*="dark"] .header_title{
+    color:rgb(255,255,255);
+}
+header[class*="dark"]{
+    background: rgb(51,51,51);
+}
+/*green*/
+header[class*="green"]{
+    background: rgb(0,166,0);
+}
+/*blue*/
+header[class*="blue"]{
+    background: rgb(18, 157,227);
+}
+/*yellow*/
+header[class*="yellow"]{
+    background:  rgb(247, 170,6);
+}
+
 
 /**
 Checkbox

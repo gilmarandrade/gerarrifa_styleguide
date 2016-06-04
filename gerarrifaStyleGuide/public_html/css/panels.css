@@ -1,9 +1,11 @@
 /**
  * Panels
  * -main
+ * -header
  * -nav
  * -aside
  */
+
 
 /* Nav
   ==================================================================== */
@@ -31,7 +33,6 @@
     width: 100%;
     display: block;
     background: rgba(0,0,0,.8);
-    cursor: pointer;
 }
 .nav-closed #nav_curtain{
     left:-100%;
@@ -43,6 +44,7 @@
     opacity: 1;
     transition: left .01s 0s, opacity .5s ease;
 }
+
 
 /* Main
   ==================================================================== */
@@ -56,8 +58,41 @@
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;/* 12/12 */
-    /*background: #1abc9c;*/
     transition: none;
+    margin-top: 56px;
+}
+
+/* Header
+  ==================================================================== */
+main > header{
+    position: fixed;
+    top:0;
+    height: 56px;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+main > header #nav_button{
+    height: 100%;
+    font-size: 20px;
+    float:left;
+    border-radius: 0%;
+}
+main > header #nav_button i{
+    font-size: 25px;
+}
+main > header .header_title{
+    font-family: "Open Sans SemiBold";
+    font-size: 22px;
+    line-height: 56px;
+    white-space: nowrap;
+    opacity: .87;
+    text-overflow: ellipsis;
+    max-width: calc( 100% - 100px);
+    overflow: hidden;
+    display:block;
+    float: left;
+    padding-left: 16px;
 }
 
 /* Aside
@@ -103,6 +138,7 @@
         *width: 41.6357%;
         transition: none;
     }
+    
 }
 /**
 * md (medium)
@@ -147,6 +183,12 @@
     #aside{
         width: 33.3333%;/* 4/12 */
         *width: 33.3023%;
+    }
+    #nav_button{
+        display: none;
+    }
+    main > header{
+        width: calc( 100% - 16.6667%);
     }
 }
 /**

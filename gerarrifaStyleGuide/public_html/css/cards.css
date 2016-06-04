@@ -143,27 +143,35 @@ section > header h1{
     margin-bottom: 16px;
 }
 
-.card_rich-area{
+.card_image--cover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-bottom: 1px dotted black;
 }
-.card_rich-area--graphic{
+.card_image--contain{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     border-bottom: 1px dotted black;
 }
-.card_rich-area--youtube > iframe{
+.card_google-charts {
+    padding: 20px;
+    overflow: hidden;
+}
+/*gambiarra para ocultar os erros do GoogleCharts Material Beta*/
+.card_google-charts div:first-child > div > span{
+    display: none !important;
+}
+.card_youtube > iframe{
     width: 100%;
     height: 100%;
 }
-.card > .card_margin > .card_box > .card_rich-area--youtube:first-child > iframe{
+.card > .card_margin > .card_box > .card_youtube:first-child > iframe{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.card > .card_margin > .card_box > .card_rich-area--youtube:last-child > iframe{
+.card > .card_margin > .card_box > .card_youtube:last-child > iframe{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }

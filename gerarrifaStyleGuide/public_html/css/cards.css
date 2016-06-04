@@ -111,7 +111,7 @@ section > header h1{
     margin: 0;
     font-size: 20px;
     font-family: "Open Sans Light";
-  
+
 }
 .card_header.card_header--small .header_title{
     font-size: 20px;
@@ -155,6 +155,18 @@ section > header h1{
     background-size: contain;
     border-bottom: 1px dotted black;
 }
+.card_rich-area--youtube > iframe{
+    width: 100%;
+    height: 100%;
+}
+.card > .card_margin > .card_box > .card_rich-area--youtube:first-child > iframe{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card > .card_margin > .card_box > .card_rich-area--youtube:last-child > iframe{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 .card_actions{
     //background: rgba(0,0,255,.7);
@@ -197,7 +209,7 @@ section > header h1{
 }
 .card_actions--medium .dropdown{
     height: 56px;
-     margin-left: 8px;
+    margin-left: 8px;
 }
 .card_actions--medium .tab .tab_button{
     line-height: 56px;

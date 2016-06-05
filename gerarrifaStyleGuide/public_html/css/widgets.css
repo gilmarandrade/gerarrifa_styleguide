@@ -1,17 +1,17 @@
 /**
  * CSS dos elementos: 
- * -avatar
- * -checkbox
- * -radiobutton
- * -switch
- * -button
- * -icontoggle
- * -togglebuton
- * -dropdown
- * -textfield
- * -tab
- * -list
- * -table
+ * -Avatar
+ * -Checkbox
+ * -Radiobutton
+ * -Switch
+ * -Button
+ * -Icontoggle
+ * -Togglebuton
+ * -Dropdown
+ * -Textfield
+ * -Tab
+ * -List & Nav-list
+ * -Table
  */
 
 
@@ -922,20 +922,37 @@ td .dropdown, th .dropdown{
 
 
 
-/* List
+/* List & Nav-list
   ==================================================================== */
-.list{
+.list, .nav-list{
     word-spacing: normal;
     list-style: none;
     padding:0;
 }
 .list_item{
     position:relative;
-}
-.list_item{
     padding-left: 16px;
     padding-right: 16px;
 }
+.nav-list_item.logo a{
+    height: 56px;
+    width:calc(100% - 32px);
+    background-image: url('../img/nav_google_logo.svg');
+    display: block;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: left center;
+}
+.nav-list_item a{
+   width:calc(100% - 32px);
+   padding-left: 16px;
+   padding-right: 16px;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   text-decoration: none;
+}
+
 .list--secondary-content .list_item{
     padding-right: 0px; 
 }
@@ -997,7 +1014,8 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .body{
+.list_item .body,
+.nav-list_item .body{
     font-family: "Open Sans";
     font-size: 16px;
     line-height: 48px;
@@ -1008,7 +1026,8 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .body--semibold{
+.list_item .body--semibold,
+.nav-list_item .body--semibold{
     font-family: "Open Sans SemiBold";
     font-size: 16px;
     line-height: 48px;
@@ -1019,7 +1038,8 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .body--bold{
+.list_item .body--bold,
+.nav-list_item .body--bold{
     font-family: "Open Sans Bold";
     font-size: 16px;
     line-height: 48px;
@@ -1077,7 +1097,8 @@ td .dropdown, th .dropdown{
     font-size: 12px;
     opacity: .54;
 }
-.list_item .subtitle{
+.list_item .subtitle,
+.nav-list_item .subtitle{
     font-family: "Open Sans Light";
     font-size: 20px;
     line-height: 48px;
@@ -1087,6 +1108,11 @@ td .dropdown, th .dropdown{
     text-overflow: ellipsis;
     max-width: 100%;
     overflow: hidden;
+}
+.nav-list_item .subtitle{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: calc(100% - 32px);
 }
 
 

@@ -61,6 +61,36 @@ section.dark-theme > header > h1{
     color: rgba(255,255,255,.87);
 }
 
+
+/**
+Nav
+=======================
+*/
+/*white*/
+#nav[class*="white"]{
+    background: white;
+}
+#nav[class*="white"] .nav-list_item a,
+#nav[class*="white"] .nav-list_item .subtitle{
+   color:rgb(0,0,0);
+}
+#nav[class*="white"] .nav-list_item a:hover{
+    background-color: rgba(153, 153, 153,.2);
+}
+
+/*green*/
+#nav[class*="green"] .nav-list_item.is-active a{
+    color:rgb(0,166,0);
+}
+/*blue*/
+#nav[class*="blue"] .nav-list_item.is-active a{
+    color:rgb(18, 157,227);
+}
+/*yellow*/
+#nav[class*="yellow"] .nav-list_item.is-active a{
+    color:rgb(247, 170,6);
+}
+
 /**
 Header
 =======================

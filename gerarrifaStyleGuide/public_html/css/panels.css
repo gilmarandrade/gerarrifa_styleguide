@@ -1,9 +1,9 @@
 /**
  * Panels
- * -main
- * -header
- * -nav
- * -aside
+ * -Main
+ * -Header
+ * -Nav
+ * -Aside
  */
 
 
@@ -19,9 +19,17 @@
     overflow-y: auto;
     width: 91.6667%;/* 11/12 */
     *width: 91.6357%;
-    background: #3498db;
     transition: left .8s ease;
     z-index: 4;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+    
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
 }
 .nav-opened #nav{
     left:0;
@@ -60,6 +68,14 @@
     width: 100%;/* 12/12 */
     transition: none;
     margin-top: 56px;
+    
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
 }
 
 /* Header
@@ -107,6 +123,14 @@ main > header .header_title{
     width: 100%;/* 12/12 */
     background: #bdc3c7;
     transition: right .8s ease;
+    
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
 }
 .aside-opened #aside{
     right:0;

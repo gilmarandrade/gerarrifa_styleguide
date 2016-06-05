@@ -76,7 +76,7 @@ section > header h1{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.card .card--divider:not(:last-child){
+.card--divider:not(:last-child){
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }

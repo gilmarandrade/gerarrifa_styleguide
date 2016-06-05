@@ -114,11 +114,11 @@
 .is-checked .checkbox_tick-outline::after{
     content: "\f00c";
     font-family: FontAwesome;
-font-size: 16px;
-top: 0;
-left:0;
-position: absolute;
-font-weight: normal;
+    font-size: 16px;
+    top: 0;
+    left:0;
+    position: absolute;
+    font-weight: normal;
 }
 .checkbox.is-disabled{
     opacity: .26;
@@ -353,7 +353,7 @@ font-weight: normal;
     background-size: 500%;
 }
 .button.button--only-icon:active, .button.button--only-icon.is-active{/*efeito ripple*/
-   background-size: 1500%;
+    background-size: 1500%;
 }
 .button--only-icon i{
     font-size:22px;
@@ -365,18 +365,18 @@ font-weight: normal;
     pointer-events: none;
 }
 
-@keyframes top_button-animation {
-   0% {
-      opacity: 0;
-   }
-   50%{ 
-     opacity: 1;
-   }
-   100%{
-    opacity: .5;
-   }
+@keyframes top-button-animation {
+    0% {
+        opacity: 0;
+    }
+    50%{ 
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+    }
 }
-#top_button{
+#top-button{
     position: fixed;
     z-index: 2;
     right: 40px;
@@ -386,16 +386,18 @@ font-weight: normal;
     width:46px;
     height:45px;
     pointer-events: none;
-    //transition: opacity 1s cubic-bezier(.35,-0.02,.72,1.54);
+    transition: opacity .3s ease;
 }
-#top_button.top_button-visible:hover{
+#top-button.top-button--visible:hover{
     opacity: 1;   
 }
-#top_button.top_button-visible{
+#top-button.top-button--visible{
     opacity: .5;
-    animation: top_button-animation 1s ease;
+    animation: top-button-animation 1s ease-in-out;
     pointer-events: auto;
 }
+
+
 /* Icon Toggle
   ==================================================================== */
 .icontoggle{
@@ -525,7 +527,7 @@ font-weight: normal;
     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), .4s background-size ease;
 }
 .togglebutton .togglebutton_button:active, .togglebutton .togglebutton_button.is-active{/*efeito ripple*/
-     background-size: 1000%;
+    background-size: 1000%;
 } 
 .togglebutton .togglebutton_button:not(:first-child){
     margin-left: -5px;
@@ -569,7 +571,7 @@ font-weight: normal;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
-    
+
     background-image:none;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -831,7 +833,7 @@ td .dropdown, th .dropdown{
     padding-left: 16px;
     padding-right: 16px;
     white-space: nowrap;
-    
+
     transition: .4s background-size ease;
     background-image:none;
     background-size: 200%;
@@ -879,7 +881,7 @@ td .dropdown, th .dropdown{
     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1), .4s background-size ease;
     cursor:pointer;
     position: relative;
-    
+
     background-image:none;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -944,13 +946,13 @@ td .dropdown, th .dropdown{
     background-position: left center;
 }
 .nav-list_item a{
-   width:calc(100% - 32px);
-   padding-left: 16px;
-   padding-right: 16px;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-   overflow: hidden;
-   text-decoration: none;
+    width:calc(100% - 32px);
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 .list--secondary-content .list_item{

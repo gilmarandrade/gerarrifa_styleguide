@@ -7,11 +7,28 @@ function initPanels() {
 
     $("#btAside").click(toggleAside);
     $("#btCloseAside").click(closeAside);
+
+    $("main").scroll(scroll);
+    $('#top-button').on('click', backToTop);
 }
 
 function resizeLayout() {
     if ($(window).width() >= 1280) {
-    } else {}
+    } else {
+    }
+}
+
+function scroll() {
+    var offset = 300; // browser window scroll (in pixels) after which the "back to top" link is shown
+    if ($(this).scrollTop() > offset) {
+        $('#top-button').addClass('top-button--visible');
+    } else {
+        $('#top-button').removeClass('top-button--visible');
+    }
+}
+
+function backToTop() {
+    $('main').animate({scrollTop: 0}, 700);
 }
 
 function toggleNav() {

@@ -31,7 +31,7 @@
     vertical-align: top;
     text-rendering: auto;
 }
-.nav-opened #nav{
+.nav--opened #nav{
     left:0;
 }
 #nav_curtain{
@@ -42,12 +42,12 @@
     display: block;
     background: rgba(0,0,0,.8);
 }
-.nav-closed #nav_curtain{
+.nav--closed #nav_curtain{
     left:-100%;
     opacity: 0;
     transition: left .01s .5s, opacity .5s ease;
 }
-.nav-opened #nav_curtain{
+.nav--opened #nav_curtain{
     left:0%;
     opacity: 1;
     transition: left .01s 0s, opacity .5s ease;
@@ -132,7 +132,7 @@ main > header .header_title{
     vertical-align: top;
     text-rendering: auto;
 }
-.aside-opened #aside{
+.aside--opened #aside{
     right:0;
 }
 
@@ -151,7 +151,7 @@ main > header .header_title{
         width: 41.6667%;/* 5/12 */
         *width: 41.6357%;
     }
-    .aside-opened #main{
+    .aside--opened #main{
         width: 58.3333%;/* 7/12*/
         *width: 58.3023%;
         margin-right: 41.6667%;/* 5/12 */
@@ -200,7 +200,7 @@ main > header .header_title{
         margin-left: 16.6667%;/* 2/12*/
         *margin-left: 16.6357%;
     }
-    .aside-opened #main{
+    .aside--opened #main{
         width: 50%; /* 6/12 */
         *width: 49.9690%;
     }

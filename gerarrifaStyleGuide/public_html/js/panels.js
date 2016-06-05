@@ -15,24 +15,24 @@ function resizeLayout() {
 }
 
 function toggleNav() {
-    $("body").toggleClass("nav-opened");
-    $("body").toggleClass("nav-closed");
+    $("body").toggleClass("nav--opened");
+    $("body").toggleClass("nav--closed");
 }
 function closeNav() {
-    $("body").removeClass("nav-opened");
-    $("body").addClass("nav-closed");
+    $("body").removeClass("nav--opened");
+    $("body").addClass("nav--closed");
 }
 function openNav() {
-    $("body").addClass("nav-opened");
-    $("body").removeClass("nav-closed");
+    $("body").addClass("nav--opened");
+    $("body").removeClass("nav--closed");
 }
 
 function toggleAside() {
-    $("body").toggleClass("aside-opened");
+    $("body").toggleClass("aside--opened");
 }
 function openAside() {
-    $("body").addClass("aside-opened");
+    $("body").addClass("aside--opened");
 }
 function closeAside() {
-    $("body").removeClass("aside-opened");
+    $("body").removeClass("aside--opened");
 }

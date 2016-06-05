@@ -702,6 +702,13 @@ td .dropdown, th .dropdown{
     position: relative;
     outline:none;
 }
+.textfield.textfield--static .textfield_input{
+    border-bottom-width: 0px;
+}
+.textfield.textfield--primary .textfield_input{
+    font-family: "Static Bold";
+    font-size: 22px;
+}
 
 .textfield_label, .selectfield_label{
     position: absolute;
@@ -724,13 +731,20 @@ td .dropdown, th .dropdown{
     pointer-events: none;
 }
 .textfield.textfield--floating-label.is-dirty .textfield_label, .textfield--floating-label.is-focused .textfield_label,
-.selectfield.is-dirty .selectfield_label, .selectfiel.is-focused .selectfield_label{
+.selectfield.is-dirty .selectfield_label, .selectfiel.is-focused .selectfield_label {
     top:0;
     opacity: 1;
     pointer-events: none;
     font-family: "Open Sans Semibold";
     font-size: 12px;
     line-height: 21px;
+}
+.textfield.textfield--static .textfield_label{
+    top:0;
+    opacity: 1;
+    font-family: "Open Sans Semibold";
+    font-size: 12px;
+    line-height: 21px; 
 }
 .textfield.is-required .textfield_label:after,
 .selectfield.is-required .selectfield_label:after{

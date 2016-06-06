@@ -583,9 +583,8 @@
     position: absolute;
     right: 8px;
 }
-.dropdown_button:active{
+.dropdown_button:not(:disabled):active{
     background-size: 1000%;
-    background-image: radial-gradient(circle, rgba(0,0,0,.1) 10%, rgba(255,255,255,.1) 11%);
 }
 .dropdown_options{
     position: absolute;
@@ -649,6 +648,7 @@
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: 50%;
+    text-align: left;
 }
 .dropdown_options li:active{
     background-size: 1000%;
@@ -1019,7 +1019,7 @@ td .dropdown, th .dropdown{
     opacity: .87;
 }
 
-.list_item .body--light{
+.body--light{
     font-family: "Open Sans";
     font-size: 16px;
     line-height: 48px;
@@ -1030,8 +1030,7 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .body,
-.nav-list_item .body{
+.body{
     font-family: "Open Sans";
     font-size: 16px;
     line-height: 48px;
@@ -1042,8 +1041,7 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .body--semibold,
-.nav-list_item .body--semibold{
+.body--semibold{
     font-family: "Open Sans SemiBold";
     font-size: 16px;
     line-height: 48px;
@@ -1054,8 +1052,7 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .body--bold,
-.nav-list_item .body--bold{
+.body--bold{
     font-family: "Open Sans Bold";
     font-size: 16px;
     line-height: 48px;
@@ -1066,7 +1063,7 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .caption{
+.caption{
     font-family: "Open Sans Light";
     font-size: 12px;
     line-height: 48px;
@@ -1077,7 +1074,7 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .caption--upper{
+.caption--upper{
     font-family: "Open Sans Light";
     text-transform: uppercase;
     font-size: 12px;
@@ -1089,7 +1086,7 @@ td .dropdown, th .dropdown{
     max-width: 100%;
     overflow: hidden;
 }
-.list_item .caption--bold{
+.caption--bold{
     font-family: "Open Sans ExtraBold";
     font-size: 12px;
     line-height: 48px;
@@ -1113,8 +1110,7 @@ td .dropdown, th .dropdown{
     font-size: 12px;
     opacity: .54;
 }
-.list_item .subtitle,
-.nav-list_item .subtitle{
+.subtitle{
     font-family: "Open Sans Light";
     font-size: 20px;
     line-height: 48px;

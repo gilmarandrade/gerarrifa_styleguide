@@ -85,12 +85,12 @@ section > header h1{
     overflow: auto;
     /*word-spacing: -0.43em;*/
     word-spacing: -0.30em;
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
 }
 .card_header {
     padding: 16px;
     min-height: 56px;
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
 }
 .card_header .header_title{
     margin: 0;
@@ -125,7 +125,7 @@ section > header h1{
     font-family: "Open Sans";
     font-size: 16px;
     color: rgba(0,0,0,0.87);
-    border-bottom: 1px dotted black;
+   /* border-bottom: 1px dotted black;*/
 }
 .card_text.card_text--justify{
     text-align: justify;
@@ -138,13 +138,13 @@ section > header h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
 }
 .card_image--contain{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
 }
 .card_google-charts {
     padding: 20px;
@@ -169,11 +169,13 @@ section > header h1{
 
 .card_actions{
     //background: rgba(0,0,255,.7);
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
     min-height: 48px;
     padding-right: 8px;
 }
-.card_actions .avatar, .card_actions .checkbox, .card_actions .radiobutton, .card_actions .switch{
+.card_actions .avatar, .card_actions .checkbox, .card_actions .radiobutton, .card_actions .switch,
+.card_actions .body--light, .card_actions .body, .card_actions .body--semibold, .card_actions .body--bold,
+.card_actions .caption, .card_actions .caption--upper, .card_actions .caption--bold, .card_actions .subtitle{
     margin:0;
     margin-left: 8px;
     //background: orange;
@@ -194,7 +196,9 @@ section > header h1{
     min-height: 56px;
     padding-right: 8px;
 }
-.card_actions--medium .avatar, .card_actions--medium .checkbox, .card_actions--medium .radiobutton, .card_actions--medium .switch{
+.card_actions--medium .avatar, .card_actions--medium .checkbox, .card_actions--medium .radiobutton, .card_actions--medium .switch,
+.card_actions--medium .body--light, .card_actions--medium .body, .card_actions--medium .body--semibold, .card_actions--medium .body--bold,
+.card_actions--medium .caption, .card_actions--medium .caption--upper, .card_actions--medium .caption--bold, .card_actions--medium .subtitle{
     margin:0;
     margin-left: 8px;
     margin-top:4px;
@@ -218,7 +222,9 @@ section > header h1{
     min-height: 72px;
     padding-right: 16px;
 }
-.card_actions--large .avatar, .card_actions--large .checkbox, .card_actions--large .radiobutton, .card_actions--large .switch{
+.card_actions--large .avatar, .card_actions--large .checkbox, .card_actions--large .radiobutton, .card_actions--large .switch,
+.card_actions--large .body--light, .card_actions--large .body, .card_actions--large .body--semibold, .card_actions--large .body--bold,
+.card_actions--large .caption, .card_actions--large .caption--upper, .card_actions--large .caption--bold, .card_actions--large .subtitle{
     margin-left: 16px;
     margin-right: 0;
     margin-top:10px;

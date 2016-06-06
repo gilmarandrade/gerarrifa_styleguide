@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Selection Controls</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+            section{
+                padding-bottom: 72px;
+            }
+            pre{
+                font-size: 14px;
+                margin:0 !important;
+                border-radius: 0 !important;
+                width: calc(100% - 16px);
+            }
+            pre code{
+                max-width: 750px;
+                margin: auto !important;
+                display: block;
+            }
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+        <script src="js/prism.js"></script>
+
+    </head>
+
+    <body class="nav--closed">
+        <a id="top-button" class="button button--raised-primary button--only-icon yellow-light" href="#">
+            <i class="fa fa-fw fa-chevron-up"></i>
+        </a>
+        <div class="grid-g">
+
+            <main id="main" >
+                <header class="green-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Selection Controls</span></header>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Checkbox</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <label class="checkbox green-light" for="checkbox-w1">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-w1" value="checkboxvalue">
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Label</span>
+                                </label>
+                                <label class="checkbox green-light" for="checkbox-w2">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-w2" checked value="checkboxvalue">
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Label</span>
+                                </label>
+                                <label class="checkbox green-light" for="checkbox-w3">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-w3" disabled value="checkboxvalue">
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Label</span>
+                                </label>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Unchecked -->
+&lt;label class="checkbox green-light" for="checkbox-1">
+    &lt;input type="checkbox" class="checkbox_input" id="checkbox-1" value="...">
+    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="checkbox_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Checked -->
+&lt;label class="checkbox green-light" for="checkbox-2">
+    &lt;input type="checkbox" class="checkbox_input" id="checkbox-2" value="..." checked>
+    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="checkbox_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Disabled -->
+&lt;label class="checkbox green-light" for="checkbox-3">
+    &lt;input type="checkbox" class="checkbox_input" id="checkbox-3" value="..." disabled>
+    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="checkbox_label">Label&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <label class="checkbox green-dark" for="checkbox-d1">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-d1" value="checkboxvalue" checked>
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Label</span>
+                                </label>
+                                <label class="checkbox blue-dark" for="checkbox-d2">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-d2" value="checkboxvalue" checked>
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Label</span>
+                                </label>
+                                <label class="checkbox yellow-dark" for="checkbox-d3">
+                                    <input type="checkbox" class="checkbox_input" id="checkbox-d3" value="checkboxvalue"  checked>
+                                    <span class="checkbox_box-outline">
+                                        <span class="checkbox_tick-outline"></span>
+                                    </span>
+                                    <span class="checkbox_label">Label</span>
+                                </label>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Green -->
+&lt;label class="checkbox green-dark" for="checkbox-1">
+    &lt;input type="checkbox" class="checkbox_input" id="checkbox-1" value="...">
+    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="checkbox_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Blue -->
+&lt;label class="checkbox blue-dark" for="checkbox-2">
+    &lt;input type="checkbox" class="checkbox_input" id="checkbox-2" value="...">
+    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="checkbox_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Yellow -->
+&lt;label class="checkbox yellow-dark" for="checkbox-3">
+    &lt;input type="checkbox" class="checkbox_input" id="checkbox-3" value="...">
+    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="checkbox_label">Label&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+
+
+
+
+                </section>  
+
+
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Radiobutton</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <label class="radiobutton green-light" for="radiobutton-a-1">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-a" id="radiobutton-a-1" value="value">
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Label</span>
+                                </label>
+                                <label class="radiobutton green-light" for="radiobutton-a-2">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-a" id="radiobutton-a-2" value="value" checked>
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Label</span>
+                                </label>
+                                <label class="radiobutton green-light" for="radiobutton-a-3">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-a" id="radiobutton-a-3" value="value" disabled>
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Label</span>
+                                </label>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Unchecked -->
+&lt;label class="radiobutton green-light" for="option-1">
+    &lt;input type="radio" class="radiobutton_input" name="options" id="option-1" value="...">
+    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="radiobutton_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Checked -->
+&lt;label class="radiobutton green-light" for="option-2">
+    &lt;input type="radio" class="radiobutton_input" name="options" id="option-2" value="..." checked>
+    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="radiobutton_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Disabled -->
+&lt;label class="radiobutton green-light" for="option-3">
+    &lt;input type="radio" class="radiobutton_input" name="options" id="option-3" value="..." disabled>
+    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="radiobutton_label">Label&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <label class="radiobutton green-dark" for="radiobutton-b-1">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-b" id="radiobutton-b-1" value="value" checked>
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Label</span>
+                                </label>
+                                <label class="radiobutton blue-dark" for="radiobutton-b-2">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-b" id="radiobutton-b-2" value="value">
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Label</span>
+                                </label>
+                                <label class="radiobutton yellow-dark" for="radiobutton-b-3">
+                                    <input type="radio" class="radiobutton_input" name="radiobutton-b" id="radiobutton-b-3" value="value">
+                                    <span class="radiobutton_box-outline">
+                                        <span class="radiobutton_tick-outline"></span>
+                                    </span>
+                                    <span class="radiobutton_label">Label</span>
+                                </label>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Green -->
+&lt;label class="radiobutton green-dark" for="option-1">
+    &lt;input type="radio" class="radiobutton_input" name="options" id="option-1" value="...">
+    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="radiobutton_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Blue -->
+&lt;label class="radiobutton blue-dark" for="option-2">
+    &lt;input type="radio" class="radiobutton_input" name="options" id="option-2" value="...">
+    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="radiobutton_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Yellow -->
+&lt;label class="radiobutton yellow-dark" for="option-3">
+    &lt;input type="radio" class="radiobutton_input" name="options" id="option-3" value="...">
+    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="radiobutton_label">Label&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Switch</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <label class="switch green-light" for="switch-1">
+                                    <input type="checkbox" class="switch_input" id="switch-1" value="valor">
+                                    <span class="switch_box-outline">
+                                        <span class="switch_tick-outline"></span>
+                                    </span>
+                                    <span class="switch_label">Label</span>
+                                </label>
+                                <label class="switch green-light" for="switch-2">
+                                    <input type="checkbox" class="switch_input" id="switch-2" value="valor" checked>
+                                    <span class="switch_box-outline">
+                                        <span class="switch_tick-outline"></span>
+                                    </span>
+                                    <span class="switch_label">Label</span>
+                                </label>
+                                <label class="switch green-light" for="switch-3">
+                                    <input type="checkbox" class="switch_input" id="switch-3" value="valor" disabled>
+                                    <span class="switch_box-outline">
+                                        <span class="switch_tick-outline"></span>
+                                    </span>
+                                    <span class="switch_label">Label</span>
+                                </label>
+                                <label class="switch green-light" for="switch-4">
+                                    <input type="checkbox" class="switch_input" id="switch-4" value="valor" checked disabled>
+                                    <span class="switch_box-outline">
+                                        <span class="switch_tick-outline"></span>
+                                    </span>
+                                    <span class="switch_label">Label</span>
+                                </label>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Unchecked -->
+&lt;label class="switch green-light" for="switch-1">
+    &lt;input type="checkbox" class="switch_input" id="switch-1" value="...">
+    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="switch_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Checked -->
+&lt;label class="switch green-light" for="switch-2">
+    &lt;input type="checkbox" class="switch_input" id="switch-2" value="..." checked>
+    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="switch_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Disabled -->
+&lt;label class="switch green-light" for="switch-3">
+    &lt;input type="checkbox" class="switch_input" id="switch-3" value="..." disabled>
+    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="switch_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Checked & Disabled -->
+&lt;label class="switch green-light" for="switch-4">
+    &lt;input type="checkbox" class="switch_input" id="switch-4" value="..." checked disabled>
+    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="switch_label">Label&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <label class="switch green-dark" for="switch-d1">
+                                    <input type="checkbox" class="switch_input" id="switch-d1" value="valor" checked>
+                                    <span class="switch_box-outline">
+                                        <span class="switch_tick-outline"></span>
+                                    </span>
+                                    <span class="switch_label">Label</span>
+                                </label>
+                                <label class="switch blue-dark" for="switch-d2">
+                                    <input type="checkbox" class="switch_input" id="switch-d2" value="valor" checked>
+                                    <span class="switch_box-outline">
+                                        <span class="switch_tick-outline"></span>
+                                    </span>
+                                    <span class="switch_label">Label</span>
+                                </label>
+                                <label class="switch yellow-dark" for="switch-d3">
+                                    <input type="checkbox" class="switch_input" id="switch-d3" value="valor" checked>
+                                    <span class="switch_box-outline">
+                                        <span class="switch_tick-outline"></span>
+                                    </span>
+                                    <span class="switch_label">Label</span>
+                                </label>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Green -->
+&lt;label class="switch green-light" for="switch-1">
+    &lt;input type="checkbox" class="switch_input" id="switch-1" value="...">
+    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="switch_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Blue -->
+&lt;label class="switch blue-light" for="switch-2">
+    &lt;input type="checkbox" class="switch_input" id="switch-2" value="...">
+    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="switch_label">Label&lt;/span>
+&lt;/label>
+
+&lt;!-- Yellow -->
+&lt;label class="switch yellow-light" for="switch-3">
+    &lt;input type="checkbox" class="switch_input" id="switch-3" value="...">
+    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+    &lt;span class="switch_label">Label&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+            </main>
+            <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="green-white">
+                <ul class="nav-list white-theme">
+                    <li class="nav-list_item logo card--divider">
+                        <a href="#" ></a>
+                    </li>
+                    <li class="nav-list_item">
+                        <span class="subtitle">Subtitle</span>
+                    </li>
+                    <li class="nav-list_item is-active">
+                        <a href="controle.html" class="body--semibold">Selection Controls</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="botao.html" class="body--semibold">Botões</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

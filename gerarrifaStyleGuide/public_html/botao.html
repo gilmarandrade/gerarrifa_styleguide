@@ -1,0 +1,845 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Botões</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+            section{
+                padding-bottom: 72px;
+            }
+            pre{
+                font-size: 14px;
+                margin:0 !important;
+                border-radius: 0 !important;
+                width: calc(100% - 16px);
+            }
+            pre code{
+                max-width: 750px;
+                margin: auto !important;
+                display: block;
+            }
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+        <script src="js/prism.js"></script>
+
+    </head>
+
+    <body class="nav--closed">
+        <a id="top-button" class="button button--raised-primary button--only-icon blue-light" href="#">
+            <i class="fa fa-fw fa-chevron-up"></i>
+        </a>
+        <div class="grid-g">
+
+            <main id="main" >
+                <header class="blue-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Botões</span></header>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Button</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <a href="#" class="button button--raised-primary green-light">raised button</a>
+                                <button class="button button--raised-primary blue-light">raised button</button>
+                                <input class="button button--raised-primary yellow-light" type="button" value="raised button">
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Tags</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Link -->
+&lt;a href="..." class="button button--raised-primary green-light">raised button&lt;/a>
+
+&lt;!-- Button -->
+&lt;button class="button button--raised-primary blue-light">raised button&lt;/button>
+
+&lt;!-- Input -->
+&lt;input class="button button--raised-primary yellow-light" type="button" value="raised button"></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                
+                  <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <a href="#" class="button button--raised-primary green-dark">raised button</a>
+                                <button class="button button--raised-primary blue-dark">raised button</button>
+                                <input class="button button--raised-primary yellow-dark" type="button" value="raised button">
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Tags</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Link -->
+&lt;a href="..." class="button button--raised-primary green-dark">raised button&lt;/a>
+
+&lt;!-- Button -->
+&lt;button class="button button--raised-primary blue-dark">raised button&lt;/button>
+
+&lt;!-- Input -->
+&lt;input class="button button--raised-primary yellow-dark" type="button" value="raised button"></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <button class="button button--raised-secondary light">raised button</button>
+                                <button class="button button--raised-secondary blue-light">raised button</button>
+                                <button class="button button--raised-primary blue-light">raised button</button>
+                                <button class="button button--raised-primary blue-light" disabled>raised button</button>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Raised Button</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Raised Secondary -->
+&lt;button class="button button--raised-secondary light">raised button&lt;/button>
+
+&lt;!-- Raised Secondary Colored -->
+&lt;button class="button button--raised-secondary blue-light">raised button&lt;/button>
+
+&lt;!-- Raised Primary -->
+&lt;button class="button button--raised-primary blue-light">raised button&lt;/button>
+
+&lt;!-- Raised Disabled -->
+&lt;button class="button button--raised-primary blue-light" disabled>raised button&lt;/button></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                
+                 <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <button class="button button--raised-secondary dark">raised button</button>
+                                <button class="button button--raised-secondary blue-dark">raised button</button>
+                                <button class="button button--raised-primary blue-dark">raised button</button>
+                                <button class="button button--raised-primary blue-dark" disabled>raised button</button>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Raised Button</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Raised Secondary -->
+&lt;button class="button button--raised-secondary dark">raised button&lt;/button>
+
+&lt;!-- Raised Secondary Colored -->
+&lt;button class="button button--raised-secondary blue-dark">raised button&lt;/button>
+
+&lt;!-- Raised Primary -->
+&lt;button class="button button--raised-primary blue-dark">raised button&lt;/button>
+
+&lt;!-- Raised Disabled -->
+&lt;button class="button button--raised-primary blue-dark" disabled>raised button&lt;/button></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <button class="button button--flat light">flat button</button>
+                                <button class="button button--flat blue-light">flat button</button>
+                                <button class="button button--flat blue-light" disabled>flat button</button>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Flat Button</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Flat -->
+&lt;button class="button button--flat light">flat button&lt;/button>
+
+&lt;!-- Flat Colored -->
+&lt;button class="button button--flat blue-light">flat button&lt;/button>
+
+&lt;!-- Flat Disabled -->
+&lt;button class="button button--flat blue-light" disabled>flat button&lt;/button></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                
+                     <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <button class="button button--flat dark">flat button</button>
+                                <button class="button button--flat blue-dark">flat button</button>
+                                <button class="button button--flat blue-dark" disabled>flat button</button>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Flat Button</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Flat -->
+&lt;button class="button button--flat dark">flat button&lt;/button>
+
+&lt;!-- Flat Colored -->
+&lt;button class="button button--flat blue-dark">flat button&lt;/button>
+
+&lt;!-- Flat Disabled -->
+&lt;button class="button button--flat blue-dark" disabled>flat button&lt;/button></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <a href="#" class="button button--raised-primary blue-light"><i class="fa fa-fw fa-camera"></i> raised</a>
+                                <a href="#" class="button button--raised-secondary blue-light"><i class="fa fa-fw fa-refresh"></i> raised</a>
+                                <a href="#" class="button button--flat blue-light"><i class="fa fa-fw fa-edit"></i> flat</a>
+                                <a href="#" class="button button--raised-primary button--only-icon blue-light"><i class="fa fa-fw fa-cogs"></i></a>
+                                <a href="#" class="button button--flat button--only-icon blue-light"><i class="fa fa-fw fa-search"></i></a>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Com ícone</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Raised Button -->
+&lt;a href="..." class="button button--raised-primary blue-light">&lt;i class="fa fa-fw fa-camera">&lt;/i> raised&lt;/a>
+&lt;a href="..." class="button button--raised-secondary blue-light">&lt;i class="fa fa-fw fa-refresh">&lt;/i> raised&lt;/a>
+
+&lt;!-- Flat Button -->
+&lt;a href="..." class="button button--flat blue-light">&lt;i class="fa fa-fw fa-edit">&lt;/i> flat&lt;/a>
+
+&lt;!-- Only Icon -->
+&lt;a href="..." class="button button--raised-primary button--only-icon blue-light">&lt;i class="fa fa-fw fa-cogs">&lt;/i>&lt;/a>
+&lt;a href="..." class="button button--flat button--only-icon blue-light">&lt;i class="fa fa-fw fa-search">&lt;/i>&lt;/a></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+              
+
+               
+           
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <a href="#" class="button button--raised-primary blue-dark"><i class="fa fa-fw fa-camera"></i> raised</a>
+                                <a href="#" class="button button--raised-secondary blue-dark"><i class="fa fa-fw fa-refresh"></i> raised</a>
+                                <a href="#" class="button button--flat blue-dark"><i class="fa fa-fw fa-edit"></i> flat</a>
+                                <a href="#" class="button button--raised-primary button--only-icon blue-dark"><i class="fa fa-fw fa-cogs"></i></a>
+                                <a href="#" class="button button--flat button--only-icon blue-dark"><i class="fa fa-fw fa-search"></i></a>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Com ícone</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Raised Button -->
+&lt;a href="..." class="button button--raised-primary blue-dark">&lt;i class="fa fa-fw fa-camera">&lt;/i> raised&lt;/a>
+&lt;a href="..." class="button button--raised-secondary blue-dark">&lt;i class="fa fa-fw fa-refresh">&lt;/i> raised&lt;/a>
+
+&lt;!-- Flat Button -->
+&lt;a href="..." class="button button--flat blue-dark">&lt;i class="fa fa-fw fa-edit">&lt;/i> flat&lt;/a>
+
+&lt;!-- Only Icon -->
+&lt;a href="..." class="button button--raised-primary button--only-icon blue-dark">&lt;i class="fa fa-fw fa-cogs">&lt;/i>&lt;/a>
+&lt;a href="..." class="button button--flat button--only-icon blue-dark">&lt;i class="fa fa-fw fa-search">&lt;/i>&lt;/a></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Toggle Button</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <div class="togglebutton blue-light">
+                                    <label class="togglebutton_button" for="align1-1">
+                                        <input type="radio" class="togglebutton_radio-input" name="align1" id="align1-1" value="align1" disabled>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-center"></i> center</span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align1-2">
+                                        <input type="radio" class="togglebutton_radio-input" checked name="align1" id="align1-2" value="align2">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-left"></i> left</span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align1-3">
+                                        <input type="radio" class="togglebutton_radio-input" name="align1" id="align1-3" value="align3">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-right"></i> right</span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align1-4">
+                                        <input type="radio" class="togglebutton_radio-input" name="align1" id="align1-4" value="align4">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-justify"></i> justify</span>
+                                    </label>
+                                </div>
+                                <div class="togglebutton green-light">
+                                    <label class="togglebutton_button" for="display1-1">
+                                        <input type="radio" class="togglebutton_radio-input" name="display1" id="display1-1" value="display1-1">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-list"></i></span>
+                                    </label>
+                                    <label class="togglebutton_button" for="display1-2">
+                                        <input type="radio" class="togglebutton_radio-input" name="display1" id="display1-2" value="display1-2" checked>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-table"></i></span>
+                                    </label>
+                                </div>
+                                <div class="togglebutton yellow-light">
+                                    <label class="togglebutton_button" for="align2-1">
+                                        <input type="radio" class="togglebutton_radio-input" name="align2" id="align2-1" value="align2-1">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-center"></i></span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align2-2">
+                                        <input type="radio" class="togglebutton_radio-input" checked name="align2" id="align2-2" value="align2-2">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-left"></i></span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align2-3">
+                                        <input type="radio" class="togglebutton_radio-input" name="align2" id="align2-3" value="align2-3">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-right"></i></span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align2-4">
+                                        <input type="radio" class="togglebutton_radio-input" name="align2" id="align2-4" value="align2-4">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-justify"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Exclusive Selection</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Blue  -->
+&lt;div class="togglebutton blue-light">
+    &lt;label class="togglebutton_button" for="align-1">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align" id="align-1" value="..." disabled>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-center">&lt;/i> center&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align-2">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align" id="align-2" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-left">&lt;/i> left&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align-3">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align" id="align-3" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-right">&lt;/i> right&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align-4">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align" id="align-4" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-justify">&lt;/i> justify&lt;/span>
+    &lt;/label>
+&lt;/div>
+
+&lt;!-- Green  -->
+&lt;div class="togglebutton green-light">
+    &lt;label class="togglebutton_button" for="display-1">
+        &lt;input type="radio" class="togglebutton_radio-input" name="display" id="display-1" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-list">&lt;/i>&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="display-2">
+        &lt;input type="radio" class="togglebutton_radio-input" name="display" id="display-2" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-table">&lt;/i>&lt;/span>
+    &lt;/label>
+&lt;/div>
+
+&lt;!-- Yellow  -->
+&lt;div class="togglebutton yellow-light">
+    &lt;label class="togglebutton_button" for="align2-1">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align2" id="align2-1" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-center">&lt;/i>&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align2-2">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align2" id="align2-2" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-left">&lt;/i>&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align2-3">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align2" id="align2-3" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-right">&lt;/i>&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align2-4">
+        &lt;input type="radio" class="togglebutton_radio-input" name="align2" id="align2-4" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-justify">&lt;/i>&lt;/span>
+    &lt;/label>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <div class="togglebutton blue-dark">
+                                    <label class="togglebutton_button" for="align3-1">
+                                        <input type="checkbox" class="togglebutton_checkbox-input" id="align3-1" value="align3-1" disabled>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-center"></i> center</span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align3-2">
+                                        <input type="checkbox" class="togglebutton_checkbox-input" id="align3-2" value="align3-2" checked>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-left"></i> left</span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align3-3">
+                                        <input type="checkbox" class="togglebutton_checkbox-input" id="align3-3" value="align3-3">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-right"></i> right</span>
+                                    </label>
+                                    <label class="togglebutton_button" for="align3-4">
+                                        <input type="checkbox" class="togglebutton_checkbox-input" id="align3-4" value="align3-4" checked>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-align-justify"></i> justify</span>
+                                    </label>
+                                </div>
+                                <div class="togglebutton green-dark">
+                                    <label class="togglebutton_button" for="style-1">
+                                        <input type="checkbox" class="togglebutton_checkbox-input" id="style-1" value="style-1">
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-bold"></i></span>
+                                    </label>
+                                    <label class="togglebutton_button" for="style-2">
+                                        <input type="checkbox" class="togglebutton_checkbox-input"  id="style-2" value="style-2" checked>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-italic"></i></span>
+                                    </label>
+                                    <label class="togglebutton_button" for="style-3">
+                                        <input type="checkbox" class="togglebutton_checkbox-input" id="style-3" value="style-3" checked>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-underline"></i></span>
+                                    </label>
+                                </div>
+                                <div class="togglebutton yellow-dark">
+                                    <label class="togglebutton_button" for="select1">
+                                        <input type="checkbox" class="togglebutton_checkbox-input"  id="select1" value="select" checked>
+                                        <span class="togglebutton_label"><i class="fa fa-fw fa-hand-pointer-o"></i> select</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Multiple Selection</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Blue  -->
+&lt;div class="togglebutton blue-dark">
+    &lt;label class="togglebutton_button" for="align-1">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input" id="align-1" value="..." disabled>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-center">&lt;/i> center&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align-2">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input" id="align-2" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-left">&lt;/i> left&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align-3">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input" id="align-3" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-right">&lt;/i> right&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="align-4">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input" id="align-4" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-align-justify">&lt;/i> justify&lt;/span>
+    &lt;/label>
+&lt;/div>
+
+&lt;!-- Green  -->
+&lt;div class="togglebutton green-dark">
+    &lt;label class="togglebutton_button" for="style-1">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input" id="style-1" value="...">
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-bold">&lt;/i>&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="style-2">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input"  id="style-2" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-italic">&lt;/i>&lt;/span>
+    &lt;/label>
+    &lt;label class="togglebutton_button" for="style-3">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input" id="style-3" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-underline">&lt;/i>&lt;/span>
+    &lt;/label>
+&lt;/div>
+
+&lt;!-- Yellow  -->
+&lt;div class="togglebutton yellow-dark">
+    &lt;label class="togglebutton_button" for="select1">
+        &lt;input type="checkbox" class="togglebutton_checkbox-input"  id="select1" value="..." checked>
+        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-hand-pointer-o">&lt;/i> select&lt;/span>
+    &lt;/label>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Icon Toggle</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <label class="icontoggle blue-light" for="icontoggle-4">
+                                    <input type="checkbox" class="icontoggle_input" id="icontoggle-4" value="icontoggle">
+                                    <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                    <span class="icontoggle_label-unchecked">curtir</span>
+                                    <span class="icontoggle_label-checked">descurtir</span>
+                                </label>
+                                <label class="icontoggle blue-light" for="icontoggle-5">
+                                    <input type="checkbox" class="icontoggle_input" id="icontoggle-5" value="icontoggle" checked>
+                                    <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                    <span class="icontoggle_label-unchecked">curtir</span>
+                                    <span class="icontoggle_label-checked">descurtir</span>
+                                </label>
+                                <label class="icontoggle blue-light" for="icontoggle-6">
+                                    <input type="checkbox" class="icontoggle_input" id="icontoggle-6" value="icontoggle" disabled>
+                                    <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                    <span class="icontoggle_label-unchecked">curtir</span>
+                                    <span class="icontoggle_label-checked">descurtir</span>
+                                </label>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Unchecked  -->
+&lt;label class="icontoggle blue-light" for="icontoggle-1">
+    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-1" value="...">
+    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
+    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
+&lt;/label>
+
+&lt;!-- Checked -->
+&lt;label class="icontoggle blue-light" for="icontoggle-2">
+    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-2" value="..." checked>
+    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
+    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
+&lt;/label>
+
+&lt;!-- Disabled -->
+&lt;label class="icontoggle blue-light" for="icontoggle-3">
+    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-3" value="..." disabled>
+    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
+    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                <section class="light-theme">
+
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <label class="icontoggle blue-ldark" for="icontoggle-1">
+                                    <input type="checkbox" class="icontoggle_input" id="icontoggle-1" value="icontoggle" checked>
+                                    <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                    <span class="icontoggle_label-unchecked">curtir</span>
+                                    <span class="icontoggle_label-checked">descurtir</span>
+                                </label>
+                                <label class="icontoggle green-dark" for="icontoggle-2">
+                                    <input type="checkbox" class="icontoggle_input" id="icontoggle-2" value="icontoggle" checked>
+                                    <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                    <span class="icontoggle_label-unchecked">curtir</span>
+                                    <span class="icontoggle_label-checked">descurtir</span>
+                                </label>
+                                <label class="icontoggle yellow-dark" for="icontoggle-3">
+                                    <input type="checkbox" class="icontoggle_input" id="icontoggle-3" value="icontoggle" checked>
+                                    <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                    <span class="icontoggle_label-unchecked">curtir</span>
+                                    <span class="icontoggle_label-checked">descurtir</span>
+                                </label>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Blue  -->
+&lt;label class="icontoggle blue-dark" for="icontoggle-1">
+    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-1" value="...">
+    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
+    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
+&lt;/label>
+
+&lt;!-- Green -->
+&lt;label class="icontoggle green-dark" for="icontoggle-2">
+    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-2" value="...">
+    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
+    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
+&lt;/label>
+
+&lt;!-- Yellow -->
+&lt;label class="icontoggle yellow-dark" for="icontoggle-3">
+    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-3" value="...">
+    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
+    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
+&lt;/label></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                
+                <section class="light-theme">
+                    <header>
+                        <h1>Dropdown</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <div class="dropdown blue-light">
+                                    <button class="dropdown_button" style="width:70px;"></button>
+                                    <ul class="dropdown_options dropdown_options--top-left">
+                                        <li data-value="10" class="is-active">10</li>
+                                        <li data-value="20">20</li>
+                                        <li data-value="30">30</li>
+                                        <li data-value="40">40</li>
+                                        <li data-value="50">50</li>
+                                        <li data-value="60">60</li>
+                                        <li data-value="70">70</li>
+                                        <li data-value="80">80</li>
+                                        <li data-value="90">90</li>
+                                        <li data-value="100">100</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
+                                </div>
+                                <div class="dropdown blue-light">
+                                    <button class="dropdown_button" style="width:150px;" disabled></button>
+                                    <ul class="dropdown_options dropdown_options--bottom-left">
+                                        <li data-value="option1" class="is-active">Option 1</li>
+                                        <li data-value="option2">Option 2</li>
+                                        <li data-value="option3">Option 3</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown2" class="dropdown_input" value=""/>
+                                </div>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Enabled -->
+&lt;div class="dropdown blue-light">
+    &lt;button class="dropdown_button" style="width:70px;">&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--top-left">
+        &lt;li data-value="..." class="is-active">10&lt;/li>
+        ...
+        &lt;li data-value="...">100&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
+&lt;/div>
+
+&lt;!-- Disabled -->
+&lt;div class="dropdown blue-light">
+    &lt;button class="dropdown_button" style="width:150px;" disabled>&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--top-left">
+        ...
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown2" class="dropdown_input" value=""/>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <div class="dropdown blue-dark">
+                                    <button class="dropdown_button" style="width:70px;"></button>
+                                    <ul class="dropdown_options dropdown_options--top-left">
+                                        <li data-value="10" class="is-active">10</li>
+                                        <li data-value="20">20</li>
+                                        <li data-value="30">30</li>
+                                        <li data-value="40">40</li>
+                                        <li data-value="50">50</li>
+                                        <li data-value="60">60</li>
+                                        <li data-value="70">70</li>
+                                        <li data-value="80">80</li>
+                                        <li data-value="90">90</li>
+                                        <li data-value="100">100</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown3" class="dropdown_input" value=""/>
+                                </div>
+                                <div class="dropdown blue-dark">
+                                    <button class="dropdown_button" style="width:150px;" disabled></button>
+                                    <ul class="dropdown_options dropdown_options--bottom-left">
+                                        <li data-value="option1" class="is-active">Option 1</li>
+                                        <li data-value="option2">Option 2</li>
+                                        <li data-value="option3">Option 3</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown4" class="dropdown_input" value=""/>
+                                </div>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Enabled -->
+&lt;div class="dropdown blue-dark">
+    &lt;button class="dropdown_button" style="width:70px;">&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--top-left">
+        &lt;li data-value="..." class="is-active">10&lt;/li>
+        ...
+        &lt;li data-value="...">100&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
+&lt;/div>
+
+&lt;!-- Disabled -->
+&lt;div class="dropdown blue-dark">
+    &lt;button class="dropdown_button" style="width:150px;" disabled>&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--top-left">
+        ...
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown2" class="dropdown_input" value=""/>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <div class="dropdown blue-light">
+                                    <button class="dropdown_button" style="width: 200px;"></button>
+                                    <ul class="dropdown_options dropdown_options--bottom-left">
+                                        <li data-value="action1" class="is-active">Yet Another Action</li>
+                                        <li data-value="ac 2">Yet Another Action Yet Another Action</li>
+                                        <li data-value="another 3">Another Action</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
+                                </div>
+                                <div class="dropdown blue-light">
+                                    <button class="dropdown_button" style="width: 200px;"></button>
+                                    <ul class="dropdown_options dropdown_options--bottom-right">
+                                        <li data-value="action1" class="is-active">Yet Another Action</li>
+                                        <li data-value="ac 2">Yet Another Action Yet Another Action</li>
+                                        <li data-value="another 3">Another Action</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown2" class="dropdown_input" value=""/>
+                                </div>
+                                <div class="dropdown blue-light">
+                                    <button class="dropdown_button" style="width: 200px;"></button>
+                                    <ul class="dropdown_options dropdown_options--top-left">
+                                        <li data-value="action1" class="is-active">Yet Another Action</li>
+                                        <li data-value="ac 2">Yet Another Action Yet Another Action</li>
+                                        <li data-value="another 3">Another Action</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown3" class="dropdown_input" value=""/>
+                                </div>
+                                <div class="dropdown blue-light">
+                                    <button class="dropdown_button" style="width: 200px;"></button>
+                                    <ul class="dropdown_options dropdown_options--top-right">
+                                        <li data-value="action1" class="is-active">Yet Another Action</li>
+                                        <li data-value="ac 2">Yet Another Action Yet Another Action</li>
+                                        <li data-value="another 3">Another Action</li>
+                                    </ul>
+                                    <input type="hidden" id="dropdown4" class="dropdown_input" value=""/>
+                                </div>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Options Position</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Bottom-left -->
+&lt;div class="dropdown blue-light">
+    &lt;button class="dropdown_button" style="width: 200px;">&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--bottom-left">
+        &lt;li data-value="..." class="is-active">Yet Another Action&lt;/li>
+        &lt;li data-value="...">Yet Another Action Yet Another Action&lt;/li>
+        &lt;li data-value="...">Another Action&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
+&lt;/div>
+
+&lt;!-- Bottom-right -->
+&lt;div class="dropdown blue-light">
+    &lt;button class="dropdown_button" style="width: 200px;">&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--bottom-right">
+        &lt;li data-value="..." class="is-active">Yet Another Action&lt;/li>
+        &lt;li data-value="...">Yet Another Action Yet Another Action&lt;/li>
+        &lt;li data-value="...">Another Action&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown2" class="dropdown_input" value=""/>
+&lt;/div>
+
+&lt;!-- Top-left -->
+&lt;div class="dropdown blue-light">
+    &lt;button class="dropdown_button" style="width: 200px;">&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--top-left">
+        &lt;li data-value="..." class="is-active">Yet Another Action&lt;/li>
+        &lt;li data-value="...">Yet Another Action Yet Another Action&lt;/li>
+        &lt;li data-value="...">Another Action&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown3" class="dropdown_input" value=""/>
+&lt;/div>
+
+&lt;!-- Top-right -->
+&lt;div class="dropdown blue-light">
+    &lt;button class="dropdown_button" style="width: 200px;">&lt;/button>
+    &lt;ul class="dropdown_options dropdown_options--top-right">
+        &lt;li data-value="..." class="is-active">Yet Another Action&lt;/li>
+        &lt;li data-value="...">Yet Another Action Yet Another Action&lt;/li>
+        &lt;li data-value="...">Another Action&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="dropdown4" class="dropdown_input" value=""/>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+            </main>
+            <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="blue-white">
+                <ul class="nav-list white-theme">
+                    <li class="nav-list_item logo card--divider">
+                        <a href="#" ></a>
+                    </li>
+                    <li class="nav-list_item">
+                        <span class="subtitle">Subtitle</span>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="controle.html" class="body--semibold">Selection Controls</a>
+                    </li>
+                    <li class="nav-list_item is-active">
+                        <a href="botao.html" class="body--semibold">Botões</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

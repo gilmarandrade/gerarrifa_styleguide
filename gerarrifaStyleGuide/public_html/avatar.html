@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Avatar</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+            section{
+                padding-bottom: 72px;
+            }
+            pre{
+                font-size: 14px;
+                margin:0 !important;
+                border-radius: 0 !important;
+                width: calc(100% - 16px);
+            }
+            pre code{
+                max-width: 750px;
+                margin: auto !important;
+                display: block;
+            }
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+        <script src="js/prism.js"></script>
+
+    </head>
+
+    <body class="nav--closed">
+        <a id="top-button" class="button button--raised-primary button--only-icon yellow-light" href="#">
+            <i class="fa fa-fw fa-chevron-up"></i>
+        </a>
+        <div class="grid-g">
+
+            <main id="main" >
+                <header class="yellow-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Avatar</span></header>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Avatar</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center">
+                                <span class="avatar avatar--one-line light-theme">
+                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                    <span>Jonas Connor Alexander Van</span>
+                                </span>
+                                <span class="avatar avatar--two-line white-theme">
+                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                    <span>Jonas Connor Alexander Van</span>
+                                    <span>Lorem Ipsum</span>
+                                </span>
+                                <span class="avatar white-theme">
+                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                </span>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- One Line -->
+&lt;span class="avatar avatar--one-line light-theme">
+    &lt;img alt="imagem" src="..."/>
+    &lt;span>Jonas Connor Alexander Van&lt;/span>
+&lt;/span>
+
+&lt;!-- Two Line -->
+&lt;span class="avatar avatar--two-line white-theme">
+    &lt;img alt="imagem" src="..."/>
+    &lt;span>Jonas Connor Alexander Van&lt;/span>
+    &lt;span>Lorem Ipsum&lt;/span>
+&lt;/span>
+
+&lt;!-- No Label -->
+&lt;span class="avatar white-theme">
+    &lt;img alt="imagem" src="..."/>
+&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center">
+                                <span class="avatar avatar--one-line dark-theme">
+                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                    <span>Jonas Connor Alexander Van</span>
+                                </span>
+                                <span class="avatar avatar--two-line dark-theme">
+                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                    <span>Jonas Connor Alexander Van</span>
+                                    <span>Lorem Ipsum</span>
+                                </span>
+                                <span class="avatar dark-theme">
+                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                </span>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- One Line -->
+&lt;span class="avatar avatar--one-line dark-theme">
+    &lt;img alt="imagem" src="..."/>
+    &lt;span>Jonas Connor Alexander Van&lt;/span>
+&lt;/span>
+
+&lt;!-- Two Line -->
+&lt;span class="avatar avatar--two-line dark-theme">
+    &lt;img alt="imagem" src="..."/>
+    &lt;span>Jonas Connor Alexander Van&lt;/span>
+    &lt;span>Lorem Ipsum&lt;/span>
+&lt;/span>
+
+&lt;!-- No Label -->
+&lt;span class="avatar dark-theme">
+    &lt;img alt="imagem" src="..."/>
+&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+            </main>
+            <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="yellow-white">
+                <ul class="nav-list white-theme">
+                    <li class="nav-list_item logo card--divider">
+                        <a href="#" ></a>
+                    </li>
+                    <li class="nav-list_item">
+                        <span class="subtitle">Subtitle</span>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="controle.html" class="body--semibold">Selection Controls</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="botao.html" class="body--semibold">Botões</a>
+                    </li>
+                    <li class="nav-list_item  is-active">
+                        <a href="avatar.html" class="body--semibold">Avatar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

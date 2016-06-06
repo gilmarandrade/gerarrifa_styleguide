@@ -853,6 +853,7 @@ td .dropdown, th .dropdown{
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: 50%;
+    text-align: left;
 }
 .selectfield_options li:active{
     background-size: 1000%;

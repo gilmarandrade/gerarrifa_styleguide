@@ -1,0 +1,617 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Textfield</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+            section{
+                padding-bottom: 72px;
+            }
+            pre{
+                font-size: 14px;
+                margin:0 !important;
+                border-radius: 0 !important;
+                width: calc(100% - 16px);
+            }
+            pre code{
+                max-width: 750px;
+                margin: auto !important;
+                display: block;
+            }
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+        <script src="js/prism.js"></script>
+
+    </head>
+
+    <body class="nav--closed">
+        <a id="top-button" class="button button--raised-primary button--only-icon yellow-light" href="#">
+            <i class="fa fa-fw fa-chevron-up"></i>
+        </a>
+        <div class="grid-g">
+
+            <main id="main" >
+                <header class="green-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Textfields</span></header>
+
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Textfield</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-1 grid-u-sm-1-3 green-light">
+                                    <input class="textfield_input" type="text" id="sample1-1" >
+                                    <label class="textfield_label" for="sample1-1">Placeholder</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-1-3 textfield--floating-label blue-light">
+                                    <input class="textfield_input" type="text" id="sample1-2" value="preenchido">
+                                    <label class="textfield_label" for="sample1-2">Label Float</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-1-3 textfield--floating-label textfield--primary yellow-light">
+                                    <input class="textfield_input" type="text" id="sample1-3" value="23,6">
+                                    <label class="textfield_label" for="sample1-3">Textfield Primary</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Placeholder Label -->
+&lt;div class="textfield green-light grid-u-1 grid-u-sm-1-3">
+    &lt;input class="textfield_input" type="text" id="sample1" >
+    &lt;label class="textfield_label" for="sample1">Placeholder&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Floating Label -->
+&lt;div class="textfield textfield--floating-label blue-light grid-u-1 grid-u-sm-1-3">
+    &lt;input class="textfield_input" type="text" id="sample2" value="preenchido">
+    &lt;label class="textfield_label" for="sample2">Label Float&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Textfield Primary -->
+&lt;div class="textfield textfield--floating-label textfield--primary yellow-light grid-u-1 grid-u-sm-1-3">
+    &lt;input class="textfield_input" type="text" id="sample3" value="23,6">
+    &lt;label class="textfield_label" for="sample3">Textfield Primary&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-1 grid-u-sm-1-3 green-dark">
+                                    <input class="textfield_input" type="text" id="sample11-1" >
+                                    <label class="textfield_label" for="sample11-1">Placeholder</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-1-3 textfield--floating-label blue-dark">
+                                    <input class="textfield_input" type="text" id="sample11-2" value="preenchido">
+                                    <label class="textfield_label" for="sample11-2">Label Float</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-1-3 textfield--floating-label textfield--primary yellow-dark">
+                                    <input class="textfield_input" type="text" id="sample11-3" value="23,6">
+                                    <label class="textfield_label" for="sample11-3">Textfield Primary</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Placeholder Label -->
+&lt;div class="textfield green-dark grid-u-1 grid-u-sm-1-3">
+    &lt;input class="textfield_input" type="text" id="sample1" >
+    &lt;label class="textfield_label" for="sample1">Placeholder&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Floating Label -->
+&lt;div class="textfield textfield--floating-label blue-dark grid-u-1 grid-u-sm-1-3">
+    &lt;input class="textfield_input" type="text" id="sample2" value="preenchido">
+    &lt;label class="textfield_label" for="sample2">Label Float&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Textfield Primary -->
+&lt;div class="textfield textfield--floating-label textfield--primary yellow-dark grid-u-1 grid-u-sm-1-3">
+    &lt;input class="textfield_input" type="text" id="sample3" value="23,6">
+    &lt;label class="textfield_label" for="sample3">Textfield Primary&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center grid-g">
+                                <div class="textfield  grid-u-1 grid-u-md-1-2  green-light">
+                                    <textarea class="textfield_input" id="sample3-1" rows="8"></textarea>
+                                    <label class="textfield_label" for="sample3-1">Label</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-md-1-2 textfield--floating-label green-light">
+                                    <textarea class="textfield_input" id="sample3-2" rows="8"></textarea>
+                                    <label class="textfield_label" for="sample3-2">Label</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Multiple Lines (Placeholder Label) -->
+&lt;div class="textfield green-light grid-u-1 grid-u-md-1-2">
+    &lt;textarea class="textfield_input" id="sample1" rows="8">&lt;/textarea>
+    &lt;label class="textfield_label" for="sample1">Label&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Multiple Lines (Floating Label) -->
+&lt;div class="textfield textfield--floating-label green-light grid-u-1 grid-u-md-1-2">
+    &lt;textarea class="textfield_input" id="sample2" rows="8">&lt;/textarea>
+    &lt;label class="textfield_label" for="sample2">Label&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center grid-g">
+                                <div class="textfield  grid-u-1 grid-u-md-1-2  green-dark">
+                                    <textarea class="textfield_input" id="sample13-1" rows="8"></textarea>
+                                    <label class="textfield_label" for="sample13-1">Label</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-md-1-2 textfield--floating-label green-dark">
+                                    <textarea class="textfield_input" id="sample13-2" rows="8"></textarea>
+                                    <label class="textfield_label" for="sample13-2">Label</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Multiple Lines (Placeholder Label) -->
+&lt;div class="textfield green-dark grid-u-1 grid-u-md-1-2">
+    &lt;textarea class="textfield_input" id="sample1" rows="8">&lt;/textarea>
+    &lt;label class="textfield_label" for="sample1">Label&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Multiple Lines (Floating Label) -->
+&lt;div class="textfield textfield--floating-label green-dark grid-u-1 grid-u-md-1-2">
+    &lt;textarea class="textfield_input" id="sample2" rows="8">&lt;/textarea>
+    &lt;label class="textfield_label" for="sample2">Label&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-1 grid-u-sm-1-2 textfield--floating-label is-required green-light">
+                                    <input class="textfield_input" type="text" id="sample2-1" >
+                                    <label class="textfield_label" for="sample2-1">Required</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label is-invalid yellow-light">
+                                    <input class="textfield_input" type="text" id="sample2-2" >
+                                    <label class="textfield_label" for="sample2-2">Invalid</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label blue-light">
+                                    <input class="textfield_input" type="text" id="sample2-3" value="Value" disabled>
+                                    <label class="textfield_label" for="sample2-3">Label</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Required -->
+&lt;div class="textfield textfield--floating-label is-required green-light grid-u-1 grid-u-sm-1-2">
+    &lt;input class="textfield_input" type="text" id="sample1" >
+    &lt;label class="textfield_label" for="sample1">Required&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Invalid -->
+&lt;div class="textfield textfield--floating-label is-invalid yellow-light grid-u-1 grid-u-sm-3-12 ">
+    &lt;input class="textfield_input" type="text" id="sample2" >
+    &lt;label class="textfield_label" for="sample2">Invalid&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Disabled -->
+&lt;div class="textfield textfield--floating-label blue-light grid-u-1 grid-u-sm-3-12">
+    &lt;input class="textfield_input" type="text" id="sample3" value="value" disabled>
+    &lt;label class="textfield_label" for="sample3">Label&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-1 grid-u-sm-1-2 textfield--floating-label is-required green-dark">
+                                    <input class="textfield_input" type="text" id="sample42-1" >
+                                    <label class="textfield_label" for="sample42-1">Required</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label is-invalid yellow-dark">
+                                    <input class="textfield_input" type="text" id="sample42-2" >
+                                    <label class="textfield_label" for="sample42-2">Invalid</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label blue-dark">
+                                    <input class="textfield_input" type="text" id="sample42-3" value="Value" disabled>
+                                    <label class="textfield_label" for="sample42-3">Label</label>
+                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                </div>
+
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Required -->
+&lt;div class="textfield textfield--floating-label is-required green-dark grid-u-1 grid-u-sm-1-2">
+    &lt;input class="textfield_input" type="text" id="sample1" >
+    &lt;label class="textfield_label" for="sample1">Required&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Invalid -->
+&lt;div class="textfield textfield--floating-label is-invalid yellow-dark grid-u-1 grid-u-sm-3-12 ">
+    &lt;input class="textfield_input" type="text" id="sample2" >
+    &lt;label class="textfield_label" for="sample2">Invalid&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div>
+
+&lt;!-- Disabled -->
+&lt;div class="textfield textfield--floating-label blue-dark grid-u-1 grid-u-sm-3-12">
+    &lt;input class="textfield_input" type="text" id="sample3" value="value" disabled>
+    &lt;label class="textfield_label" for="sample3">Label&lt;/label>
+    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Textfield Static</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-3-12 textfield--static light">
+                                    <span class="textfield_label">Label Static</span>
+                                    <div class="textfield_input">Lorem Ipsum Dolor Sit</div>
+                                </div>
+                            </div>
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-2-12 textfield--static textfield--primary light">
+                                    <span class="textfield_label">Primary Static</span>
+                                    <div class="textfield_input">R$ 23.786,09</div>
+                                </div>
+                            </div>
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-1-2 textfield--static light">
+                                    <span class="textfield_label">Label Static</span>
+                                    <div class="textfield_input">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</div>
+                                </div>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Textfield Static -->
+&lt;div class="textfield textfield--static light grid-u-3-12">
+    &lt;span class="textfield_label">Label Static&lt;/span>
+    &lt;div class="textfield_input">Lorem Ipsum Dolor Sit&lt;/div>
+&lt;/div>
+
+&lt;!-- Textfield Primary Static -->
+&lt;div class="textfield textfield--static textfield--primary light grid-u-2-12">
+    &lt;span class="textfield_label">Primary Static&lt;/span>
+    &lt;div class="textfield_input">R$ 23.786,09&lt;/div>
+&lt;/div>
+
+&lt;!-- Multiple Lines Static -->
+&lt;div class="textfield textfield--static light grid-u-1-2">
+    &lt;span class="textfield_label">Label Static&lt;/span>
+    &lt;div class="textfield_input">Lorem ipsum dolor sit amet, consectetur adipiscing 
+    elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit 
+    amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend 
+    lacinia.&lt;/div>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-3-12 textfield--static dark">
+                                    <span class="textfield_label">Label Static</span>
+                                    <div class="textfield_input">Lorem Ipsum Dolor Sit</div>
+                                </div>
+                            </div>
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-2-12 textfield--static textfield--primary dark">
+                                    <span class="textfield_label">Primary Static</span>
+                                    <div class="textfield_input">R$ 23.786,09</div>
+                                </div>
+                            </div>
+                            <div class="card_actions align--left grid-g">
+                                <div class="textfield grid-u-1-2 textfield--static dark">
+                                    <span class="textfield_label">Label Static</span>
+                                    <div class="textfield_input">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</div>
+                                </div>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Textfield Static -->
+&lt;div class="textfield textfield--static dark grid-u-3-12">
+    &lt;span class="textfield_label">Label Static&lt;/span>
+    &lt;div class="textfield_input">Lorem Ipsum Dolor Sit&lt;/div>
+&lt;/div>
+
+&lt;!-- Textfield Primary Static -->
+&lt;div class="textfield textfield--static textfield--primary dark grid-u-2-12">
+    &lt;span class="textfield_label">Primary Static&lt;/span>
+    &lt;div class="textfield_input">R$ 23.786,09&lt;/div>
+&lt;/div>
+
+&lt;!-- Multiple Lines Static -->
+&lt;div class="textfield textfield--static dark grid-u-1-2">
+    &lt;span class="textfield_label">Label Static&lt;/span>
+    &lt;div class="textfield_input">Lorem ipsum dolor sit amet, consectetur adipiscing 
+    elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit 
+    amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend 
+    lacinia.&lt;/div>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Selectfield</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions align--center grid-g">
+                                <div class="selectfield grid-u-1-3 green-light">
+                                    <button class="selectfield_input" id="sample1-1"></button>
+                                    <ul class="selectfield_options">
+                                        <li data-value="Action 1" class="is-active">Action 1</li>
+                                        <li data-value="Action 2">Action 2</li>
+                                        <li data-value="Action 3">Action 3</li>
+                                        <li data-value="Action 4">Action 4</li>
+                                        <li data-value="Action 5">Action 5</li>
+                                        <li data-value="Action 6">Action 6</li>
+                                    </ul>
+                                    <input type="hidden" id="selectfield1" value=""/>
+                                    <label class="selectfield_label" for="sample1-1">Label</label>
+                                </div>
+                                <div class="selectfield grid-u-1-3 green-light">
+                                    <button class="selectfield_input" id="sample1-2" disabled></button>
+                                    <ul class="selectfield_options">
+                                        <li data-value="Action 1" class="is-active">Action 1</li>
+                                        <li data-value="Action 2">Action 2</li>
+                                        <li data-value="Action 3">Action 3</li>
+                                        <li data-value="Action 4">Action 4</li>
+                                        <li data-value="Action 5">Action 5</li>
+                                        <li data-value="Action 6">Action 6</li>
+                                    </ul>
+                                    <input type="hidden" id="selectfield2"  value=""/>
+                                    <label class="selectfield_label" for="sample1-2">Label</label>
+                                </div>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Enabled -->
+&lt;div class="selectfield grid-u-1-3 green-light">
+    &lt;button class="selectfield_input" id="sample1">&lt;/button>
+    &lt;ul class="selectfield_options">
+        &lt;li data-value="Action 1" class="is-active">Action 1&lt;/li>
+        &lt;li data-value="Action 2">Action 2&lt;/li>
+        &lt;li data-value="Action 3">Action 3&lt;/li>
+        &lt;li data-value="Action 4">Action 4&lt;/li>
+        &lt;li data-value="Action 5">Action 5&lt;/li>
+        &lt;li data-value="Action 6">Action 6&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="selectfield1" value=""/>
+    &lt;label class="selectfield_label" for="sample1">Label&lt;/label>
+&lt;/div>
+
+&lt;!-- Disabled -->
+&lt;div class="selectfield grid-u-1-3 green-light">
+    &lt;button class="selectfield_input" id="sample2" disabled>&lt;/button>
+    &lt;ul class="selectfield_options">
+        &lt;li data-value="Action 1" class="is-active">Action 1&lt;/li>
+        &lt;li data-value="Action 2">Action 2&lt;/li>
+        &lt;li data-value="Action 3">Action 3&lt;/li>
+        &lt;li data-value="Action 4">Action 4&lt;/li>
+        &lt;li data-value="Action 5">Action 5&lt;/li>
+        &lt;li data-value="Action 6">Action 6&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="selectfield2"  value=""/>
+    &lt;label class="selectfield_label" for="sample2">Label&lt;/label>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions align--center grid-g">
+                                <div class="selectfield grid-u-1-3 green-dark">
+                                    <button class="selectfield_input" id="sample2-1"></button>
+                                    <ul class="selectfield_options">
+                                        <li data-value="Action 1" class="is-active">Action 1</li>
+                                        <li data-value="Action 2">Action 2</li>
+                                        <li data-value="Action 3">Action 3</li>
+                                        <li data-value="Action 4">Action 4</li>
+                                        <li data-value="Action 5">Action 5</li>
+                                        <li data-value="Action 6">Action 6</li>
+                                    </ul>
+                                    <input type="hidden" id="selectfield2" value=""/>
+                                    <label class="selectfield_label" for="sample2-1">Label</label>
+                                </div>
+                                <div class="selectfield grid-u-1-3 green-dark">
+                                    <button class="selectfield_input" id="sample2-2" disabled></button>
+                                    <ul class="selectfield_options">
+                                        <li data-value="Action 1" class="is-active">Action 1</li>
+                                        <li data-value="Action 2">Action 2</li>
+                                        <li data-value="Action 3">Action 3</li>
+                                        <li data-value="Action 4">Action 4</li>
+                                        <li data-value="Action 5">Action 5</li>
+                                        <li data-value="Action 6">Action 6</li>
+                                    </ul>
+                                    <input type="hidden" id="selectfield3"  value=""/>
+                                    <label class="selectfield_label" for="sample2-2">Label</label>
+                                </div>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Enabled -->
+&lt;div class="selectfield grid-u-1-3 green-dark">
+    &lt;button class="selectfield_input" id="sample1">&lt;/button>
+    &lt;ul class="selectfield_options">
+        &lt;li data-value="Action 1" class="is-active">Action 1&lt;/li>
+        &lt;li data-value="Action 2">Action 2&lt;/li>
+        &lt;li data-value="Action 3">Action 3&lt;/li>
+        &lt;li data-value="Action 4">Action 4&lt;/li>
+        &lt;li data-value="Action 5">Action 5&lt;/li>
+        &lt;li data-value="Action 6">Action 6&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="selectfield1" value=""/>
+    &lt;label class="selectfield_label" for="sample1">Label&lt;/label>
+&lt;/div>
+
+&lt;!-- Disabled -->
+&lt;div class="selectfield grid-u-1-3 green-dark">
+    &lt;button class="selectfield_input" id="sample2" disabled>&lt;/button>
+    &lt;ul class="selectfield_options">
+        &lt;li data-value="Action 1" class="is-active">Action 1&lt;/li>
+        &lt;li data-value="Action 2">Action 2&lt;/li>
+        &lt;li data-value="Action 3">Action 3&lt;/li>
+        &lt;li data-value="Action 4">Action 4&lt;/li>
+        &lt;li data-value="Action 5">Action 5&lt;/li>
+        &lt;li data-value="Action 6">Action 6&lt;/li>
+    &lt;/ul>
+    &lt;input type="hidden" id="selectfield2"  value=""/>
+    &lt;label class="selectfield_label" for="sample2">Label&lt;/label>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+            </main>
+            <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="green-white">
+                <ul class="nav-list white-theme">
+                    <li class="nav-list_item logo card--divider">
+                        <a href="#" ></a>
+                    </li>
+                    <li class="nav-list_item">
+                        <span class="subtitle">Subtitle</span>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="controle.html" class="body--semibold">Selection Controls</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="botao.html" class="body--semibold">Botões</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="avatar.html" class="body--semibold">Avatar</a>
+                    </li>
+                    <li class="nav-list_item is-active">
+                        <a href="textfield.html" class="body--semibold">Textfields</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

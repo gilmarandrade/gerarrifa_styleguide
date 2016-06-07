@@ -17,6 +17,7 @@ section > header{
     vertical-align: top;
     text-rendering: auto;
     width: 100%;
+    text-align: left;
 }
 section > header h1, .title-display{
     font-family: "Static Bold";

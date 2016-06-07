@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Avatar</title>
+        <title>Multimídia</title>
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/font-awesome.css">
@@ -60,99 +60,80 @@
         <div class="grid-g">
 
             <main id="main" >
-                <header class="yellow-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Avatar</span></header>
+                <header class="green-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Multimídia</span></header>
 
-                <section class="light-theme">
+                <section class="light-theme align--center" >
                     <header>
-                        <h1>Avatar</h1>
+                        <h1>Imagem</h1>
                     </header>
-                    <div class="card grid-u-1">
+                    <div class="card grid-u-10-12" style="margin:auto;">
                         <div class="card_box white-theme">
-                            <div class="card_actions align--center">
-                                <span class="avatar avatar--one-line light-theme">
-                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
-                                    <span>Jonas Connor Alexander Van</span>
-                                </span>
-                                <span class="avatar avatar--two-line white-theme">
-                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
-                                    <span>Jonas Connor Alexander Van</span>
-                                    <span>Lorem Ipsum</span>
-                                </span>
-                                <span class="avatar white-theme">
-                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
-                                </span>
+                            <div class="card_image--contain" style="height:400px; background-image:url('img/imagem-teste.jpg');">
                             </div>
+                        </div>
+                    </div>
+                    <div class="card grid-u-12-12">
+                        <div class="card_box white-theme">
                             <div class="card_actions white-theme align--center">
-                                <span class="caption--bold">Light</span>
+                                <span class="caption--bold">Image Size Contain</span>
                             </div>
                             <div class="card_actions" >
-                                <pre><code class="language-html">&lt;!-- One Line -->
-&lt;span class="avatar avatar--one-line light-theme">
-    &lt;img alt="imagem" src="..."/>
-    &lt;span>Jonas Connor Alexander Van&lt;/span>
-&lt;/span>
-
-&lt;!-- Two Line -->
-&lt;span class="avatar avatar--two-line white-theme">
-    &lt;img alt="imagem" src="..."/>
-    &lt;span>Jonas Connor Alexander Van&lt;/span>
-    &lt;span>Lorem Ipsum&lt;/span>
-&lt;/span>
-
-&lt;!-- No Label -->
-&lt;span class="avatar white-theme">
-    &lt;img alt="imagem" src="..."/>
-&lt;/span></code></pre>
+                                <pre><code class="language-html">&lt;div class="card_image--contain" style="height:400px; background-image:url('...');">&lt;/div></code></pre>
                             </div>
-                        </div>  
+                        </div>
+
                     </div>
                 </section>
-                <section class="light-theme">
-                    <div class="card grid-u-1">
-                        <div class="card_box dark-theme">
-                            <div class="card_actions align--center">
-                                <span class="avatar avatar--one-line dark-theme">
-                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
-                                    <span>Jonas Connor Alexander Van</span>
-                                </span>
-                                <span class="avatar avatar--two-line dark-theme">
-                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
-                                    <span>Jonas Connor Alexander Van</span>
-                                    <span>Lorem Ipsum</span>
-                                </span>
-                                <span class="avatar dark-theme">
-                                    <img alt="imagem" src="img/imagem-teste.jpg"/>
-                                </span>
+
+                <section class="light-theme align--center" >
+                    <div class="card grid-u-10-12" style="margin:auto;">
+                        <div class="card_box white-theme">
+                            <div class="card_image--cover" style="height:400px; background-image:url('img/imagem-teste.jpg');">
                             </div>
-                            <div class="card_actions dark-theme align--center">
-                                <span class="caption--bold">Light</span>
+                        </div>
+                    </div>
+                    <div class="card grid-u-12-12">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Image Size Cover</span>
                             </div>
                             <div class="card_actions" >
-                                <pre><code class="language-html">&lt;!-- One Line -->
-&lt;span class="avatar avatar--one-line dark-theme">
-    &lt;img alt="imagem" src="..."/>
-    &lt;span>Jonas Connor Alexander Van&lt;/span>
-&lt;/span>
-
-&lt;!-- Two Line -->
-&lt;span class="avatar avatar--two-line dark-theme">
-    &lt;img alt="imagem" src="..."/>
-    &lt;span>Jonas Connor Alexander Van&lt;/span>
-    &lt;span>Lorem Ipsum&lt;/span>
-&lt;/span>
-
-&lt;!-- No Label -->
-&lt;span class="avatar dark-theme">
-    &lt;img alt="imagem" src="..."/>
-&lt;/span></code></pre>
+                                <pre><code class="language-html">&lt;div class="card_image--cover" style="height:400px; background-image:url('...');">&lt;/div></code></pre>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </section>
+
+                <section class="light-theme align--center" >
+                    <header>
+                        <h1>Vídeo</h1>
+                    </header>
+                    <div class="card grid-u-10-12" style="margin:auto;">
+                        <div class="card_box white-theme">
+                            <div class="card_youtube" style="height:400px;">
+                                <iframe src="https://www.youtube.com/embed/Q8TXgCzxEnw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card grid-u-12-12">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Youtube</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;div class="card_youtube" style="height:400px;">
+    &lt;iframe src="https://www.youtube.com/embed/VIDEO-ID" frameborder="0" allowfullscreen>&lt;/iframe>
+&lt;/div></code></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
             </main>
             <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
             <div id="nav_curtain"></div>
-            <nav  id="nav" class="yellow-white">
+            <nav  id="nav" class="green-white">
                 <ul class="nav-list white-theme">
                     <li class="nav-list_item logo card--divider">
                         <a href="#" ></a>
@@ -169,7 +150,7 @@
                     <li class="nav-list_item">
                         <a href="botao.html" class="body--semibold">Botões</a>
                     </li>
-                    <li class="nav-list_item  is-active">
+                    <li class="nav-list_item">
                         <a href="avatar.html" class="body--semibold">Avatar</a>
                     </li>
                     <li class="nav-list_item">
@@ -181,7 +162,7 @@
                     <li class="nav-list_item">
                         <a href="tabela.html" class="body--semibold">Tabelas</a>
                     </li>
-                    <li class="nav-list_item">
+                    <li class="nav-list_item is-active">
                         <a href="multimidia.html" class="body--semibold">Multimídia</a>
                     </li>
                 </ul>

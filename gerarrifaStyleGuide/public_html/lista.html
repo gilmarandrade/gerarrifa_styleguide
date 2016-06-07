@@ -1,0 +1,616 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Lista</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+            section{
+                padding-bottom: 72px;
+            }
+            pre{
+                font-size: 14px;
+                margin:0 !important;
+                border-radius: 0 !important;
+                width: calc(100% - 16px);
+            }
+            pre code{
+                max-width: 750px;
+                margin: auto !important;
+                display: block;
+            }
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+        <script src="js/prism.js"></script>
+
+    </head>
+
+    <body class="nav--closed">
+        <a id="top-button" class="button button--raised-primary button--only-icon blue-light" href="#">
+            <i class="fa fa-fw fa-chevron-up"></i>
+        </a>
+        <div class="grid-g">
+
+            <main id="main" >
+                <header class="blue-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Lista</span></header>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Lista</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_container  align--center">
+                                <ul class="list white-theme" style="max-width:500px; margin: auto;">
+                                    <li class="list_item">
+                                        <span class="subtitle">Family</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jennifer Smith</span>
+                                            <span>Brazil</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jonas Connor</span>
+                                            <span>Portugal</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item card--divider">
+                                        <span class="text--two-line">
+                                            <span>Alexander Van</span>
+                                            <span>São Paulo</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="subtitle">Recents</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Mickey Mouse</span>
+                                            <span>Orlando</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;ul class="list white-theme">
+    &lt;li class="list_item">
+        &lt;span class="subtitle">Family&lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="text--two-line">
+            &lt;span>Jennifer Smith&lt;/span>
+            &lt;span>Brazil&lt;/span>
+        &lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="text--two-line">
+            &lt;span>Jonas Connor&lt;/span>
+            &lt;span>Portugal&lt;/span>
+        &lt;/span>
+    &lt;/li>
+    &lt;li class="list_item card--divider">
+        &lt;span class="text--two-line">
+            &lt;span>Alexander Van&lt;/span>
+            &lt;span>São Paulo&lt;/span>
+        &lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="subtitle">Recents&lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="text--two-line">
+            &lt;span>Mickey Mouse&lt;/span>
+            &lt;span>Orlando&lt;/span>
+        &lt;/span>
+    &lt;/li>
+&lt;/ul></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_container  align--center">
+                                <ul class="list dark-theme" style="max-width:500px; margin: auto;">
+                                    <li class="list_item">
+                                        <span class="subtitle">Family</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jennifer Smith</span>
+                                            <span>Brazil</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jonas Connor</span>
+                                            <span>Portugal</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item card--divider">
+                                        <span class="text--two-line">
+                                            <span>Alexander Van</span>
+                                            <span>São Paulo</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="subtitle">Recents</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Mickey Mouse</span>
+                                            <span>Orlando</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;ul class="list dark-theme">
+    ...
+&lt;/ul></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_container  align--center">
+                                <ul class="list white-theme" style="max-width:500px; margin: auto;">
+                                    <li class="list_item">
+                                        <span class="subtitle">Mauris sagittis pellentesque lacus eleifend</span>
+                                        <span class="list_caption">23/04/2016</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--light">Mauris sagittis pellentesque lacus eleifend</span>
+                                        <span class="list_caption">23/04/2016</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body">Jennifer Smith</span>
+                                        <span class="list_caption">now</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</span>
+                                        <span class="list_caption">06:45am</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--bold">Mauris sagittis pellentesque lacus eleifend</span>
+                                        <span class="list_caption">23/04/2016</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Caption</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;ul class="list white-theme">
+    &lt;li class="list_item">
+        &lt;span class="subtitle">Mauris sagittis pellentesque lacus eleifend&lt;/span>
+        &lt;span class="list_caption">23/04/2016&lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="body--light">Mauris sagittis pellentesque lacus eleifend&lt;/span>
+        &lt;span class="list_caption">23/04/2016&lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="body">Jennifer Smith&lt;/span>
+        &lt;span class="list_caption">now&lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="body--semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/span>
+        &lt;span class="list_caption">06:45am&lt;/span>
+    &lt;/li>
+    &lt;li class="list_item">
+        &lt;span class="body--bold">Mauris sagittis pellentesque lacus eleifend&lt;/span>
+        &lt;span class="list_caption">23/04/2016&lt;/span>
+    &lt;/li>
+&lt;/ul></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_container  align--center" style="height:200px;">
+                                <ul class="list white-theme" style="max-width:500px; margin: auto;">
+                                    <li class="list_item">
+                                        <span class="subtitle">Family</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jennifer Smith</span>
+                                            <span>Brazil</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jonas Connor</span>
+                                            <span>Portugal</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item card--divider">
+                                        <span class="text--two-line">
+                                            <span>Alexander Van</span>
+                                            <span>São Paulo</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="subtitle">Recents</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Mickey Mouse</span>
+                                            <span>Orlando</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jennifer Smith</span>
+                                            <span>Brazil</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="text--two-line">
+                                            <span>Jonas Connor</span>
+                                            <span>Portugal</span>
+                                        </span>
+                                    </li>
+                                    <li class="list_item card--divider">
+                                        <span class="text--two-line">
+                                            <span>Alexander Van</span>
+                                            <span>São Paulo</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Scroll Bar</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;div class="card_container" style="height:200px;">
+    &lt;ul class="list white-theme">
+        ...
+    &lt;/ul>
+&lt;/div></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_container  align--center">
+                                <ul class="list white-theme list--secondary-content" style="max-width:500px; margin:auto;">
+                                    <li class="list_item">
+                                        <label class="checkbox green-light" for="checkbox-azb">
+                                            <input type="checkbox" class="checkbox_input" id="checkbox-azb" value="testeaz" >
+                                            <span class="checkbox_box-outline">
+                                                <span class="checkbox_tick-outline"></span>
+                                            </span>
+                                        </label>
+                                        <span class="body--light">Checkbox</span>
+                                    </li>
+
+                                    <li class="list_item">
+                                        <label class="radiobutton green-light" for="radiobutton-qb">
+                                            <input type="radio" class="radiobutton_input" name="radiobutton-qb" id="radiobutton-qb" value="testeq">
+                                            <span class="radiobutton_box-outline">
+                                                <span class="radiobutton_tick-outline"></span>
+                                            </span>
+                                        </label>
+                                        <span class="body--light">Radiobutton</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <label class="switch green-light" for="switch-qb">
+                                            <input type="checkbox" class="switch_input" id="switch-qb" value="testeq">
+                                            <span class="switch_box-outline">
+                                                <span class="switch_tick-outline"></span>
+                                            </span>
+                                        </label>
+                                        <span class="body--light">Switch</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="avatar white-theme">
+                                            <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                        </span>
+                                        <span class="body--light">Avatar</span>
+                                    </li>
+
+                                    <li class="list_item">
+                                        <label class="icontoggle green-light" for="icontoggle-g">
+                                            <input type="checkbox" class="icontoggle_input" id="icontoggle-g" value="icontoggle-g">
+                                            <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                        </label>   
+                                        <span class="body--light">Icon Toggle</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="icon"><i class="fa fa-fw fa-calendar"></i></span>
+                                        <span class="body--light">Icon</span>
+                                    </li>
+                                    <li class="list_item">
+                                        <button class="button button--flat button--only-icon light"><i class="fa fa-fw fa-hand-o-down"></i></button>
+                                        <span class="body--light">Button Only Icon</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Controls Left</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;ul class="list white-theme list--secondary-content">
+    &lt;!-- Checkbox -->
+    &lt;li class="list_item">
+        &lt;label class="checkbox green-light" for="checkbox1">
+            &lt;input type="checkbox" class="checkbox_input" id="checkbox1" value="..." >
+            &lt;span class="checkbox_box-outline">
+                &lt;span class="checkbox_tick-outline">&lt;/span>
+            &lt;/span>
+        &lt;/label>
+        &lt;span class="body--light">Checkbox&lt;/span>
+    &lt;/li>
+
+    &lt;!-- Radiobutton -->
+    &lt;li class="list_item">
+        &lt;label class="radiobutton green-light" for="radiobutton1">
+            &lt;input type="radio" class="radiobutton_input" name="options" id="radiobutton1" value="...">
+            &lt;span class="radiobutton_box-outline">
+                &lt;span class="radiobutton_tick-outline">&lt;/span>
+            &lt;/span>
+        &lt;/label>
+        &lt;span class="body--light">Radiobutton&lt;/span>
+    &lt;/li>
+
+    &lt;!-- Switch -->
+    &lt;li class="list_item">
+        &lt;label class="switch green-light" for="switch1">
+            &lt;input type="checkbox" class="switch_input" id="switch1" value="...">
+            &lt;span class="switch_box-outline">
+                &lt;span class="switch_tick-outline">&lt;/span>
+            &lt;/span>
+        &lt;/label>
+        &lt;span class="body--light">Switch&lt;/span>
+    &lt;/li>
+
+    &lt;!-- Avatar -->
+    &lt;li class="list_item">
+        &lt;span class="avatar white-theme">
+            &lt;img alt="imagem" src="..."/>
+        &lt;/span>
+        &lt;span class="body--light">Avatar&lt;/span>
+    &lt;/li>
+
+    &lt;!-- Icon Toggle -->
+    &lt;li class="list_item">
+        &lt;label class="icontoggle green-light" for="icontoggle1">
+            &lt;input type="checkbox" class="icontoggle_input" id="icontoggle1" value="...">
+            &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+        &lt;/label>   
+        &lt;span class="body--light">Icon Toggle&lt;/span>
+    &lt;/li>
+
+    &lt;!-- Icon -->
+    &lt;li class="list_item">
+        &lt;span class="icon">&lt;i class="fa fa-fw fa-calendar">&lt;/i>&lt;/span>
+        &lt;span class="body--light">Icon&lt;/span>
+    &lt;/li>
+
+    &lt;!-- Button Only Icon -->
+    &lt;li class="list_item">
+        &lt;button class="button button--flat button--only-icon light">&lt;i class="fa fa-fw fa-hand-o-down">&lt;/i>&lt;/button>
+        &lt;span class="body--light">Button Only Icon&lt;/span>
+    &lt;/li>
+&lt;/ul></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_container  align--center">
+                                <ul class="list white-theme list--secondary-content" style="max-width:500px; margin:auto;">
+                                    <li class="list_item">
+                                        <span class="body--light">Checkbox</span>
+                                        <label class="checkbox green-light" for="checkbox-azbc">
+                                            <input type="checkbox" class="checkbox_input" id="checkbox-azbc" value="testeaz" >
+                                            <span class="checkbox_box-outline">
+                                                <span class="checkbox_tick-outline"></span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--light">Radiobutton</span>
+                                        <label class="radiobutton green-light" for="radiobutton-qbw">
+                                            <input type="radio" class="radiobutton_input" name="radiobutton-qb" id="radiobutton-qbw" value="testeq">
+                                            <span class="radiobutton_box-outline">
+                                                <span class="radiobutton_tick-outline"></span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--light">Switch</span>
+                                        <label class="switch green-light" for="switch-qbn">
+                                            <input type="checkbox" class="switch_input" id="switch-qbn" value="testeq">
+                                            <span class="switch_box-outline">
+                                                <span class="switch_tick-outline"></span>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--light">Avatar</span>
+                                        <span class="avatar avatar--two-line white-theme">
+                                            <img alt="imagem" src="img/imagem-teste.jpg"/>
+                                        </span>
+                                    </li>
+
+                                    <li class="list_item">
+                                        <span class="body--light">Icon Toggle</span>
+                                        <label class="icontoggle green-light" for="icontoggle-gm">
+                                            <input type="checkbox" class="icontoggle_input" id="icontoggle-gm" value="icontoggle-g">
+                                            <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                                        </label>   
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--light">Icon</span>
+                                        <span class="icon"><i class="fa fa-fw fa-calendar"></i></span>
+                                    </li>
+                                    <li class="list_item">
+                                        <span class="body--light">Button Oly Icon</span>
+                                        <button class="button button--flat button--only-icon light"><i class="fa fa-fw fa-hand-o-down"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Controls Right</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;ul class="list white-theme list--secondary-content">
+    &lt;!-- Checkbox -->
+    &lt;li class="list_item">
+        &lt;span class="body--light">Checkbox&lt;/span>
+        &lt;label class="checkbox green-light" for="checkbox1">
+            &lt;input type="checkbox" class="checkbox_input" id="checkbox1" value="..." >
+            &lt;span class="checkbox_box-outline">
+                &lt;span class="checkbox_tick-outline">&lt;/span>
+            &lt;/span>
+        &lt;/label>
+    &lt;/li>
+
+    &lt;!-- Radiobutton -->
+    &lt;li class="list_item">
+        &lt;span class="body--light">Radiobutton&lt;/span>
+        &lt;label class="radiobutton green-light" for="radiobutton1">
+            &lt;input type="radio" class="radiobutton_input" name="options" id="radiobutton1" value="...">
+            &lt;span class="radiobutton_box-outline">
+                &lt;span class="radiobutton_tick-outline">&lt;/span>
+            &lt;/span>
+        &lt;/label>
+    &lt;/li>
+
+    &lt;!-- Switch -->
+    &lt;li class="list_item">
+        &lt;span class="body--light">Switch&lt;/span>
+        &lt;label class="switch green-light" for="switch1">
+            &lt;input type="checkbox" class="switch_input" id="switch1" value="...">
+            &lt;span class="switch_box-outline">
+                &lt;span class="switch_tick-outline">&lt;/span>
+            &lt;/span>
+        &lt;/label>
+    &lt;/li>
+
+    &lt;!-- Avatar -->
+    &lt;li class="list_item">
+        &lt;span class="body--light">Avatar&lt;/span>
+        &lt;span class="avatar white-theme">
+            &lt;img alt="imagem" src="..."/>
+        &lt;/span>
+    &lt;/li>
+
+    &lt;!-- Icon Toggle -->
+    &lt;li class="list_item">
+        &lt;span class="body--light">Icon Toggle&lt;/span>
+        &lt;label class="icontoggle green-light" for="icontoggle1">
+            &lt;input type="checkbox" class="icontoggle_input" id="icontoggle1" value="...">
+            &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+        &lt;/label>   
+    &lt;/li>
+
+    &lt;!-- Icon -->
+    &lt;li class="list_item">
+        &lt;span class="body--light">Icon&lt;/span>
+        &lt;span class="icon">&lt;i class="fa fa-fw fa-calendar">&lt;/i>&lt;/span>
+    &lt;/li>
+
+    &lt;!-- Button Only Icon -->
+    &lt;li class="list_item">
+        &lt;span class="body--light">Button Only Icon&lt;/span>
+        &lt;button class="button button--flat button--only-icon light">&lt;i class="fa fa-fw fa-hand-o-down">&lt;/i>&lt;/button>
+    &lt;/li>
+&lt;/ul></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+
+
+            </main>
+            <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="blue-white">
+                <ul class="nav-list white-theme">
+                    <li class="nav-list_item logo card--divider">
+                        <a href="#" ></a>
+                    </li>
+                    <li class="nav-list_item">
+                        <span class="subtitle">Subtitle</span>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="tipologia.html" class="body--semibold">Tipologia</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="controle.html" class="body--semibold">Selection Controls</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="botao.html" class="body--semibold">Botões</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="avatar.html" class="body--semibold">Avatar</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="textfield.html" class="body--semibold">Textfields</a>
+                    </li>
+                    <li class="nav-list_item is-active">
+                        <a href="lista.html" class="body--semibold">Listas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

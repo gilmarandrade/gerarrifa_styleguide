@@ -945,6 +945,7 @@ td .dropdown, th .dropdown{
     word-spacing: normal;
     list-style: none;
     padding:0;
+    text-align: left;
 }
 .list_item{
     position:relative;
@@ -995,6 +996,7 @@ td .dropdown, th .dropdown{
     position: relative;
     overflow: hidden;
     text-align: left;
+    width: 100%;
 }
 .text--two-line span:first-child{
     font-family: "Open Sans SemiBold";

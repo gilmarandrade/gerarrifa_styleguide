@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tipologia</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+            section{
+                padding-bottom: 72px;
+            }
+            pre{
+                font-size: 14px;
+                margin:0 !important;
+                border-radius: 0 !important;
+                width: calc(100% - 16px);
+            }
+            pre code{
+                max-width: 750px;
+                margin: auto !important;
+                display: block;
+            }
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+        <script src="js/prism.js"></script>
+
+    </head>
+
+    <body class="nav--closed">
+        <a id="top-button" class="button button--raised-primary button--only-icon yellow-light" href="#">
+            <i class="fa fa-fw fa-chevron-up"></i>
+        </a>
+        <div class="grid-g">
+
+            <main id="main" >
+                <header class="yellow-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Tipologia</span></header>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Caption</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption">Lorem Ipsum Dolor</span>
+                                <span class="caption--upper">Lorem Ipsum Dolor</span>
+                                <span class="caption--bold">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Caption -->
+&lt;span class="caption">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Caption Upper -->
+&lt;span class="caption--upper">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Caption Bold -->
+&lt;span class="caption--bold">Lorem Ipsum Dolor&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption">Lorem Ipsum Dolor</span>
+                                <span class="caption--upper">Lorem Ipsum Dolor</span>
+                                <span class="caption--bold">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Caption -->
+&lt;span class="caption">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Caption Upper -->
+&lt;span class="caption--upper">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Caption Bold -->
+&lt;span class="caption--bold">Lorem Ipsum Dolor&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Body</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="body--light">Lorem Ipsum Dolor</span>
+                                <span class="body">Lorem Ipsum Dolor</span>
+                                <span class="body--semibold">Lorem Ipsum Dolor</span>
+                                <span class="body--bold">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Body Light -->
+&lt;span class="body--light">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Body -->
+&lt;span class="body">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Body Semibold -->
+&lt;span class="body--semibold">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Body Bold -->
+&lt;span class="body--bold">Lorem Ipsum Dolor&lt;/span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions dark-theme align--center">
+                                <span class="body--light">Lorem Ipsum Dolor</span>
+                                <span class="body">Lorem Ipsum Dolor</span>
+                                <span class="body--semibold">Lorem Ipsum Dolor</span>
+                                <span class="body--bold">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Body Light -->
+&lt;span class="body--light">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Body -->
+&lt;span class="body">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Body Semibold -->
+&lt;span class="body--semibold">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Body Bold -->
+&lt;span class="body--bold">Lorem Ipsum Dolor&lt;/span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Title</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="subtitle">Lorem Ipsum Dolor</span>
+                                <span class="header_subtitle">Lorem Ipsum Dolor</span>
+                                <span class="header_title">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="title-display">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Subtitle Light-->
+&lt;span class="subtitle">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Subtitle -->
+&lt;span class="header_subtitle">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Title -->
+&lt;span class="header_title">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Title Display -->
+&lt;span class="title-display">Lorem Ipsum Dolor&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions dark-theme align--center">
+                                <span class="subtitle">Lorem Ipsum Dolor</span>
+                                <span class="header_subtitle">Lorem Ipsum Dolor</span>
+                                <span class="header_title">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="title-display">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Subtitle Light-->
+&lt;span class="subtitle">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Subtitle -->
+&lt;span class="header_subtitle">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Title -->
+&lt;span class="header_title">Lorem Ipsum Dolor&lt;/span>
+
+&lt;!-- Title Display -->
+&lt;span class="title-display">Lorem Ipsum Dolor&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Ícones</h1>
+                    </header>
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="icon"><i class="fa fa-fw fa-calendar"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-bank"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-link"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-male"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-arrows"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-arrow-circle-up"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-object-group"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-hand-paper-o"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-times"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-info-circle"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-bitbucket"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-share"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-recycle"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-edge"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-edit"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-hashtag"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-star"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-heart"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-ticket"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-list"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-download"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-code"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-html5"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-css3"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-android"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-google"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-spin fa-spinner"></i></span>
+                            </div>
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Veja todos os ícones disponíveis em FontAwesome... -->
+&lt;span class="icon">&lt;i class="fa fa-fw fa-calendar">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-bank">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-link">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-male">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-arrows">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-arrow-circle-up">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-object-group">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-hand-paper-o">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-times">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-info-circle">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-bitbucket">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-share">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-recycle">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-envelope">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-edge">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-edit">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-hashtag">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-star">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-ticket">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-list">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-download">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-code">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-html5">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-css3">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-android">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-google">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-spin fa-spinner">&lt;/i>&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+                      <section class="light-theme">
+                    <div class="card grid-u-1">
+                        <div class="card_box dark-theme">
+                            <div class="card_actions dark-theme align--center">
+                                <span class="icon"><i class="fa fa-fw fa-calendar"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-bank"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-link"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-male"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-arrows"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-arrow-circle-up"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-object-group"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-hand-paper-o"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-times"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-info-circle"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-bitbucket"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-share"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-recycle"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-edge"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-edit"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-hashtag"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-star"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-heart"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-ticket"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-list"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-download"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-code"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-html5"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-css3"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-android"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-google"></i></span>
+                                <span class="icon"><i class="fa fa-fw fa-spin fa-spinner"></i></span>
+                            </div>
+                            <div class="card_actions dark-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;!-- Veja todos os ícones disponíveis em FontAwesome... -->
+&lt;span class="icon">&lt;i class="fa fa-fw fa-calendar">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-bank">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-link">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-male">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-arrows">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-arrow-circle-up">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-object-group">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-hand-paper-o">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-times">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-info-circle">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-bitbucket">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-share">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-recycle">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-envelope">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-edge">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-edit">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-hashtag">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-star">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-ticket">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-list">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-download">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-code">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-html5">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-css3">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-android">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-google">&lt;/i>&lt;/span>
+&lt;span class="icon">&lt;i class="fa fa-fw fa-spin fa-spinner">&lt;/i>&lt;/span></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+
+            </main>
+            <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="yellow-white">
+                <ul class="nav-list white-theme">
+                    <li class="nav-list_item logo card--divider">
+                        <a href="#" ></a>
+                    </li>
+                    <li class="nav-list_item">
+                        <span class="subtitle">Subtitle</span>
+                    </li>
+                    <li class="nav-list_item  is-active">
+                        <a href="tipologia.html" class="body--semibold">Tipologia</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="controle.html" class="body--semibold">Selection Controls</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="botao.html" class="body--semibold">Botões</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="avatar.html" class="body--semibold">Avatar</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="textfield.html" class="body--semibold">Textfields</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

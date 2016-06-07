@@ -18,7 +18,7 @@ section > header{
     text-rendering: auto;
     width: 100%;
 }
-section > header h1{
+section > header h1, .title-display{
     font-family: "Static Bold";
     font-size: 34px;
 }
@@ -92,13 +92,13 @@ section > header h1{
     min-height: 56px;
     /*border-bottom: 1px dotted black;*/
 }
-.card_header .header_title{
+.header_title{
     margin: 0;
     font-size: 24px;
     line-height: 28px;
     font-family: "Open Sans SemiBold";
 }
-.card_header .header_subtitle{
+ .header_subtitle{
     margin: 0;
     font-size: 20px;
     font-family: "Open Sans Light";
@@ -175,10 +175,18 @@ section > header h1{
 }
 .card_actions .avatar, .card_actions .checkbox, .card_actions .radiobutton, .card_actions .switch,
 .card_actions .body--light, .card_actions .body, .card_actions .body--semibold, .card_actions .body--bold,
-.card_actions .caption, .card_actions .caption--upper, .card_actions .caption--bold, .card_actions .subtitle{
+.card_actions .caption, .card_actions .caption--upper, .card_actions .caption--bold, .card_actions .subtitle,
+.card_actions .header_title, .card_actions .header_subtitle, .card_actions .title-display{
     margin:0;
     margin-left: 8px;
     //background: orange;
+}
+.card_actions .body--light, .card_actions .body, .card_actions .body--semibold, .card_actions .body--bold,
+.card_actions .caption, .card_actions .caption--upper, .card_actions .caption--bold, .card_actions .subtitle,
+.card_actions .header_title, .card_actions .header_subtitle, .card_actions .title-display{
+    line-height: 48px;
+    display: inline-block;
+    overflow: hidden;
 }
 .card_actions .button, .card_actions .icontoggle, .card_actions .togglebutton{
     margin-top:6px;
@@ -198,12 +206,20 @@ section > header h1{
 }
 .card_actions--medium .avatar, .card_actions--medium .checkbox, .card_actions--medium .radiobutton, .card_actions--medium .switch,
 .card_actions--medium .body--light, .card_actions--medium .body, .card_actions--medium .body--semibold, .card_actions--medium .body--bold,
-.card_actions--medium .caption, .card_actions--medium .caption--upper, .card_actions--medium .caption--bold, .card_actions--medium .subtitle{
+.card_actions--medium .caption, .card_actions--medium .caption--upper, .card_actions--medium .caption--bold, .card_actions--medium .subtitle,
+.card_actions--medium .header_title, .card_actions--medium .header_subtitle, .card_actions--medium .title-display{
     margin:0;
     margin-left: 8px;
     margin-top:4px;
     margin-bottom:0px;
     //background: blueviolet;
+}
+.card_actions--medium .body--light, .card_actions--medium .body, .card_actions--medium .body--semibold, .card_actions--medium .body--bold,
+.card_actions--medium .caption, .card_actions--medium .caption--upper, .card_actions--medium .caption--bold, .card_actions--medium .subtitle,
+.card_actions--medium .header_title, .card_actions--medium .header_subtitle, .card_actions--medium .title-display{
+    line-height: 56px;
+    display: inline-block;
+    overflow: hidden;
 }
 .card_actions--medium .button, .card_actions--medium .icontoggle, .card_actions--medium .togglebutton {
     margin-top:10px;
@@ -224,12 +240,20 @@ section > header h1{
 }
 .card_actions--large .avatar, .card_actions--large .checkbox, .card_actions--large .radiobutton, .card_actions--large .switch,
 .card_actions--large .body--light, .card_actions--large .body, .card_actions--large .body--semibold, .card_actions--large .body--bold,
-.card_actions--large .caption, .card_actions--large .caption--upper, .card_actions--large .caption--bold, .card_actions--large .subtitle{
+.card_actions--large .caption, .card_actions--large .caption--upper, .card_actions--large .caption--bold, .card_actions--large .subtitle,
+.card_actions--large .header_title, .card_actions--large .header_subtitle, .card_actions--large .title-display{
     margin-left: 16px;
     margin-right: 0;
     margin-top:10px;
     margin-bottom:10px;
     //background: greenyellow;
+}
+.card_actions--large .body--light, .card_actions--large .body, .card_actions--large .body--semibold, .card_actions--large .body--bold,
+.card_actions--large .caption, .card_actions--large .caption--upper, .card_actions--large .caption--bold, .card_actions--large .subtitle,
+.card_actions--large .header_title, .card_actions--large .header_subtitle, .card_actions--large .title-display{
+    line-height: 72px;
+    display: inline-block;
+    overflow: hidden;
 }
 .card_actions--large .button, .card_actions--large .icontoggle, .card_actions--large .togglebutton{
     margin-left: 16px;

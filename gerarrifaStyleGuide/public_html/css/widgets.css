@@ -932,6 +932,7 @@ td .dropdown, th .dropdown{
 }
 .tab_container{
     display: none;
+    word-spacing: normal;
 }
 .tab_container.is-active{
     display: block;
@@ -949,7 +950,7 @@ td .dropdown, th .dropdown{
 }
 .list_item{
     position:relative;
-    padding-left: 16px;
+    padding-left: 0px;
     padding-right: 16px;
 }
 .nav-list_item.logo a{
@@ -979,16 +980,20 @@ td .dropdown, th .dropdown{
     padding-bottom: 10px;
 }
 .list--secondary-content .list_item [class*="body"], .list--secondary-content .list_item [class*="caption"], .list--secondary-content .list_item [class*="text"]  {
-    width: calc(100% - 65px);
+    width: calc(100% - 70px);
 }
-.list--secondary-content .list_item > :first-child{
+.list--secondary-content .list_item > :first-child:not(.subtitle){
     float:left; 
 }
-.list--secondary-content .list_item > :last-child{
+.list--secondary-content .list_item > :not(.subtitle){
     float: none;
 }
+.list--secondary-content .list_item > *{
+    margin-top:0;
+    margin-bottom: 0;
+}
 .list--secondary-content .list_item .button{
-    margin: 6px 7px;
+    margin: 6px 8px 6px 16px;
 }
 .text--two-line{
     height: 48px;

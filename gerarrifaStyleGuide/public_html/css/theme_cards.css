@@ -20,16 +20,16 @@ section.light-theme > header > h1, section.white-theme > header > h1{
 .card_box.white-theme {
     background-color: rgb(255,255,255);
 }
-.card_header.light-theme, .card_text.light-theme, .card_actions.light-theme, .card_rich-area.light-theme, .card_container.light-theme{
+.card_row.card_row--header.light-theme, .card_row--text.light-theme, .card_row.light-theme, .card_rich-area.light-theme, .card_row.card_row--scroll.light-theme{
     background-color: rgb(238,238,238);
 }
-.card_header.white-theme, .card_text.white-theme, .card_actions.white-theme, .card_rich-area.white-theme, .card_container.white-theme{
+.card_row.card_row--header.white-theme, .card_row--text.white-theme, .card_row.white-theme, .card_rich-area.white-theme, .card_row.card_row--scroll.white-theme{
     background-color: rgb(255,255,255);
 }
-.card_header.light-theme .header_title, .card_header.light-theme .header_subtitle, .card_text.light-theme, .card_actions.light-theme{
+.card_row.card_row--header.light-theme .header_title, .card_row.card_row--header.light-theme .header_subtitle, .card_row--text.light-theme, .card_row.light-theme{
     color: rgba(0,0,0,.87);
 }
-.card_header.white-theme .header_title, .card_header.white-theme .header_subtitle, .card_text.white-theme, .card_actions.white-theme{
+.card_row.card_row--header.white-theme .header_title, .card_row.card_row--header.white-theme .header_subtitle, .card_row--text.white-theme, .card_row.white-theme{
     color: rgba(0,0,0,.87);
 }
 .avatar.light-theme{
@@ -51,10 +51,10 @@ section.dark-theme > header > h1{
 .card_box.dark-theme {
     background-color: rgb(51,51,51);
 }
-.card_header.dark-theme, .card_text.dark-theme, .card_actions.dark-theme, .card_rich-area.dark-theme, .card_container.dark-theme{
+.card_row.card_row--header.dark-theme, .card_row--text.dark-theme, .card_row.dark-theme, .card_rich-area.dark-theme, .card_row.card_row--scroll.dark-theme{
     background-color: rgb(51,51,51);  
 }
-.card_header.dark-theme .header_title, .card_header.dark-theme .header_subtitle, .card_text.dark-theme, .card_actions.dark-theme{
+.card_row.card_row--header.dark-theme .header_title, .card_row.card_row--header.dark-theme .header_subtitle, .card_row--text.dark-theme, .card_row.dark-theme{
     color: rgba(255,255,255,.87);
 }
 .avatar.dark-theme{

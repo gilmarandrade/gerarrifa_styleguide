@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Estrutura</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+            section{
+                padding-bottom: 72px;
+            }
+            pre{
+                font-size: 14px;
+                margin:0 !important;
+                border-radius: 0 !important;
+                width: calc(100% - 16px);
+            }
+            pre code{
+                max-width: 750px;
+                margin: auto !important;
+                display: block;
+            }
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+        <script src="js/prism.js"></script>
+
+    </head>
+
+    <body class="nav--closed">
+        <a id="top-button" class="button button--raised-primary button--only-icon yellow-light" href="#">
+            <i class="fa fa-fw fa-chevron-up"></i>
+        </a>
+        <div class="grid-g">
+
+            <main id="main" >
+                <header class="yellow-dark"><button id="nav_button" class="button button--flat dark"><i class="fa fa-navicon fa-fw"></i></button> <span class="header_title">Estrutura</span></header>
+
+                <section class="light-theme">
+                    <header>
+                        <h1>Section</h1>
+                    </header>
+
+                    <section class="white-theme">
+                        <header>
+                            <h1>Lorem ipsum dolor sit amet</h1>
+                        </header>
+                        <div class="card grid-u-1 grid-u-sm-1-2">
+                            <div class="card_margin">
+                                <div class="card_box white-theme">
+                                    <div class="card_header card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--justify">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card grid-u-1 grid-u-sm-1-2">
+                            <div class="card_margin">
+                                <div class="card_box white-theme">
+                                    <div class="card_header card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--justify">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">White</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;section class="white-theme">
+    &lt;header>
+        &lt;h1>Lorem ipsum dolor sit amet&lt;/h1>
+    &lt;/header>
+    &lt;div class="card grid-u-1 grid-u-sm-1-2">
+        ...
+    &lt;/div>
+    &lt;div class="card grid-u-1 grid-u-sm-1-2">
+       ...
+    &lt;/div>
+&lt;/section></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                
+                <section class="light-theme">
+                    <section class="light-theme">
+                        <header>
+                            <h1>Lorem ipsum dolor sit amet</h1>
+                        </header>
+                        <div class="card grid-u-1 grid-u-sm-1-2">
+                            <div class="card_margin">
+                                <div class="card_box white-theme">
+                                    <div class="card_header card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--justify">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card grid-u-1 grid-u-sm-1-2">
+                            <div class="card_margin">
+                                <div class="card_box white-theme">
+                                    <div class="card_header card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--justify">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Light</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;section class="light-theme">
+    &lt;header>
+        &lt;h1>Lorem ipsum dolor sit amet&lt;/h1>
+    &lt;/header>
+    &lt;div class="card grid-u-1 grid-u-sm-1-2">
+        ...
+    &lt;/div>
+    &lt;div class="card grid-u-1 grid-u-sm-1-2">
+       ...
+    &lt;/div>
+&lt;/section></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                
+                
+                <section class="light-theme">
+                    <section class="dark-theme">
+                        <header>
+                            <h1>Lorem ipsum dolor sit amet</h1>
+                        </header>
+                        <div class="card grid-u-1 grid-u-sm-1-2">
+                            <div class="card_margin">
+                                <div class="card_box white-theme">
+                                    <div class="card_header card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--justify">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card grid-u-1 grid-u-sm-1-2">
+                            <div class="card_margin">
+                                <div class="card_box white-theme">
+                                    <div class="card_header card_header--ellipsis">
+                                        <h2 class="header_title">Title Goes Here</h2>
+                                        <h3 class="header_subtitle">Subtitle Goes Here</h3>
+                                    </div>
+                                    <div class="card_text align--justify">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div class="card grid-u-1">
+                        <div class="card_box white-theme">
+                            <div class="card_actions white-theme align--center">
+                                <span class="caption--bold">Dark</span>
+                            </div>
+                            <div class="card_actions" >
+                                <pre><code class="language-html">&lt;section class="dark-theme">
+    &lt;header>
+        &lt;h1>Lorem ipsum dolor sit amet&lt;/h1>
+    &lt;/header>
+    &lt;div class="card grid-u-1 grid-u-sm-1-2">
+        ...
+    &lt;/div>
+    &lt;div class="card grid-u-1 grid-u-sm-1-2">
+       ...
+    &lt;/div>
+&lt;/section></code></pre>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+                
+            </main>
+            <aside id="aside" >aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content t aside content aside content aside content aside content aside content<button id="btCloseAside">close aside</button> aside content aside content aside content aside content aside content </aside>
+            <div id="nav_curtain"></div>
+            <nav  id="nav" class="yellow-white">
+                <ul class="nav-list white-theme">
+                    <li class="nav-list_item logo card--divider">
+                        <a href="https://material.google.com/" ></a>
+                    </li>
+                    <li class="nav-list_item">
+                        <span class="subtitle">Subtitle</span>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="tipologia.html" class="body--semibold">Tipologia</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="controle.html" class="body--semibold">Selection Controls</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="botao.html" class="body--semibold">Botões</a>
+                    </li>
+                    <li class="nav-list_item  is-active">
+                        <a href="avatar.html" class="body--semibold">Avatar</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="textfield.html" class="body--semibold">Textfields</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="lista.html" class="body--semibold">Listas</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="tabela.html" class="body--semibold">Tabelas</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="multimidia.html" class="body--semibold">Multimídia</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="grafico.html" class="body--semibold">Gráficos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

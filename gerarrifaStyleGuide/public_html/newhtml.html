@@ -1,37 +1,16 @@
-&lt;script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">&lt;/script>&lt;!--google chart-->
-&lt;script type="text/javascript">
-    // Load the Visualization API and the corechart package.
-    google.charts.load("current", {packages: ["corechart", "bar", "line"]});
-
-    // Set a callback to run when the Google Visualization API is loaded.
-    google.charts.setOnLoadCallback(drawPieChart1);
-
-    // Callback that creates and populates a data table,
-    // instantiates the pie chart, passes in the data and
-    // draws it.
-    function drawPieChart1() {
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-            ['Mushrooms', 3],
-            ['Onions', 1],
-            ['Olives', 1],
-            ['Zucchini', 1],
-            ['Pepperoni', 2]
-        ]);
-
-        // Set chart options
-        var options = {};
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('pieChartDiv'));
-        chart.draw(data, options);
-    }
-
-
-    $(window).resize(function() {
-        setTimeout(drawPieChart1, 500);
-    });
-&lt;/script>
+&lt;section class="white-theme">
+    &lt;header>
+        &lt;h1>Lorem ipsum dolor sit amet&lt;/h1>
+    &lt;/header>
+    &lt;div class="card grid-u-1 white-theme">
+        &lt;div class="card_box">
+            &lt;div class="card_header card_header--ellipsis">
+                &lt;h2 class="header_title">Title Goes Here&lt;/h2>
+                &lt;h3 class="header_subtitle">Subtitle Goes Here&lt;/h3>
+            &lt;/div>
+            &lt;div class="card_text align--justify">
+                &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.&lt;/p>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>

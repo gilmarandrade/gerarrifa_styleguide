@@ -620,22 +620,22 @@
 .dropdown_options.dropdown_options--top-left{
     top:0;
     left:0;
-    margin-left:-1000px;
+    margin-left:-3000px;
 }
 .dropdown_options.dropdown_options--top-right{
     top:0;
     right:0;
-    margin-right:-1000px;
+    margin-right:-3000px;
 }
 .dropdown_options.dropdown_options--bottom-left{
     bottom:0;
     left:0;
-    margin-left:-1000px;
+    margin-left:-3000px;
 }
 .dropdown_options.dropdown_options--bottom-right{
     bottom:0;
     right:0;
-    margin-right:-1000px;
+    margin-right:-3000px;
 }
 .dropdown_options li{
     line-height: 48px;
@@ -830,7 +830,7 @@ td .dropdown, th .dropdown{
     top:52px;
     left:16px;
     margin-left:-3000px;
-    margin-top:-1000px;
+    margin-top:-3000px;
 }
 
 .selectfield_input:not(.is-disabled):focus + .selectfield_options, .selectfield_input:not(:disabled):focus + .selectfield_options{

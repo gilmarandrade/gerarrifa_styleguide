@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/theme_cards.css">
+        <link rel="stylesheet" href="css/widgets.css">
+        <link href="css/prism.css" rel="stylesheet" />
+        <style>
+
+        </style>
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/panels.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            $(document).ready(function() {
+                initPanels();
+
+                initCheckbox();
+                initSwitch();
+                initRadiobutton();
+                initIcontoggle();
+                initTogglebutton();
+                initDropdown();
+                initTextfield();
+                initTab();
+                initTable();
+
+            });
+        </script>
+    </head>
+    <body>
+        <br/>
+        <br/>
+        <br/>
+        <div class="card_row card_row--controls">
+            <span class="avatar avatar--one-line light-theme">
+                <img alt="imagem" src="img/imagem-teste.jpg"/>
+                <span>Jonas Connor Alexander Van</span>
+            </span>
+
+
+            <label class="checkbox green-light" for="checkbox-1">
+                <input type="checkbox" class="checkbox_input" id="checkbox-1" value="...">
+                <span class="checkbox_box-outline"><span class="checkbox_tick-outline"></span></span>
+                <span class="checkbox_label">Label</span>
+            </label>
+            <label class="radiobutton green-light" for="option-1">
+                <input type="radio" class="radiobutton_input" name="options" id="option-1" value="...">
+                <span class="radiobutton_box-outline"><span class="radiobutton_tick-outline"></span></span>
+                <span class="radiobutton_label">Label</span>
+            </label>
+
+            <label class="switch green-light" for="switch-1">
+                <input type="checkbox" class="switch_input" id="switch-1" value="...">
+                <span class="switch_box-outline"><span class="switch_tick-outline"></span></span>
+                <span class="switch_label">Label</span>
+            </label>
+
+            <span class="body--light">Lorem Ipsum Dolor</span>
+            <span class="body">Lorem Ipsum Dolor</span>
+            <span class="body--semibold">Lorem Ipsum Dolor</span>
+            <span class="body--bold">Lorem Ipsum Dolor</span>
+            <span class="caption">Lorem Ipsum Dolor</span>
+            <span class="caption--upper">Lorem Ipsum Dolor</span>
+            <span class="caption--bold">Lorem Ipsum Dolor</span>
+            <span class="subtitle">Lorem Ipsum Dolor</span>
+            <span class="header_title">Lorem Ipsum Dolor</span>
+            <span class="header_subtitle">Lorem Ipsum Dolor</span>
+            <span class="title-display">Lorem Ipsum Dolor</span>
+          
+
+            <input class="button button--raised-primary yellow-light" type="button" value="raised button">
+            <a href="" class="button button--raised-primary yellow-light">raised button</a>
+
+            <label class="icontoggle blue-light" for="icontoggle-2">
+                <input type="checkbox" class="icontoggle_input" id="icontoggle-2" value="..." checked>
+                <span class="icontoggle_box"><i class="fa fa-fw fa-heart"></i></span>
+                <span class="icontoggle_label-unchecked">curtir</span>
+                <span class="icontoggle_label-checked">descurtir</span>
+            </label>
+
+            <div class="togglebutton green-light">
+                <label class="togglebutton_button" for="display-1">
+                    <input type="radio" class="togglebutton_radio-input" name="display" id="display-1" value="...">
+                    <span class="togglebutton_label"><i class="fa fa-fw fa-list"></i></span>
+                </label>
+                <label class="togglebutton_button" for="display-2">
+                    <input type="radio" class="togglebutton_radio-input" name="display" id="display-2" value="..." checked>
+                    <span class="togglebutton_label"><i class="fa fa-fw fa-table"></i></span>
+                </label>
+            </div>
+
+            <span class="icon"><i class="fa fa-fw fa-calendar"></i> line</span>
+
+            <div class="dropdown blue-light">
+                <button class="dropdown_button" style="width:70px;"></button>
+                <ul class="dropdown_options dropdown_options--top-left">
+                    <li data-value="..." class="is-active">10</li>
+                    <li data-value="...">100</li>
+                </ul>
+                <input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
+            </div>
+
+        </div>
+    </body>
+</html>

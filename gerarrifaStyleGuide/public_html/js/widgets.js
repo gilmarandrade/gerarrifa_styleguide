@@ -88,7 +88,14 @@ function initTextfield() {
     });
     $(".textfield_input").blur(function () {
         $(this).parent().removeClass("is-focused");
+        
+        if( $(this).is(':invalid')){
+             $(this).parent().addClass("is-invalid");
+        }else{
+             $(this).parent().removeClass("is-invalid");
+        }
     });
+    
 
 
 
@@ -311,6 +318,8 @@ function updateTextfield() {
         } else {
             $(this).parent().removeClass("is-disabled");
         }
+        
+        
     });
 
 

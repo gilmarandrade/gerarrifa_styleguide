@@ -1,71 +1,20 @@
-&lt;div class="card grid-u-1 grid-u-md-1">
-    &lt;div class="card_margin">
-        &lt;div class="card_box white-theme">
-            &lt;div class="card_row card_row--controls">
-                &lt;span class="avatar avatar--one-line light-theme">
-                    &lt;img alt="imagem" src="img/imagem-teste.jpg"/>
-                    &lt;span>Jonas Connor Alexander Van&lt;/span>
-                &lt;/span>
-
-                &lt;input class="button button--raised-primary yellow-light" type="button" value="button">
-                &lt;a href="#" class="button button--raised-primary yellow-light">link&lt;/a>
-
-                &lt;label class="icontoggle blue-light" for="icontoggle-2">
-                    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-2" value="..." checked>
-                    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
-                    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
-                    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
-                &lt;/label>
-
-                &lt;div class="togglebutton green-light">
-                    &lt;label class="togglebutton_button" for="display-1">
-                        &lt;input type="radio" class="togglebutton_radio-input" name="display" id="display-1" value="...">
-                        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-list">&lt;/i>&lt;/span>
-                    &lt;/label>
-                    &lt;label class="togglebutton_button" for="display-2">
-                        &lt;input type="radio" class="togglebutton_radio-input" name="display" id="display-2" value="..." checked>
-                        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-table">&lt;/i>&lt;/span>
-                    &lt;/label>
-                &lt;/div>
-
-                &lt;div class="dropdown blue-light">
-                    &lt;button class="dropdown_button" style="width:70px;">&lt;/button>
-                    &lt;ul class="dropdown_options dropdown_options--top-left">
-                        &lt;li data-value="..." class="is-active">10&lt;/li>
-                        &lt;li data-value="...">100&lt;/li>
-                    &lt;/ul>
-                    &lt;input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
-                &lt;/div>
-                &lt;label class="checkbox green-light" for="checkbox-1">
-                    &lt;input type="checkbox" class="checkbox_input" id="checkbox-1" value="...">
-                    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
-                    &lt;span class="checkbox_label">Label&lt;/span>
-                &lt;/label>
-                &lt;label class="radiobutton green-light" for="option-1">
-                    &lt;input type="radio" class="radiobutton_input" name="options" id="option-1" value="...">
-                    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
-                    &lt;span class="radiobutton_label">Label&lt;/span>
-                &lt;/label>
-                &lt;label class="switch green-light" for="switch-1">
-                    &lt;input type="checkbox" class="switch_input" id="switch-1" value="...">
-                    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
-                    &lt;span class="switch_label">Label&lt;/span>
-                &lt;/label>
-
-                &lt;span class="body--light">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="body">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="body--semibold">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="body--bold">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="caption">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="caption--upper">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="caption--bold">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="icon">&lt;i class="fa fa-fw fa-calendar">&lt;/i> line&lt;/span>
-
-                &lt;span class="subtitle">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="header_title">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="header_subtitle">Lorem Ipsum Dolor&lt;/span>
-                &lt;span class="title-display">Lorem Ipsum Dolor&lt;/span>
-            &lt;/div>
-        &lt;/div>
-    &lt;/div>
+&lt;div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label green-dark">
+    &lt;input class="textfield_input" type="text" id="sample-1" pattern="[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9] [0-9][0-9]:[0-9][0-9]">
+    &lt;label class="textfield_label" for="sample-1">Data&lt;/label>
+    &lt;span class="textfield_helper">Formato: mm-dd-aaaa HH:MM.&lt;/span>
+&lt;/div>
+&lt;div class="textfield grid-u-1 grid-u-sm-2-12 textfield--floating-label green-dark">
+    &lt;input class="textfield_input" type="text" id="sample-2" pattern="[0-9]+[0-9]+">
+    &lt;label class="textfield_label" for="sample-2">Int Number&lt;/label>
+    &lt;span class="textfield_helper">Informe um número inteiro.&lt;/span>
+&lt;/div>
+&lt;div class="textfield grid-u-1 grid-u-sm-2-12 textfield--floating-label green-dark">
+    &lt;input class="textfield_input" type="text" id="sample-3" pattern="[0-9]+[,]?[0-9]+">
+    &lt;label class="textfield_label" for="sample-3">Float Number&lt;/label>
+    &lt;span class="textfield_helper">Informe um número decimal.&lt;/span>
+&lt;/div>
+&lt;div class="textfield grid-u-1 grid-u-sm-5-12 textfield--floating-label yellow-dark">
+    &lt;input class="textfield_input" type="text" id="sample-4" pattern="#[0-9|A-Z|a-z]{6}">
+    &lt;label class="textfield_label" for="sample-4">Código do Bilhete&lt;/label>
+    &lt;span class="textfield_helper">informe 6 caracteres alfanuméricos, iniciando com #&lt;/span>
 &lt;/div>

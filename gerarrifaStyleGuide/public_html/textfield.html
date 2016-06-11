@@ -245,15 +245,15 @@
                     <div class="card grid-u-1">
                         <div class="card_box white-theme">
                             <div class="card_row align--left grid-g">
-                                <div class="textfield grid-u-1 grid-u-sm-1-2 textfield--floating-label is-required green-light">
-                                    <input class="textfield_input" type="text" id="sample2-1" >
-                                    <label class="textfield_label" for="sample2-1">Required</label>
-                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                <div class="textfield grid-u-1 grid-u-sm-3-12 is-required is-invalid textfield--floating-label green-light">
+                                    <input class="textfield_input" type="text" id="sample22-1" required >
+                                    <label class="textfield_label" for="sample22-1">Required</label>
+                                    <span class="textfield_helper">Campo obrigatório.</span>
                                 </div>
-                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label is-invalid yellow-light">
-                                    <input class="textfield_input" type="text" id="sample2-2" >
-                                    <label class="textfield_label" for="sample2-2">Invalid</label>
-                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                <div class="textfield grid-u-1 grid-u-sm-1-2 textfield--floating-label is-invalid yellow-light">
+                                    <input class="textfield_input" type="email" id="sample23-2" value="asdasda" >
+                                    <label class="textfield_label" for="sample23-2">E-mail</label>
+                                    <span class="textfield_helper">Informe um e-mail válido</span>
                                 </div>
                                 <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label blue-light">
                                     <input class="textfield_input" type="text" id="sample2-3" value="Value" disabled>
@@ -268,16 +268,16 @@
                             <div class="card_row" >
                                 <pre><code class="language-html">&lt;!-- Required -->
 &lt;div class="textfield textfield--floating-label is-required green-light grid-u-1 grid-u-sm-1-2">
-    &lt;input class="textfield_input" type="text" id="sample1" >
+    &lt;input class="textfield_input" type="text" id="sample1" required>
     &lt;label class="textfield_label" for="sample1">Required&lt;/label>
-    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+    &lt;span class="textfield_helper">Campo obrigatório.&lt;/span>
 &lt;/div>
 
-&lt;!-- Invalid -->
-&lt;div class="textfield textfield--floating-label is-invalid yellow-light grid-u-1 grid-u-sm-3-12 ">
-    &lt;input class="textfield_input" type="text" id="sample2" >
-    &lt;label class="textfield_label" for="sample2">Invalid&lt;/label>
-    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;!-- Email-->
+&lt;div class="textfield textfield--floating-label yellow-light grid-u-1 grid-u-sm-3-12 ">
+    &lt;input class="textfield_input" type="email" id="sample2">
+    &lt;label class="textfield_label" for="sample2">E-mail&lt;/label>
+    &lt;span class="textfield_helper">Informe um e-mail válido.&lt;/span>
 &lt;/div>
 
 &lt;!-- Disabled -->
@@ -296,20 +296,25 @@
                     <div class="card grid-u-1">
                         <div class="card_box dark-theme">
                             <div class="card_row align--left grid-g">
-                                <div class="textfield grid-u-1 grid-u-sm-1-2 textfield--floating-label is-required green-dark">
-                                    <input class="textfield_input" type="text" id="sample42-1" >
-                                    <label class="textfield_label" for="sample42-1">Required</label>
-                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label is-invalid green-dark">
+                                    <input class="textfield_input" type="text" id="sample42-1" pattern="[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9] [0-9][0-9]:[0-9][0-9]" value="alalal">
+                                    <label class="textfield_label" for="sample42-1">Data</label>
+                                    <span class="textfield_helper">Formato: mm-dd-aaaa HH:MM.</span>
                                 </div>
-                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label is-invalid yellow-dark">
-                                    <input class="textfield_input" type="text" id="sample42-2" >
-                                    <label class="textfield_label" for="sample42-2">Invalid</label>
-                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                <div class="textfield grid-u-1 grid-u-sm-2-12 textfield--floating-label is-invalid green-dark">
+                                    <input class="textfield_input" type="text" id="sample52-1" pattern="[0-9]+[0-9]+" value="1,56">
+                                    <label class="textfield_label" for="sample52-1">Int Number</label>
+                                    <span class="textfield_helper">Informe um número inteiro.</span>
                                 </div>
-                                <div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label blue-dark">
-                                    <input class="textfield_input" type="text" id="sample42-3" value="Value" disabled>
-                                    <label class="textfield_label" for="sample42-3">Label</label>
-                                    <span class="textfield_helper">O valor informado é inválido.</span>
+                                <div class="textfield grid-u-1 grid-u-sm-2-12 textfield--floating-label is-invalid green-dark">
+                                    <input class="textfield_input" type="text" id="sample62-1" pattern="[0-9]+[,]?[0-9]+" value="dez">
+                                    <label class="textfield_label" for="sample62-1">Float Number</label>
+                                    <span class="textfield_helper">Informe um número decimal.</span>
+                                </div>
+                                <div class="textfield grid-u-1 grid-u-sm-5-12 textfield--floating-label is-invalid yellow-dark">
+                                    <input class="textfield_input" type="text" pattern="#[0-9|A-Z|a-z]{6}" id="sample42-2" value="$12 x>G">
+                                    <label class="textfield_label" for="sample42-2">Código do Bilhete</label>
+                                    <span class="textfield_helper">informe 6 caracteres alfanuméricos, iniciando com #.</span>
                                 </div>
 
                             </div>
@@ -317,25 +322,32 @@
                                 <span class="caption--bold">Dark</span>
                             </div>
                             <div class="card_row" >
-                                <pre><code class="language-html">&lt;!-- Required -->
-&lt;div class="textfield textfield--floating-label is-required green-dark grid-u-1 grid-u-sm-1-2">
-    &lt;input class="textfield_input" type="text" id="sample1" >
-    &lt;label class="textfield_label" for="sample1">Required&lt;/label>
-    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+                                <pre><code class="language-html">&lt;!-- Data -->
+&lt;div class="textfield grid-u-1 grid-u-sm-3-12 textfield--floating-label green-dark">
+    &lt;input class="textfield_input" type="text" id="sample-1" pattern="[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9] [0-9][0-9]:[0-9][0-9]">
+    &lt;label class="textfield_label" for="sample-1">Data&lt;/label>
+    &lt;span class="textfield_helper">Formato: mm-dd-aaaa HH:MM.&lt;/span>
 &lt;/div>
 
-&lt;!-- Invalid -->
-&lt;div class="textfield textfield--floating-label is-invalid yellow-dark grid-u-1 grid-u-sm-3-12 ">
-    &lt;input class="textfield_input" type="text" id="sample2" >
-    &lt;label class="textfield_label" for="sample2">Invalid&lt;/label>
-    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;!-- Número Inteiro -->
+&lt;div class="textfield grid-u-1 grid-u-sm-2-12 textfield--floating-label green-dark">
+    &lt;input class="textfield_input" type="text" id="sample-2" pattern="[0-9]+[0-9]+">
+    &lt;label class="textfield_label" for="sample-2">Int Number&lt;/label>
+    &lt;span class="textfield_helper">Informe um número inteiro.&lt;/span>
 &lt;/div>
 
-&lt;!-- Disabled -->
-&lt;div class="textfield textfield--floating-label blue-dark grid-u-1 grid-u-sm-3-12">
-    &lt;input class="textfield_input" type="text" id="sample3" value="value" disabled>
-    &lt;label class="textfield_label" for="sample3">Label&lt;/label>
-    &lt;span class="textfield_helper">O valor informado é inválido.&lt;/span>
+&lt;!-- Número Decimal -->
+&lt;div class="textfield grid-u-1 grid-u-sm-2-12 textfield--floating-label green-dark">
+    &lt;input class="textfield_input" type="text" id="sample-3" pattern="[0-9]+[,]?[0-9]+">
+    &lt;label class="textfield_label" for="sample-3">Float Number&lt;/label>
+    &lt;span class="textfield_helper">Informe um número decimal.&lt;/span>
+&lt;/div>
+
+&lt;!-- Regular Expression! -->
+&lt;div class="textfield grid-u-1 grid-u-sm-5-12 textfield--floating-label yellow-dark">
+    &lt;input class="textfield_input" type="text" id="sample-4" pattern="#[0-9|A-Z|a-z]{6}">
+    &lt;label class="textfield_label" for="sample-4">Código do Bilhete&lt;/label>
+    &lt;span class="textfield_helper">informe 6 caracteres alfanuméricos, iniciando com #.&lt;/span>
 &lt;/div></code></pre>
                             </div>
                         </div>  
@@ -454,7 +466,7 @@
                         <div class="card_box white-theme">
                             <div class="card_row align--center grid-g">
                                 <div class="selectfield grid-u-1-3 green-light">
-                                    <button class="selectfield_input" id="sample1-1"></button>
+                                    <button class="selectfield_input" id="sample3-1"></button>
                                     <ul class="selectfield_options">
                                         <li data-value="Action 1" class="is-active">Action 1</li>
                                         <li data-value="Action 2">Action 2</li>
@@ -464,7 +476,7 @@
                                         <li data-value="Action 6">Action 6</li>
                                     </ul>
                                     <input type="hidden" id="selectfield1" value=""/>
-                                    <label class="selectfield_label" for="sample1-1">Label</label>
+                                    <label class="selectfield_label" for="sample3-1">Label</label>
                                 </div>
                                 <div class="selectfield grid-u-1-3 green-light">
                                     <button class="selectfield_input" id="sample1-2" disabled></button>

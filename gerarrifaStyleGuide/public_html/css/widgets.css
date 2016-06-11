@@ -734,6 +734,7 @@ td .dropdown, th .dropdown{
     resize: vertical;
     position: relative;
     outline:none;
+    box-shadow: none;
 }
 .textfield.textfield--static .textfield_input{
     border-bottom-width: 0px;
@@ -792,10 +793,14 @@ td .dropdown, th .dropdown{
     line-height: 21px;
     display: none;
 }
+.textfield.is-invalid .textfield_input{
+    box-shadow: none;
+}
 .textfield.is-invalid .textfield_helper, .selectfield.is-invalid .selectfield_helper{
     display: block;
     overflow: hidden;
     white-space: nowrap;
+    
 }
 .textfield.is-disabled .textfield_input, .selectfield.is-disabled .selectfield_input{
     border-style: dashed;

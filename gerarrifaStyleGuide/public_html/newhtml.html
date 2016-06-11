@@ -1,68 +1,71 @@
-&lt;div class="card grid-u-1-2">
+&lt;div class="card grid-u-1 grid-u-md-1">
     &lt;div class="card_margin">
         &lt;div class="card_box white-theme">
-            &lt;div class="card_row">
-                &lt;div class="tab blue-light">
-                    &lt;label class="tab_button" for="tabGroup1-aba1">
-                        &lt;input type="radio" class="tab_input" name="tabGroup1" id="tabGroup1-aba1">
-                        &lt;span class="tab_label">aba um&lt;/span>
+            &lt;div class="card_row card_row--controls">
+                &lt;span class="avatar avatar--one-line light-theme">
+                    &lt;img alt="imagem" src="img/imagem-teste.jpg"/>
+                    &lt;span>Jonas Connor Alexander Van&lt;/span>
+                &lt;/span>
+
+                &lt;input class="button button--raised-primary yellow-light" type="button" value="button">
+                &lt;a href="#" class="button button--raised-primary yellow-light">link&lt;/a>
+
+                &lt;label class="icontoggle blue-light" for="icontoggle-2">
+                    &lt;input type="checkbox" class="icontoggle_input" id="icontoggle-2" value="..." checked>
+                    &lt;span class="icontoggle_box">&lt;i class="fa fa-fw fa-heart">&lt;/i>&lt;/span>
+                    &lt;span class="icontoggle_label-unchecked">curtir&lt;/span>
+                    &lt;span class="icontoggle_label-checked">descurtir&lt;/span>
+                &lt;/label>
+
+                &lt;div class="togglebutton green-light">
+                    &lt;label class="togglebutton_button" for="display-1">
+                        &lt;input type="radio" class="togglebutton_radio-input" name="display" id="display-1" value="...">
+                        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-list">&lt;/i>&lt;/span>
                     &lt;/label>
-                    &lt;label class="tab_button" for="tabGroup1-aba2">
-                        &lt;input type="radio" class="tab_input" checked name="tabGroup1" id="tabGroup1-aba2">
-                        &lt;span class="tab_label">aba dois&lt;/span>
+                    &lt;label class="togglebutton_button" for="display-2">
+                        &lt;input type="radio" class="togglebutton_radio-input" name="display" id="display-2" value="..." checked>
+                        &lt;span class="togglebutton_label">&lt;i class="fa fa-fw fa-table">&lt;/i>&lt;/span>
                     &lt;/label>
                 &lt;/div>
-            &lt;/div>
-            &lt;div class="card_row card_row--scroll" style="height:200px;">
-                &lt;div class="tab_container" data-group="tabGroup1" data-id="tabGroup1-aba1">                                        
-                    &lt;div class="card_row card_row--header white-theme">
-                        &lt;h2 class="header_title">Aba 1&lt;/h2>
-                        &lt;h3 class="header_subtitle">Lorem Ipsum&lt;/h3>
-                    &lt;/div>
-                    &lt;div class="card_row card_row--header header--avatar white-theme">
-                        &lt;span class="avatar avatar--one-line light-theme">
-                            &lt;img alt="imagem" src="img/imagem-teste.jpg"/>
-                            &lt;span>Jonas Connor Alexander Van&lt;/span>
-                        &lt;/span>
-                    &lt;/div>
-                    &lt;div class="card_row align--right white-theme">
-                        &lt;button class="button button--flat yellow-light">&lt;i class="fa fa-trash">&lt;/i> Excluir&lt;/button>
-                        &lt;button class="button button--raised-primary yellow-light">&lt;i class="fa fa-pencil">&lt;/i> Editar&lt;/button>
-                    &lt;/div>
+
+                &lt;div class="dropdown blue-light">
+                    &lt;button class="dropdown_button" style="width:70px;">&lt;/button>
+                    &lt;ul class="dropdown_options dropdown_options--top-left">
+                        &lt;li data-value="..." class="is-active">10&lt;/li>
+                        &lt;li data-value="...">100&lt;/li>
+                    &lt;/ul>
+                    &lt;input type="hidden" id="dropdown1" class="dropdown_input" value=""/>
                 &lt;/div>
-                &lt;div class="tab_container" data-group="tabGroup1" data-id="tabGroup1-aba2">
-                    &lt;div class="card_row card_row--header header--avatar white-theme">
-                        &lt;span class="avatar avatar--one-line light-theme">
-                            &lt;img alt="imagem" src="img/imagem-teste.jpg"/>
-                            &lt;span>Jonas Connor Alexander Van&lt;/span>
-                        &lt;/span>
-                    &lt;/div>
+                &lt;label class="checkbox green-light" for="checkbox-1">
+                    &lt;input type="checkbox" class="checkbox_input" id="checkbox-1" value="...">
+                    &lt;span class="checkbox_box-outline">&lt;span class="checkbox_tick-outline">&lt;/span>&lt;/span>
+                    &lt;span class="checkbox_label">Label&lt;/span>
+                &lt;/label>
+                &lt;label class="radiobutton green-light" for="option-1">
+                    &lt;input type="radio" class="radiobutton_input" name="options" id="option-1" value="...">
+                    &lt;span class="radiobutton_box-outline">&lt;span class="radiobutton_tick-outline">&lt;/span>&lt;/span>
+                    &lt;span class="radiobutton_label">Label&lt;/span>
+                &lt;/label>
+                &lt;label class="switch green-light" for="switch-1">
+                    &lt;input type="checkbox" class="switch_input" id="switch-1" value="...">
+                    &lt;span class="switch_box-outline">&lt;span class="switch_tick-outline">&lt;/span>&lt;/span>
+                    &lt;span class="switch_label">Label&lt;/span>
+                &lt;/label>
 
-                    &lt;div class="card_row card_row--text card--divider white-theme">
-                        &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia&lt;/p>
-                        &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia&lt;/p>
-                    &lt;/div>
-                    &lt;div class="card_row card_row--medium while-theme">
-                        &lt;label class="checkbox yellow-light" for="checkbox-wwww">
-                            &lt;input type="checkbox" class="checkbox_input" id="checkbox-wwww" value="testeas">
-                            &lt;span class="checkbox_box-outline">
-                                &lt;span class="checkbox_tick-outline">&lt;/span>
-                            &lt;/span>
-                            &lt;span class="checkbox_label">Checkbox ww&lt;/span>
-                        &lt;/label>
+                &lt;span class="body--light">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="body">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="body--semibold">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="body--bold">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="caption">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="caption--upper">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="caption--bold">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="icon">&lt;i class="fa fa-fw fa-calendar">&lt;/i> line&lt;/span>
 
-                        &lt;label class="switch yellow-light" for="switch-wwww">
-                            &lt;input type="checkbox" class="switch_input" id="switch-wwww" value="testeq">
-                            &lt;span class="switch_box-outline">
-                                &lt;span class="switch_tick-outline">&lt;/span>
-                            &lt;/span>
-                            &lt;span class="switch_label">switch ww&lt;/span>
-                        &lt;/label>
-                    &lt;/div>
-
-                &lt;/div>
+                &lt;span class="subtitle">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="header_title">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="header_subtitle">Lorem Ipsum Dolor&lt;/span>
+                &lt;span class="title-display">Lorem Ipsum Dolor&lt;/span>
             &lt;/div>
-
-        &lt;/div>      
+        &lt;/div>
     &lt;/div>
 &lt;/div>

@@ -40,6 +40,7 @@ section > header h1, .title-display{
 }
 .align--clear{
     clear: both;
+    display: block !important;
 }
 .align--justify{
     text-align: justify !important;
@@ -87,15 +88,25 @@ section > header h1, .title-display{
     padding-right: 8px;
     min-height: 48px;
     text-align: left;
+    
+    clear: both;
+}
+.card_row.card_row--large {
+    padding-right: 16px;
+    min-height: 72px;
+    text-align: left;
 }
 
-.card_row.card_row--controls{
+.card_row.card_row--inline-controls{
     line-height: 48px;
 }
-.card_row.card_row--controls > *{
+.card_row.card_row--inline-controls.card_row--large{
+    line-height: 72px;
+}
+.card_row.card_row--inline-controls > *, .card_row.card_row--inline-controls div[class*="align--"] > *{
     display: inline;
 }
-.card_row.card_row--controls a.button, .card_row .togglebutton{
+.card_row.card_row--inline-controls a.button, .card_row .togglebutton{
     display: inline-block;
 }
 
@@ -104,10 +115,30 @@ section > header h1, .title-display{
 .card_row .caption, .card_row .caption--upper, .card_row .caption--bold, .card_row .subtitle,
 .card_row .header_title, .card_row .header_subtitle, .card_row .title-display,
 .card_row .text--two-line, .card_row .icon,
- .card_row .icontoggle{
+.card_row .icontoggle{
     height: 48px;
     line-height: 48px;
     margin: 0 0 0 8px;
+}
+
+.card_row.card_row--large .avatar, .card_row.card_row--large .checkbox, .card_row.card_row--large .radiobutton, .card_row.card_row--large .switch,
+.card_row.card_row--large .body--light, .card_row.card_row--large .body, .card_row.card_row--large .body--semibold, .card_row.card_row--large .body--bold,
+.card_row.card_row--large .caption, .card_row.card_row--large .caption--upper, .card_row.card_row--large .caption--bold, .card_row.card_row--large .subtitle,
+.card_row.card_row--large .header_title, .card_row.card_row--large .header_subtitle, .card_row.card_row--large .title-display,
+.card_row.card_row--large .text--two-line, .card_row.card_row--large .icon,
+.card_row.card_row--large .icontoggle{
+    height: 48px;
+    line-height: 48px;
+    margin: 26px 0 26px 16px;
+}
+.card_row.card_row--large .avatar img{
+    margin:17px 7px;
+}
+.card_row.card_row--large .checkbox_box-outline, .card_row.card_row--large .radiobutton_box-outline, .card_row.card_row--large .switch_box-outline{
+    margin-top: 24px;
+}
+.card_row.card_row--large .checkbox:before, .card_row.card_row--large .radiobutton:before, .card_row.card_row--large .switch:before{
+    margin-top: 14px;
 }
 
 .card_row .togglebutton{
@@ -115,20 +146,41 @@ section > header h1, .title-display{
     margin: 0px 0 0 8px;
     top:6px;
 }
+.card_row.card_row--large .togglebutton{
+    height: 36px;
+    margin: 18px 0 18px 16px;
+    top:0px;
+}
 
 .card_row .button{
     height: 36px;
     line-height: 36px;
     margin: 0 0 0 8px;
 }
+.card_row.card_row--large .button{
+    height: 36px;
+    line-height: 36px;
+    margin: 18px 0 18px 16px;/*?*/
+}
+
 .card_row .dropdown{
     height: 48px;
     line-height: 48px;
     display: inline;
     margin: 0 0 0 8px;
 }
+.card_row.card_row--large .dropdown{
+    height: 72px;
+    line-height: 72px;
+    display: inline;
+    margin: 0 0 0 16px;
+}
+
 .card_row .tab .tab_button{
     line-height: 48px;
+}
+.card_row.card_row--large .tab .tab_button{
+    line-height: 72px;
 }
 
 

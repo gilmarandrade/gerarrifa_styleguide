@@ -994,11 +994,12 @@ td .dropdown, th .dropdown{
 .nav-list_item.logo a{
     height: 56px;
     width:calc(100% - 32px);
-    background-image: url('../img/nav_google_logo.svg');
+    background-image: url('../img/logo.png');
     display: block;
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: left center;
+    background-size: contain;
 }
 .nav-list_item a{
     width:calc(100% - 32px);
